@@ -1,0 +1,13 @@
+---
+title: <p class="center-text">Topics</p>
+listing:
+  type: grid
+page-layout: full
+
+comments: false
+format:
+  html:
+    theme: 
+        - cosmo
+        - ../styles.scss
+---

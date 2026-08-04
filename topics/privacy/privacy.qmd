@@ -1,0 +1,10 @@
+---
+title: "Privacy"
+
+format:    
+  html:     
+    code-fold: true 
+execute:   
+  echo: false   
+  warning: false
+---

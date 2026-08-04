@@ -1,0 +1,16 @@
+---
+website:
+  title: "Critical AI Literacy: Reflective use (or non-use) of GenerativeAI systems"
+format:
+  html:
+    theme: 
+        - cosmo
+        - styles.scss
+    toc: false
+
+---
+
+## Welcome, welcome!
+
+
+Description....
