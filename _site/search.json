@@ -1,30 +1,51 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Critical AI Literacy: Reflective use (or non-use) of GenerativeAI systems",
+    "objectID": "topics/interaction/interaction.html",
+    "href": "topics/interaction/interaction.html",
+    "title": "Interaction",
     "section": "",
-    "text": "Description…."
+    "text": "Overview\n\nhow language models differ by design from humans on all levels (against claims by tech broes)\nhow GenAI chatbots have been constructed to make human-chatbot interaction seem ‘human-like’ and ‘engaging’\nthe consequences thereof for the way we interact with such systems\n\n\n\nContent\n\nBy virtue of their architecture and training method, large language models (LLMs) that underly GenAI chatbots, mimic observed patterns in their input and generate these patterns probabilistically [@bender]\nThis is why they’ve been referred to as stochastic parrots\n\nstochastic =\nparrot =\n\nThe term stochastic parrots has however become more vague…. original intention behind the term ..\nAs part of the design process of GenAI chatbots, the output of these systems has been fabricated to sound more intelligent, more empathetic,… (see Data section)\nELIZA-effect, anthropomorphic language\n\nagainst norms in the field\n\n\n\n\nSlides\nLink to slides\n\n\nQuestions for discussion\n\n\nFurther resources and references"
   },
   {
-    "objectID": "index.html#welcome-welcome",
-    "href": "index.html#welcome-welcome",
-    "title": "Critical AI Literacy: Reflective use (or non-use) of GenerativeAI systems",
+    "objectID": "alternatives.html",
+    "href": "alternatives.html",
+    "title": "Alternatives",
     "section": "",
-    "text": "Description…."
+    "text": "Alternatives\n\n\nAI-based alternatives"
+  },
+  {
+    "objectID": "references_resources.html",
+    "href": "references_resources.html",
+    "title": "References",
+    "section": "",
+    "text": "References\n\n\nResources"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Critical AI Literacy",
+    "section": "",
+    "text": "Critical AI Literacy: Reflective use (or non-use) of GenerativeAI chatbot systems\n\n\nwhat this is about\ngoals and motivation\n\ncollecting information and resources on Critical AI Literacy\nnot reinventing the wheel but making them accessible and retrievable, and therefore, more easily applicable in teaching\n\nacknowledge main sources\nauthors"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "Critical AI Literacy: Reflective use (or non-use) of GenerativeAI systems",
+    "title": "Critical AI Literacy",
     "section": "",
-    "text": "What is Critical AI Literacy?\n\n\nHow to use this collection of information"
+    "text": "What are Critical AI Literacies?\n\n\nCritical AI Literacies (CAILs) are about thinking critically about AI products, histories, and ecosystems\nLiteracies as they involve different theoretical and practical perspectives on AI\nCAILs concern the knowledge necessary to going beyond the question of how to use AI to when, where and why to use it, and importantly, when NOT to use it, empowering students (and teachers) to become active decision-makers rather than passive consumers\n‘’CAILs centre human cognition and uphold the integrity of academic research and education.’’ [@], focusing on technical, cognitive, societal and environmental evidence rather than following the promises put forward by the technology industry\n\n\nFocus of this collection\n\n\n\n\nreference guest\n\n\n\nchatbots + LLM + generative + ANN\n\n\nHow to use this collection of information\n\n\nPrerequisites"
+  },
+  {
+    "objectID": "use_cases/index.html",
+    "href": "use_cases/index.html",
+    "title": "\nUse cases\n",
+    "section": "",
+    "text": "Development of Ideas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLiterature Search and Review\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWording and orthography\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "topics/index.html",
     "href": "topics/index.html",
     "title": "\nTopics\n",
     "section": "",
-    "text": "Environment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrivacy\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnvironment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInteraction\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrivacy\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

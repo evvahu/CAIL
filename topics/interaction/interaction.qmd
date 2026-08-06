@@ -1,0 +1,39 @@
+---
+title: "Interaction"
+
+format:    
+  html:     
+    code-fold: true 
+execute:   
+  echo: false   
+  warning: false
+---
+
+# Overview
+
+- how language models differ by design from humans on all levels (against claims by tech broes)
+- how GenAI chatbots have been constructed to make human-chatbot interaction seem 'human-like' and 'engaging'
+- the consequences thereof for the way we interact with such systems 
+
+
+# Content
+
+- By virtue of their architecture and training method, large language models (LLMs) that underly GenAI chatbots, mimic observed patterns in their input and generate these patterns probabilistically [@bender] 
+- This is why they've been referred to as *stochastic parrots*
+    - *stochastic* = 
+    - *parrot* = 
+- The term *stochastic parrots* has however become more vague.... original intention behind the term .. 
+- As part of the design process of GenAI chatbots, the output of these systems has been fabricated to sound more intelligent, more empathetic,... (see Data section)
+- ELIZA-effect, anthropomorphic language
+    - against norms in the field
+
+# Slides
+
+[Link to slides](../../_site/slides/interaction.html)
+
+
+# Questions for discussion
+
+# Further resources and references
+
+

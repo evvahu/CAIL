@@ -1,0 +1,15 @@
+---
+title: "Alternatives"
+format:
+  html:
+    theme: 
+        - cosmo
+        - styles.scss
+    toc: true
+---
+
+# Alternatives
+
+
+
+# AI-based alternatives

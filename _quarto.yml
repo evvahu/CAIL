@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Critical AI Literacy: Reflective use (or non-use) of GenerativeAI systems"
+  title: "Critical AI Literacy"
   navbar:
     left:
       - href: index.qmd
@@ -11,6 +11,12 @@ website:
         text: About
       - href: topics/index.qmd
         text: Topics
+      - href: use_cases/index.qmd
+        text: Use Cases
+      - href: references_resources.qmd
+        text: References and further Resources
+      - href: alternatives.qmd
+        text: Alternatives
 
 format:
   html:

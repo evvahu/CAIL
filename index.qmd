@@ -1,6 +1,6 @@
 ---
 website:
-  title: "Critical AI Literacy: Reflective use (or non-use) of GenerativeAI systems"
+  title: "Critical AI Literacy"
 format:
   html:
     theme: 
@@ -10,7 +10,13 @@ format:
 
 ---
 
-## Welcome, welcome!
+<h2 class=".title"> Critical AI Literacy: Reflective use (or non-use) of GenerativeAI chatbot systems</h2>
 
 
-Description....
+- what this is about
+- goals and motivation
+  - collecting information and resources on Critical AI Literacy 
+  - not reinventing the wheel but making them accessible and retrievable, and therefore, more easily applicable in teaching 
+- acknowledge main sources
+- authors
+

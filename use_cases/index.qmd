@@ -1,0 +1,14 @@
+---
+title: <p class="center-text">Use cases</p>
+listing:
+  type: grid
+page-layout: full
+
+comments: false
+format:
+  html:
+    theme: 
+        - cosmo
+        - ../styles.scss
+---
+

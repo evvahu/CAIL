@@ -1,0 +1,13 @@
+---
+title: "Critical AI Literacies"
+subtitle: "Interaction"
+author: "Eva Scheel"
+institute: eva.scheel-huber@uni-koeln.de
+date-format: "DD. MM. YYYY"
+format:
+  revealjs: 
+    slide-number: true
+    theme: ../slides_theme.scss
+    scrollable: true
+editor: source
+---

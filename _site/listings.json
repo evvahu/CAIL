@@ -1,8 +1,18 @@
 [
   {
+    "listing": "/use_cases/index.html",
+    "items": [
+      "/use_cases/development_ideas/development_ideas.html",
+      "/use_cases/literature_review/literature_review.html",
+      "/use_cases/wording_orthography/wording.html"
+    ]
+  },
+  {
     "listing": "/topics/index.html",
     "items": [
+      "/topics/data/data.html",
       "/topics/environment/environment.html",
+      "/topics/interaction/interaction.html",
       "/topics/privacy/privacy.html"
     ]
   }

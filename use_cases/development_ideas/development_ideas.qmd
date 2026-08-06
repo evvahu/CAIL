@@ -1,0 +1,10 @@
+---
+title: "Development of Ideas"
+
+format:    
+  html:     
+    code-fold: true 
+execute:   
+  echo: false   
+  warning: false
+---
