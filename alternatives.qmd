@@ -8,8 +8,11 @@ format:
     toc: true
 ---
 
-# Alternatives
 
+# Non-AI Alternatives
+
+- in-class peer discussion and review
+- out-of-class group work, peer discussion...
 
 
 # AI-based alternatives

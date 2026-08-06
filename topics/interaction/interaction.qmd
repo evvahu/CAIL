@@ -23,6 +23,7 @@ execute:
     - *stochastic* = 
     - *parrot* = 
 - The term *stochastic parrots* has however become more vague.... original intention behind the term .. 
+- relevance vs. reliability
 - As part of the design process of GenAI chatbots, the output of these systems has been fabricated to sound more intelligent, more empathetic,... (see Data section)
 - ELIZA-effect, anthropomorphic language
     - against norms in the field

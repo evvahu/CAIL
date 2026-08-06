@@ -11,3 +11,18 @@ format:
     scrollable: true
 editor: source
 ---
+
+
+# Intro
+
+
+# Stochastic parrot
+
+![parrot](../images/papagaio_alex.jpg)
+
+::: notes
+- By virtue of their architecture and training method, large language models (LLMs) that underly GenAI chatbots, mimic observed patterns in their input and generate these patterns probabilistically [@bender] 
+- This is why they've been referred to as *stochastic parrots*
+    - *stochastic* = 
+    - *parrot* = 
+:::
