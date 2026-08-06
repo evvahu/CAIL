@@ -12,11 +12,12 @@ website:
       - href: topics/index.qmd
         text: Topics
       - href: use_cases/index.qmd
-        text: Use Cases
-      - href: references_resources.qmd
-        text: References and further Resources
+        text: Use cases
       - href: alternatives.qmd
         text: Alternatives
+      - href: references_resources.qmd
+        text: References and further resources
+
 
 format:
   html:
