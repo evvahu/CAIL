@@ -1,6 +1,7 @@
 ---
 title: "Interaction"
-
+bibliography: ../../references_interaction.bib
+callout-appearance: minimal
 format:    
   html:     
     code-fold: true 
@@ -9,7 +10,7 @@ execute:
   warning: false
 ---
 
-# Overview
+# Overview of the content
 
 - how large language models differ by design from humans on all levels
 - how GenAI chatbots have been constructed to make human-chatbot interaction seem 'human-like' and 'engaging'
@@ -20,28 +21,115 @@ execute:
 
 ## LLMs as *Stochastic parrots*
 
+
+
+- By virtue of their architecture and training method, large language models (LLMs) that underly GenAI chatbots, mimic observed patterns in their input and generate these patterns probabilistically [@bender]
+- This is why they've been referred to as *stochastic parrots*
+	- *stochastic* referring to the probabilistic procedure by which words are generated
+	- *parrot* referring to the characteristics of the system's surface output
+- LLMs produce "form without meaning, statistical coherence without semantic grounding" (p.2 @guest)
+
+
+::: {.callout-note title="Task ideas"}
+- watch video of Alex the parrot (insert link). How does the stochastic parrot metaphor align with what Alex produces and what LLMs produce?
+:::
+
 ![Irene Pepperberg's famous Alex who could ...](../../images/papagaio_alex.jpg)
 
-- By virtue of their architecture and training method, large language models (LLMs) that underly GenAI chatbots, mimic observed patterns in their input and generate these patterns probabilistically [@bender] 
-- This is why they've been referred to as *stochastic parrots*
-    - *stochastic* = 
-    - *parrot* = 
-- The term *stochastic parrots* has however become more vague.... original intention behind the term .. 
-- key difference from humans
-- relevance vs. reliability
 
+- In public discourse, the term *stochastic parrot* has been used more polemically with claims that current limits of the system (for example, shown by deficient or inadequate LLM output) will be overcome by technological improvements and scale (e.g. computational power, training data)  @guest
+- However, the intended use of *stochastic parrots* was to point out their architectural foundations and structure that make them categorically different systems from human language and human language use
+- in contrast to human language:
+	- no causal contact with the world their outputs describe
+	- no grounded representations
+	- no communicative intent
+	- no recognition of interlocutor's, i.e. user's, beliefs and intentions
+	- no epistemic commitment, i.e. commitment to saying the truth
+- As a result, their limitations cannot be overcome by increasing scale, but instead they follow from the mechanisms of the system themselves 
+
+
+
+::: {.callout-note title="Task ideas"}
+- Choose a topic that you particularly care about. Interact with a GenAI chatbot about it. If you have time, talk about this topic with a friend of yours. Compare the two interactions.
+	If you don't have the time to also talk with your friend, think about how your interaction with the GenAI chatbot differs from the interaction that you would have with a person. 
+- possibly show soika
+:::
+
+
+::: {.callout-tip title="Discussion questions"}
+- Do you agree or disagree with Sam Altman's (CEO of OpenAI) claim “i am a stochastic parrot and so r u”? Why? https://x.com/sama/status/1599471830255177728?lang=es
+:::
+
+
+::: {.callout-warning title="for linguistic students"}
+- Hocketts design features
+- key differences from human language knowledge, how children learn language
+:::
 
 ## GenAI chatbots 
+*from LLMs to GenAI chatbots*
 
-- As part of the design process of GenAI chatbots, the output of these systems has been fabricated to sound more intelligent, more empathetic,... (see Data section on human labour involved)
-- specific examples, leaks 
-- *ELIZA-effect*, anthropomorphic language (include link to Eliza)
-    - against norms in the field
-- as a result: more intelligent, 
-- reliability vs. relevance 
+- The rhetoric style of GenAI chatbots
+	- Through Reinforcement Learning with Human Feedback (RLHF) (see Data), the behaviour of GenAI chatbots is guided by human feedback. 
+	- "beguilingly human-like response patterns" @Dingemanse
+		- first-person (against norms in the field)
+		- their output sounds friendly, confident and coherent
+		- Sycophancy: the tendency of AI-based large language models to excessively agree with, flatter, or validate users @Cheng
+		- they always prioritise style over substance and their output may seem relevant but is not reliable  @
+		- as a result: they appear more intelligent than they are
+*insert picture blusky*
+- Interactive Embedding (see Dingemanse):
+	- LLMs are presented in interfaces that mimic interaction
+	- Humans have a tendency to interpret language produced in interactions and as responses to our own utterances
 
-## Consequences 
 
+::: {.callout-note title="Task ideas"}
+- engage with a GenAI chatbot about a particular topic (for example, your hobbies). Where do you spot instances of sycophancy? 
+:::
+
+
+::: {.callout-tip title="Discussion questions"}
+- key differences from human-to-human interaction
+:::
+
+
+## Consequences on how we interact with GenAI chatbots 
+"As soon as computational artifacts demonstrate some evidence of recognizably human abilities, we are inclined to endow them with the rest” (Suchman 2007 [1987]: 41)"
+
+
+- The **ELIZA effect**:
+	- Making sense of and finding meaning in anything that resembles human language is deeply human and has existed long before LLMs
+	- ELIZA, created by Joseph Weizenbaum in 1966
+		- a chatbot that replies to human prompts with the help of predefined key words and simple rule-based responses 
+			- Example: 
+		- Already back then, participants felt heard by ELIZA and .. 
+		- based on this system, ELIZA effect was coined
+			- "The ELIZA effect is the tendency to read more understanding, empathy, memory, or intention into a computer system than it actually has." (https://elizaemulator.com/eliza-effect)
+	- Therefore, it does not need a gigantic LLM trained on for humans to make sense of fluent language used in interactions
+- Consequences of sycophancy
+	- Sycophancy is highly prevalent in GenAI chatbot
+		- For example, @ show that  GenAI chatbot affirmed users’ actions 49% more often than humans, even if it involved illegality, deception or other harms
+	- While sycophancy may seem innocuous, the effects on humans, especially vulnerable people, are alaraming
+		- Sycophantic GenAI chatbots may shift how users approach their closest relationships (@ibrahim)
+		- It futher promotes dependence and undermine participants’ willingness to take responsibility and repair interpersonal conflicts (@cheng)
+- Prompt engineering (see Dingemanse)
+	- since the advent of ChatGPT, *prompt engineering* has become a skill in itself, one that requires training and knowledge, one that is usually subsumed under the discipline of  "AI Literacy" (which is different from Critical AI Literacy)
+	- However, *prompt engineering* is an odd skill to promote, considering that the models' outputs are by design unstable and unpredictable 
+	- Curiously, GenAI chatbots that are claimed to increase efficiency present a division of labour that results in additional work for the human user (@Dingemanse) (formulating "the most effective" prompt, checking the output and revising the output) 
+- The effect of anthromopomorphic language
+	- *Anthropomorphization*: the attribution of human capabilities and characteristics to the inanimate system. @Inie
+	- Module developers describe the behaviour of GenAI chatbots using anthropomorphic language. "think", 'learn', "understand", "reason", etc...
+	- Anthropomorphic language influence how such models are perceived, deployed and trusted (@Inie)
+
+
+::: {.callout-note title="Task ideas"}
+- ELIZA effect: https://elizaemulator.com/
+:::
+
+::: {.callout-tip title="Discussion questions"}
+- While it's difficult to refrain from using anthropmorphic language merely due to the lack of a respective vocabulary, what are potential risks of using such language to describe GenAI chatbot's behaviour? 
+- What are potential harms of sycophantic GenAI chatbots? Think for example about asking for advice on a personal matter from GenAI chatbots
+:::
 
 
 # Slides
@@ -54,9 +142,6 @@ execute:
 - Why are LLMs on which GenAI chatbots are built called *stochastic parrots*?
 - What is the *Eliza Effect*?
 
-# Questions for discussion
-
-- 
 
 # Further resources and references
 
