@@ -4,7 +4,28 @@
     "href": "topics/interaction/interaction.html",
     "title": "Interaction",
     "section": "",
-    "text": "Overview\n\nhow language models differ by design from humans on all levels (against claims by tech broes)\nhow GenAI chatbots have been constructed to make human-chatbot interaction seem ‘human-like’ and ‘engaging’\nthe consequences thereof for the way we interact with such systems\n\n\n\nContent\n\nBy virtue of their architecture and training method, large language models (LLMs) that underly GenAI chatbots, mimic observed patterns in their input and generate these patterns probabilistically [@bender]\nThis is why they’ve been referred to as stochastic parrots\n\nstochastic =\nparrot =\n\nThe term stochastic parrots has however become more vague…. original intention behind the term ..\nrelevance vs. reliability\nAs part of the design process of GenAI chatbots, the output of these systems has been fabricated to sound more intelligent, more empathetic,… (see Data section)\nELIZA-effect, anthropomorphic language\n\nagainst norms in the field\n\n\n\n\nSlides\nLink to slides\n\n\nQuestions for discussion\n\n\nFurther resources and references"
+    "text": "how large language models differ by design from humans on all levels\nhow GenAI chatbots have been constructed to make human-chatbot interaction seem ‘human-like’ and ‘engaging’\nthe consequences thereof for the way we interact with such systems"
+  },
+  {
+    "objectID": "topics/interaction/interaction.html#llms-as-stochastic-parrots",
+    "href": "topics/interaction/interaction.html#llms-as-stochastic-parrots",
+    "title": "Interaction",
+    "section": "LLMs as Stochastic parrots",
+    "text": "LLMs as Stochastic parrots\n\n\n\nIrene Pepperberg’s famous Alex who could …\n\n\n\nBy virtue of their architecture and training method, large language models (LLMs) that underly GenAI chatbots, mimic observed patterns in their input and generate these patterns probabilistically [@bender]\nThis is why they’ve been referred to as stochastic parrots\n\nstochastic =\nparrot =\n\nThe term stochastic parrots has however become more vague…. original intention behind the term ..\nkey difference from humans\nrelevance vs. reliability"
+  },
+  {
+    "objectID": "topics/interaction/interaction.html#genai-chatbots",
+    "href": "topics/interaction/interaction.html#genai-chatbots",
+    "title": "Interaction",
+    "section": "GenAI chatbots",
+    "text": "GenAI chatbots\n\nAs part of the design process of GenAI chatbots, the output of these systems has been fabricated to sound more intelligent, more empathetic,… (see Data section on human labour involved)\nspecific examples, leaks\nELIZA-effect, anthropomorphic language (include link to Eliza)\n\nagainst norms in the field\n\nas a result: more intelligent,\nreliability vs. relevance"
+  },
+  {
+    "objectID": "topics/interaction/interaction.html#consequences",
+    "href": "topics/interaction/interaction.html#consequences",
+    "title": "Interaction",
+    "section": "Consequences",
+    "text": "Consequences"
   },
   {
     "objectID": "use_cases/literature_review/literature_review.html",
@@ -68,26 +89,5 @@
     "title": "\nTopics\n",
     "section": "",
     "text": "Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnvironment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInteraction\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrivacy\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "topics/interaction/interaction.html#llms-as-stochastic-parrots",
-    "href": "topics/interaction/interaction.html#llms-as-stochastic-parrots",
-    "title": "Interaction",
-    "section": "LLMs as Stochastic parrots",
-    "text": "LLMs as Stochastic parrots\n\n\n\nIrene Pepperberg’s famous Alex who could …\n\n\n\nBy virtue of their architecture and training method, large language models (LLMs) that underly GenAI chatbots, mimic observed patterns in their input and generate these patterns probabilistically [@bender]\nThis is why they’ve been referred to as stochastic parrots\n\nstochastic =\nparrot =\n\nThe term stochastic parrots has however become more vague…. original intention behind the term ..\nrelevance vs. reliability"
-  },
-  {
-    "objectID": "topics/interaction/interaction.html#genai-chatbots",
-    "href": "topics/interaction/interaction.html#genai-chatbots",
-    "title": "Interaction",
-    "section": "GenAI chatbots",
-    "text": "GenAI chatbots\n\nAs part of the design process of GenAI chatbots, the output of these systems has been fabricated to sound more intelligent, more empathetic,… (see Data section)\nELIZA-effect, anthropomorphic language\n\nagainst norms in the field\n\nas a result: more intelligent,\nreliability vs. relevance"
-  },
-  {
-    "objectID": "topics/interaction/interaction.html#consequences",
-    "href": "topics/interaction/interaction.html#consequences",
-    "title": "Interaction",
-    "section": "Consequences",
-    "text": "Consequences"
   }
 ]
