@@ -11,29 +11,52 @@ execute:
 
 # Overview
 
-- how language models differ by design from humans on all levels (against claims by tech broes)
+- how large language models differ by design from humans on all levels
 - how GenAI chatbots have been constructed to make human-chatbot interaction seem 'human-like' and 'engaging'
 - the consequences thereof for the way we interact with such systems 
 
 
 # Content
 
+## LLMs as *Stochastic parrots*
+
+![Irene Pepperberg's famous Alex who could ...](../../images/papagaio_alex.jpg)
+
 - By virtue of their architecture and training method, large language models (LLMs) that underly GenAI chatbots, mimic observed patterns in their input and generate these patterns probabilistically [@bender] 
 - This is why they've been referred to as *stochastic parrots*
     - *stochastic* = 
     - *parrot* = 
 - The term *stochastic parrots* has however become more vague.... original intention behind the term .. 
+- key difference from humans
 - relevance vs. reliability
-- As part of the design process of GenAI chatbots, the output of these systems has been fabricated to sound more intelligent, more empathetic,... (see Data section)
-- ELIZA-effect, anthropomorphic language
+
+
+## GenAI chatbots 
+
+- As part of the design process of GenAI chatbots, the output of these systems has been fabricated to sound more intelligent, more empathetic,... (see Data section on human labour involved)
+- specific examples, leaks 
+- *ELIZA-effect*, anthropomorphic language (include link to Eliza)
     - against norms in the field
+- as a result: more intelligent, 
+- reliability vs. relevance 
+
+## Consequences 
+
+
 
 # Slides
 
-[Link to slides](../../_site/slides/interaction.html)
+[Link to slides]()
 
+
+# Comprehension questions
+
+- Why are LLMs on which GenAI chatbots are built called *stochastic parrots*?
+- What is the *Eliza Effect*?
 
 # Questions for discussion
+
+- 
 
 # Further resources and references
 
