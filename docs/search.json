@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "topics/interaction/interaction.html",
+    "href": "topics/interaction/interaction.html",
+    "title": "Interaction",
+    "section": "",
+    "text": "how large language models differ by design from humans on all levels\nhow GenAI chatbots have been constructed to make human-chatbot interaction seem ‘human-like’ and ‘engaging’\nthe consequences thereof for the way we interact with such systems"
+  },
+  {
+    "objectID": "topics/interaction/interaction.html#llms-as-stochastic-parrots",
+    "href": "topics/interaction/interaction.html#llms-as-stochastic-parrots",
+    "title": "Interaction",
+    "section": "LLMs as Stochastic parrots",
+    "text": "LLMs as Stochastic parrots\n\n\n\nIrene Pepperberg’s famous Alex who could …\n\n\n\nBy virtue of their architecture and training method, large language models (LLMs) that underly GenAI chatbots, mimic observed patterns in their input and generate these patterns probabilistically [@bender]\nThis is why they’ve been referred to as stochastic parrots\n\nstochastic =\nparrot =\n\nThe term stochastic parrots has however become more vague…. original intention behind the term ..\nkey difference from humans\nrelevance vs. reliability"
+  },
+  {
+    "objectID": "topics/interaction/interaction.html#genai-chatbots",
+    "href": "topics/interaction/interaction.html#genai-chatbots",
+    "title": "Interaction",
+    "section": "GenAI chatbots",
+    "text": "GenAI chatbots\n\nAs part of the design process of GenAI chatbots, the output of these systems has been fabricated to sound more intelligent, more empathetic,… (see Data section on human labour involved)\nspecific examples, leaks\nELIZA-effect, anthropomorphic language (include link to Eliza)\n\nagainst norms in the field\n\nas a result: more intelligent,\nreliability vs. relevance"
+  },
+  {
+    "objectID": "topics/interaction/interaction.html#consequences",
+    "href": "topics/interaction/interaction.html#consequences",
+    "title": "Interaction",
+    "section": "Consequences",
+    "text": "Consequences"
+  },
+  {
+    "objectID": "use_cases/literature_review/literature_review.html",
+    "href": "use_cases/literature_review/literature_review.html",
+    "title": "Literature Search and Review",
+    "section": "",
+    "text": "Discussion questions\n\nWhat are the limitations of these sytems given their training data? i.e. is the information needed actually in the training data? (in relation to linguistics: information that is not about high-resource languages)\nfrom LD: What is the point of citation, practically as well as ethically? (consider sharing some of the following embedded links in preparation for this discussion). How does a collaboratively built resource such as Wikipedia, or a peer-reviewed academic resource, differ from generative AI tools such as ChatGPT or Perplexity AI (both of which are being sued by creative workers and publications including the New York Times for violation of copyright). Consider sharing this thinkpiece on search interfaces by Leslie Allison and Tiffany DeRewal to help students to think about “friction” in this context"
+  },
+  {
+    "objectID": "use_cases/wording_orthography/wording.html",
+    "href": "use_cases/wording_orthography/wording.html",
+    "title": "Wording and orthography",
+    "section": "",
+    "text": "Discussion questions\n\nDo we by citing a chatbot or acknowledging the use of a chatbot avoid plagiarising?\n\nfrom LD10: “But what does it mean for students to cite a chatbot as an information source when the system’s own source for the information is buried in undocumented training data?” (LD p.10)”"
+  },
+  {
+    "objectID": "alternatives.html",
+    "href": "alternatives.html",
+    "title": "Alternatives",
+    "section": "",
+    "text": "Non-AI Alternatives\n\nin-class peer discussion and review\nout-of-class group work, peer discussion…\n\n\n\nAI-based alternatives"
+  },
+  {
+    "objectID": "references_resources.html",
+    "href": "references_resources.html",
+    "title": "References",
+    "section": "",
+    "text": "References\n\n\nResources"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Critical AI Literacy",
+    "section": "",
+    "text": "Critical AI Literacy: Reflective use (or non-use) of GenerativeAI chatbot systems\n\n\nwhat this is about\ngoals and motivation\n\ncollecting information and resources on Critical AI Literacy\nnot reinventing the wheel but making them accessible and retrievable, and therefore, more easily applicable in teaching\n\nacknowledge main sources\nauthors"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Critical AI Literacy",
+    "section": "",
+    "text": "What are Critical AI Literacies?\n\n\nCritical AI Literacies (CAILs) are about thinking critically about AI products, histories, and ecosystems\nPlural Literacies as they involve different theoretical and practical perspectives on AI\nCAILs concern the knowledge necessary to going beyond the question of how to use AI to when, where and why to use it, and importantly, when NOT to use it, empowering students (and teachers) to become active decision-makers rather than passive consumers\n‘’CAILs centre human cognition and uphold the integrity of academic research and education.’’ [@], focusing on technical, cognitive, societal and environmental evidence rather than following the promises put forward by the technology industry\n\n\nFocus of this collection\n\n\n\n\nreference guest\n\n\n\nchatbots + LLM + generative + ANN\n\n\nHow to use this collection of information\n\n\nPrerequisites\n\n\nIdeas\n\n\nstarting off a conversation about AI with students\n\nKahoot\n\nforums for before-class preparation"
+  },
+  {
+    "objectID": "use_cases/development_ideas/development_ideas.html",
+    "href": "use_cases/development_ideas/development_ideas.html",
+    "title": "Development of Ideas",
+    "section": "",
+    "text": "Discussion questions\n\nHow may the engagement with AI harm the development of ideas?\n\nThink about the goals of the design of the tool vs. your own particular goals (pointer to Interaction)\n\nHow does human-to-human interaction fundamentally differ from human-AI interaction?\nHow are GenAI models trained to produce and “learn” language? How does this differ from how a child learns language?\nWhat is the difference between regarding research as a process rather than as a product? Why should “serendipity” matter to this process? (LD)"
+  },
+  {
+    "objectID": "use_cases/index.html",
+    "href": "use_cases/index.html",
+    "title": "\nUse cases\n",
+    "section": "",
+    "text": "General questions\n\nFirst, students can ask themselves if their cognitive labour is being affected by an artifact; and if ‘yes’ then they can ask what that relationship means for their specific context. (Guest, Suarez et al.)\nIs this simulation actually equivalent to the labour, the learning or the care it replaces? (Ray and Guest)\nwhose labour gets replaced? (less relevant for students)\nDo I learn what I am supposed to learn?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDevelopment of Ideas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLiterature Search and Review\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWording and orthography\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "topics/index.html",
+    "href": "topics/index.html",
+    "title": "\nTopics\n",
+    "section": "",
+    "text": "Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnvironment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInteraction\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrivacy\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  }
+]
