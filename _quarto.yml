@@ -20,13 +20,10 @@ website:
       - href: references_resources.qmd
         text: References and further resources
 
+bibliography: bibliography.bib
 
 format:
   html:
     theme:
-      - cosmo
       - styles.scss
     toc: true
-
-
-

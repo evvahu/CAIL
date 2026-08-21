@@ -6,8 +6,9 @@ $petrol: #09525ac6;
 $yellow: #d69215ba;
 $cream: #FDFBF7;
 $gray: #64605f;
-$purple: #bf589d;
+$purple: #6f1e8d;
 $orange: #ad7237;
+$pinko: #bf589d;
 
 
 
@@ -21,13 +22,36 @@ $font-family-serif: 'Arial', serif;
 $font-family-sans-serif: 'Arial', sans-serif;
 $font-family-monospace: 'Arial', monospace;
 
-h1, h2 {
+/*-- scss:rules --*/
+
+h1 {
   letter-spacing: 3px;
-  font-weight: 800; 
+  font-weight: 800;
+  font-size:x-large;
+  color: $pinko
 }
 
+h2 {
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size:larger;
+  color: $gray;
+  text-align: center;
+}
+
+h3 {
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size:large;
+  color: $orange
+}
+
+
 .title {
-    color: maroon;
+    color:$purple;
+    font-size:xx-large;
+    text-align: center;
+    
 }
 
 .center-text {

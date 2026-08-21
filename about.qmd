@@ -3,32 +3,31 @@ title: ""
 format:
   html:
     theme: 
-        - cosmo
         - styles.scss
     toc: true
 ---
 
-<h2 class="center-text">What are *Critical AI Literacies*?</h2>
+# What are *Critical AI Literacies*?
 
 - Critical AI Literacies (CAILs) are about *thinking critically* about AI products, histories, and ecosystems 
 - Plural Literac**ies** as they involve different theoretical and practical perspectives on AI
 - CAILs concern the knowledge necessary to going beyond the question of *how to use AI* to *when, where and why to use it, and importantly, when NOT to use it*, empowering students (and teachers) to become active decision-makers rather than passive consumers
 - ''CAILs centre human cognition and uphold the integrity of academic research and education.'' [@], focusing on technical, cognitive, societal and environmental evidence rather than following the promises put forward by the technology industry
 
-<h2 class="center-text">Focus of this collection</h2>
+# Focus of this collection
 
 ![reference guest](images/ai_overview.png)
 
 - chatbots + LLM + generative + ANN
 
 
-<h2 class="center-text">How to use this collection of information</h2> 
+# How to use this collection of information
 
 
-<h2 class="center-text">Prerequisites</h2> 
+# Prerequisites
 
 
-<h2 class="center-text">Ideas</h2> 
+# Ideas 
 
 - starting off a conversation about AI with students
   - Kahoot
