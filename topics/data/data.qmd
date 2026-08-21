@@ -8,3 +8,6 @@ execute:
   echo: false   
   warning: false
 ---
+
+
+https://www.soekia.ch/gpt.html

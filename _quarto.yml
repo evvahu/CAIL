@@ -18,20 +18,10 @@ website:
       - href: references_resources.qmd
         text: References and further resources
 
+bibliography: bibliography.bib
 
 format:
   html:
     theme:
-      - cosmo
       - styles.scss
     toc: true
-
-
-custom-callout: 
-  todo: 
-  color: "#0d6efd" 
-  icon-symbol: "fa-clipboard-check" 
-  icon: true 
-  title: "To Do" 
-  collapse: false 
-  appearance: default

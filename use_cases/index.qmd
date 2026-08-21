@@ -1,5 +1,5 @@
 ---
-title: <p class="center-text">Use cases</p>
+title: "Topics"
 listing:
   type: grid
 page-layout: full

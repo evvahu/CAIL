@@ -4,13 +4,12 @@ website:
 format:
   html:
     theme: 
-        - cosmo
         - styles.scss
     toc: false
 
 ---
 
-<h2 class=".title"> Critical AI Literacy: Reflective use (or non-use) of GenerativeAI chatbot systems</h2>
+# Critical AI Literacy: Reflective use (or non-use) of GenerativeAI chatbot systems
 
 
 - what this is about

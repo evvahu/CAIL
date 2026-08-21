@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -42,7 +61,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-b69fdc5119c9349c80d2b3282ffd4097.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-e9a732866551768f96e5db814e9dc074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-0a534ec60d2b8a9372397a3890eac2fe.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -131,16 +150,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview-of-the-content" id="toc-overview-of-the-content" class="nav-link active" data-scroll-target="#overview-of-the-content">Overview of the content</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content">Content</a>
   <ul class="collapse">
   <li><a href="#llms-as-stochastic-parrots" id="toc-llms-as-stochastic-parrots" class="nav-link" data-scroll-target="#llms-as-stochastic-parrots">LLMs as <em>Stochastic parrots</em></a></li>
-  <li><a href="#genai-chatbots" id="toc-genai-chatbots" class="nav-link" data-scroll-target="#genai-chatbots">GenAI chatbots</a></li>
-  <li><a href="#consequences-on-how-we-interact-with-genai-chatbots" id="toc-consequences-on-how-we-interact-with-genai-chatbots" class="nav-link" data-scroll-target="#consequences-on-how-we-interact-with-genai-chatbots">Consequences on how we interact with GenAI chatbots</a></li>
+  <li><a href="#sec-fromllmtogenai" id="toc-sec-fromllmtogenai" class="nav-link" data-scroll-target="#sec-fromllmtogenai">From LLMs to GenAI chatbots</a></li>
+  <li><a href="#consequences-of-human-chatbot-interactions" id="toc-consequences-of-human-chatbot-interactions" class="nav-link" data-scroll-target="#consequences-of-human-chatbot-interactions">Consequences of human-chatbot interactions</a>
+  <ul class="collapse">
+  <li><a href="#the-eliza-effect" id="toc-the-eliza-effect" class="nav-link" data-scroll-target="#the-eliza-effect">The <strong>ELIZA effect</strong></a></li>
+  <li><a href="#consequences-of-sycophancy" id="toc-consequences-of-sycophancy" class="nav-link" data-scroll-target="#consequences-of-sycophancy">Consequences of sycophancy</a></li>
+  <li><a href="#prompt-engineering" id="toc-prompt-engineering" class="nav-link" data-scroll-target="#prompt-engineering">Prompt engineering</a></li>
+  <li><a href="#the-effect-of-anthromopomorphic-language" id="toc-the-effect-of-anthromopomorphic-language" class="nav-link" data-scroll-target="#the-effect-of-anthromopomorphic-language">The effect of anthromopomorphic language</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
   <li><a href="#comprehension-questions" id="toc-comprehension-questions" class="nav-link" data-scroll-target="#comprehension-questions">Comprehension questions</a></li>
-  <li><a href="#further-resources-and-references" id="toc-further-resources-and-references" class="nav-link" data-scroll-target="#further-resources-and-references">Further resources and references</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -166,26 +191,34 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="overview-of-the-content" class="level1">
-<h1>Overview of the content</h1>
+<hr>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
 <ul>
-<li>how large language models differ by design from humans on all levels</li>
-<li>how GenAI chatbots have been constructed to make human-chatbot interaction seem ‘human-like’ and ‘engaging’</li>
+<li>how large language models differ by design from humans</li>
+<li>how GenAI chatbots have been constructed and marketed to make human-chatbot interaction seem “human-like” and “engaging”</li>
 <li>the consequences thereof for the way we interact with such systems</li>
 </ul>
+<hr>
 </section>
 <section id="content" class="level1">
 <h1>Content</h1>
 <section id="llms-as-stochastic-parrots" class="level2">
 <h2 class="anchored" data-anchor-id="llms-as-stochastic-parrots">LLMs as <em>Stochastic parrots</em></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/papagaio_alex.jpg" class="img-fluid figure-img" width="400"></p>
+<figcaption>Irene Pepperberg’s famous Alex who had a vocabulary of over 100 words</figcaption>
+</figure>
+</div>
 <ul>
-<li>By virtue of their architecture and training method, large language models (LLMs) that underly GenAI chatbots, mimic observed patterns in their input and generate these patterns probabilistically <span class="citation" data-cites="bender">(<a href="#ref-bender" role="doc-biblioref"><strong>bender?</strong></a>)</span></li>
+<li>By virtue of their architecture and training method, large language models (LLMs) that underly GenAI chatbots, mimic observed patterns in their input and generate these patterns probabilistically <span class="citation" data-cites="bender2021dangers">(<a href="#ref-bender2021dangers" role="doc-biblioref">Bender et al. 2021</a>)</span> (see <a href="../data">Data</a> for what the input usually contains)</li>
 <li>This is why they’ve been referred to as <em>stochastic parrots</em>
 <ul>
 <li><em>stochastic</em> referring to the probabilistic procedure by which words are generated</li>
 <li><em>parrot</em> referring to the characteristics of the system’s surface output</li>
 </ul></li>
-<li>LLMs produce “form without meaning, statistical coherence without semantic grounding” (p.2 <span class="citation" data-cites="guest">(<a href="#ref-guest" role="doc-biblioref"><strong>guest?</strong></a>)</span>)</li>
+<li>LLMs produce “form without meaning, statistical coherence without semantic grounding” <span class="citation" data-cites="rayguest2026">(p.2 in <a href="#ref-rayguest2026" role="doc-biblioref">Ray and Guest 2026</a>)</span></li>
 </ul>
 <div class="callout callout-style-simple callout-note no-icon callout-titled" title="Task ideas">
 <div class="callout-header d-flex align-content-center">
@@ -198,20 +231,14 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>watch video of Alex the parrot (insert link). How does the stochastic parrot metaphor align with what Alex produces and what LLMs produce?</li>
+<li>watch <a href="https://www.youtube.com/watch?v=ldYkFdu5FJk">this video about Alex the parrot</a>. How does the stochastic parrot metaphor align with what Alex produces and what LLMs produce? How does the linguistic knowledge of parrots differ from the one of LLMs?</li>
 </ul>
 </div>
 </div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/papagaio_alex.jpg" class="img-fluid figure-img"></p>
-<figcaption>Irene Pepperberg’s famous Alex who could …</figcaption>
-</figure>
-</div>
 <ul>
-<li>In public discourse, the term <em>stochastic parrot</em> has been used more polemically with claims that current limits of the system (for example, shown by deficient or inadequate LLM output) will be overcome by technological improvements and scale (e.g.&nbsp;computational power, training data) <span class="citation" data-cites="guest">(<a href="#ref-guest" role="doc-biblioref"><strong>guest?</strong></a>)</span></li>
+<li>In public discourse, the term <em>stochastic parrot</em> has been used more polemically with claims that current limits of the system (for example, shown by deficient or inadequate LLM output) will be overcome by technological improvements and scale (e.g.&nbsp;computational power, training data) <span class="citation" data-cites="rayguest2026">(<a href="#ref-rayguest2026" role="doc-biblioref">Ray and Guest 2026</a>)</span></li>
 <li>However, the intended use of <em>stochastic parrots</em> was to point out their architectural foundations and structure that make them categorically different systems from human language and human language use</li>
-<li>in contrast to human language:
+<li>in contrast to human language <span class="citation" data-cites="rayguest2026">Bender et al. (<a href="#ref-bender2021dangers" role="doc-biblioref">2021</a>)</span>:
 <ul>
 <li>no causal contact with the world their outputs describe</li>
 <li>no grounded representations</li>
@@ -248,49 +275,198 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Do you agree or disagree with Sam Altman’s (CEO of OpenAI) claim “i am a stochastic parrot and so r u”? Why? https://x.com/sama/status/1599471830255177728?lang=es</li>
+<li>Do you agree or disagree with Sam Altman’s (CEO of OpenAI) claim “i am a stochastic parrot and so r u”? Why yes, why no? https://x.com/sama/status/1599471830255177728?lang=es</li>
 </ul>
 </div>
 </div>
-<div class="callout callout-style-simple callout-warning no-icon callout-titled" title="for linguistic students">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled" title="For linguistic students">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>for linguistic students
+<span class="screen-reader-only">Warning</span>For linguistic students
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Hocketts design features</li>
-<li>key differences from human language knowledge, how children learn language</li>
+<li>Think about Hockett’s design features: how do LLMs differ to what Hockett considers the design features of language?</li>
+<li>What are similarities and differences between how LLMs learn language and how children learn language?</li>
 </ul>
 </div>
 </div>
 </section>
-<section id="genai-chatbots" class="level2">
-<h2 class="anchored" data-anchor-id="genai-chatbots">GenAI chatbots</h2>
-<p><em>from LLMs to GenAI chatbots</em></p>
+<section id="sec-fromllmtogenai" class="level2">
+<h2 class="anchored" data-anchor-id="sec-fromllmtogenai">From LLMs to GenAI chatbots</h2>
 <ul>
 <li>The rhetoric style of GenAI chatbots
 <ul>
-<li>Through Reinforcement Learning with Human Feedback (RLHF) (see Data), the behaviour of GenAI chatbots is guided by human feedback.</li>
-<li>“beguilingly human-like response patterns” <span class="citation" data-cites="Dingemanse">(<a href="#ref-Dingemanse" role="doc-biblioref"><strong>Dingemanse?</strong></a>)</span>
+<li>The behaviour of GenAI chatbots is strongly guided by humans (see Reinforcement Learning with Human Feedback (RLHF) in<a href="../data">Data</a>). Without human feedback, the</li>
+<li>“beguilingly human-like response patterns” <span class="citation" data-cites="dingemanse2026">(<a href="#ref-dingemanse2026" role="doc-biblioref">Dingemanse 2026</a>)</span>
 <ul>
 <li>first-person (against norms in the field)</li>
 <li>their output sounds friendly, confident and coherent</li>
-<li>Sycophancy: the tendency of AI-based large language models to excessively agree with, flatter, or validate users <span class="citation" data-cites="Cheng">(<a href="#ref-Cheng" role="doc-biblioref"><strong>Cheng?</strong></a>)</span></li>
-<li>they always prioritise style over substance and their output may seem relevant but is not reliable @</li>
-<li>as a result: they appear more intelligent than they are <em>insert picture blusky</em></li>
+<li><strong>Sycophancy</strong>: the tendency of AI-based large language models to excessively agree with, flatter, or validate users <span class="citation" data-cites="chengsycophantic2026">(<a href="#ref-chengsycophantic2026" role="doc-biblioref">Cheng et al. 2026</a>)</span></li>
+<li>they prioritise style over substance and their output may seem relevant but is not reliable <span class="citation" data-cites="rayguest2026">(<a href="#ref-rayguest2026" role="doc-biblioref">Ray and Guest 2026</a>)</span></li>
+<li>as a result: they appear more intelligent than they are <span class="citation" data-cites="guestsuarezrooij2025">(e.g., <a href="#ref-guestsuarezrooij2025" role="doc-biblioref">Guest and Rooij 2025</a>)</span></li>
 </ul></li>
 </ul></li>
-<li>Interactive Embedding (see Dingemanse):
+<li>Interactive Embedding (see, for instance, <span class="citation" data-cites="dingemanse2026">Dingemanse (<a href="#ref-dingemanse2026" role="doc-biblioref">2026</a>)</span> and <span class="citation" data-cites="bender2025ai">Bender and Hanna (<a href="#ref-bender2025ai" role="doc-biblioref">2025</a>)</span>):
 <ul>
 <li>LLMs are presented in interfaces that mimic interaction</li>
 <li>Humans have a tendency to interpret language produced in interactions and as responses to our own utterances</li>
 </ul></li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/pizzacartoon.png" class="img-fluid figure-img" width="400"></p>
+<figcaption><a href="https://bsky.app/profile/smoothdunk2.bsky.social/post/3mchntbk4mc2c">source</a></figcaption>
+</figure>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Task ideas">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Task ideas
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Engage with a GenAI chatbot about a particular topic (for example, your hobbies). Where do you spot instances of sycophancy?</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled" title="Discussion questions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Discussion questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>What are differences (and similarities) between human-chatbot interaction and human-to-human interaction?</p>
+</div>
+</div>
+</section>
+<section id="consequences-of-human-chatbot-interactions" class="level2">
+<h2 class="anchored" data-anchor-id="consequences-of-human-chatbot-interactions">Consequences of human-chatbot interactions</h2>
+<p><em>“As soon as computational artifacts demonstrate some evidence of recognizably human abilities, we are inclined to endow them with the rest”</em> <span class="citation" data-cites="suchman2007human">(p.&nbsp;41 in <a href="#ref-suchman2007human" role="doc-biblioref">Suchman 2007</a>)</span></p>
+<section id="the-eliza-effect" class="level3">
+<h3 class="anchored" data-anchor-id="the-eliza-effect">The <strong>ELIZA effect</strong></h3>
+<ul>
+<li>making sense of and finding meaning in anything that resembles human language is deeply human and has existed long before LLMs</li>
+<li><strong>ELIZA</strong> (created by Joseph Weizenbaum in 1966)
+<ul>
+<li>a chatbot that replies to human prompts with the help of predefined key words and simple rule-based responses ()</li>
+<li>Already back then, users felt heard by the chatbot, some even thought that the chatbot was in fact a colleague <span class="citation" data-cites="weizenbaum1983">(<a href="#ref-weizenbaum1983" role="doc-biblioref"><span>“ELIZA,”</span> n.d.</a>)</span></li>
+<li>based on this system, the <em>ELIZA effect</em> was coined
+<ul>
+<li>“The ELIZA effect is the tendency to read more understanding, empathy, memory, or intention into a computer system than it actually has.” (definition from https://elizaemulator.com/eliza-effect)</li>
+</ul></li>
+<li>Therefore, it does not need a gigantic LLM trained on for humans to make sense of fluent language used in interactions</li>
+</ul></li>
+<li>Indeed, because of our tendency to ascribe intelligence to such systems, “the recommendation is that designers might do best to make available to the user the ways in which the system is not like a participant in interaction.” <span class="citation" data-cites="suchman2007human">(p.&nbsp;41 in <a href="#ref-suchman2007human" role="doc-biblioref">Suchman 2007</a>)</span>
+<ul>
+<li>not only a recommendation, but a tenet in the field of Computational Linguistics, but disregarded by the commercial providers of GenAI chatbots <span class="citation" data-cites="bender2025ai">(<a href="#ref-bender2025ai" role="doc-biblioref">Bender and Hanna 2025</a>)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="consequences-of-sycophancy" class="level3">
+<h3 class="anchored" data-anchor-id="consequences-of-sycophancy">Consequences of sycophancy</h3>
+<ul>
+<li>Sycophancy (see <a href="#sec-fromllmtogenai" class="quarto-xref">Section&nbsp;1.2</a>) is highly prevalent in GenAI chatbots
+<ul>
+<li>For example, <span class="citation" data-cites="chengsycophantic2026">Cheng et al. (<a href="#ref-chengsycophantic2026" role="doc-biblioref">2026</a>)</span> show that GenAI chatbot affirmed users’ actions 49% more often than humans, even if it involved illegality, deception or other harms</li>
+</ul></li>
+<li>While sycophancy may seem innocuous, the effects on humans, especially vulnerable people, are alarming
+<ul>
+<li>Sycophantic GenAI chatbots may shift how users approach their closest relationships (<span class="citation" data-cites="ibrahimsycophantic2026">Ibrahim et al. (<a href="#ref-ibrahimsycophantic2026" role="doc-biblioref">2026</a>)</span>)</li>
+<li>It futher promotes dependence and undermine participants’ willingness to take responsibility and repair interpersonal conflicts (<span class="citation" data-cites="chengsycophantic2026">Cheng et al. (<a href="#ref-chengsycophantic2026" role="doc-biblioref">2026</a>)</span>)</li>
+</ul></li>
+</ul>
+</section>
+<section id="prompt-engineering" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-engineering">Prompt engineering</h3>
+<ul>
+<li>Since the advent of ChatGPT, <em>prompt engineering</em> has become a skill in itself, one that requires training and knowledge, one that is usually subsumed under the discipline of “AI Literacy” (which is different from Critical AI Literacy)</li>
+<li>However, <em>prompt engineering</em> is an odd skill to promote, considering that the models’ outputs are by design unstable and unpredictable</li>
+<li>Curiously, GenAI chatbots that are claimed to increase efficiency present a division of labour that results in additional work for the human user (<span class="citation" data-cites="dingemanse2026">Dingemanse (<a href="#ref-dingemanse2026" role="doc-biblioref">2026</a>)</span>) (formulating “the most effective” prompt, checking the output and revising the output)</li>
+</ul>
+</section>
+<section id="the-effect-of-anthromopomorphic-language" class="level3">
+<h3 class="anchored" data-anchor-id="the-effect-of-anthromopomorphic-language">The effect of anthromopomorphic language</h3>
+<ul>
+<li><em>Anthropomorphization</em>: the attribution of human capabilities and characteristics to the inanimate system. <span class="citation" data-cites="inieanthropomorphizing2026">(p.1 in <a href="#ref-inieanthropomorphizing2026" role="doc-biblioref">Inie et al. 2026</a>)</span>
+<ul>
+<li>Module developers and users describe the behaviour and function of GenAI chatbots using anthropomorphic language.</li>
+<li>Anthropomorphic language influence how such models are perceived, deployed and trusted <span class="citation" data-cites="khadpe2020">(<a href="#ref-khadpe2020" role="doc-biblioref">Khadpe et al. 2020</a>)</span></li>
+<li>Anthropomorphic language can obscure how models actually work, making their output more magical and impressive than it actually is.</li>
+</ul></li>
+</ul>
+<div style="font-size: 80%;">
+<div id="tbl-alternatives" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-alternatives-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: This table is adopted from Table 3 from <em>Suggestions for de-anthropomorphizing language.</em> in <span class="citation" data-cites="inieanthropomorphizing2026">Inie et al. (<a href="#ref-inieanthropomorphizing2026" role="doc-biblioref">2026</a>)</span>
+</figcaption>
+<div aria-describedby="tbl-alternatives-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 47%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Category</th>
+<th style="text-align: left;">Alternative strategies</th>
+<th style="text-align: left;">Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Cognizer &amp; Products of cognition</td>
+<td style="text-align: left;">Instead of language that locates thinking in an algorithm, describe the algorithm as performing calculations or other algorithmic operations and the people using it doing the thinking.</td>
+<td style="text-align: left;"><em>artificial intelligence</em> –&gt; <em>probabilistic automation</em>, <em>model mistakes</em> -&gt; <em>model errors</em>; <em>chatbots are good at … </em> -&gt; <em>chatbots are good for</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Emotion</td>
+<td style="text-align: left;">Ascribing emotions to computers, even speculatively or subtly, is not scientific. Should this arise in scholarly writing, it is worth looking at how the rhetorical goal could be achieved in some other way, or if it should in fact be abandoned.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Communication</td>
+<td style="text-align: left;">Instead of verbs like ask, say, inform, discuss, use verbs appropriate to computers like input and output. Another strategy is to foreground the fact of simulation</td>
+<td style="text-align: left;"><em>prompt</em> -&gt; <em>text input</em>; <em>answer</em> -&gt; <em>output</em>; <em>agent</em> -&gt; <em>conversation simulator</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Agent</td>
+<td style="text-align: left;">Turns of phrase that locate agency with a machine often serve to obfuscate the interests and goals of people. We suggest revising to locate agency with people or choosing less agentive verbs.</td>
+<td style="text-align: left;"><em>ChatGPT assisted students</em> -&gt; <em>the students used ChatGPT</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Human role analogy</td>
+<td style="text-align: left;">Calling systems tutor or co-creator are overclaims (Rehak, 2021) that describe what a developer might wish they could develop — for those who want to replace people in these roles.</td>
+<td style="text-align: left;">Language that describes algorithms as tools that people use, rather than as human-like entities, more clearly indicates system functionality while also not telegraphing a plan to replace people.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Names and pronouns</td>
+<td style="text-align: left;">When naming a system, be mindful of the fact that all writing about that system will invoke the name. The act of bestowing a human name on a system entails anthropomorphizing it not only in the initial naming but every time the system will be discussed in the future. Pronouns, on the other hand, are a choice that can be made separately each time, but the choice can in some cases be subtle, e.g., pronouns that group algorithms and people together under one plural form like you or them. Breaking the system out from the people and not using the collective pronoun is the better choice from the perspective of reducing anthropomorphization.</td>
+<td style="text-align: left;"><em>who’s right?</em> -&gt; <em>is the machine output correct?</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Biological metaphors</td>
+<td style="text-align: left;">In revising away from biological metaphors, it is worth asking how system functionality can be more precisely described, giving readers a clearer sense of what is actually happening.</td>
+<td style="text-align: left;"><em>neural networks</em> -&gt; <em>weighted networks</em> (Hunger, 2023); <em>the model consumes data</em> -&gt; <em>data is used in setting model weights.</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
 <div class="callout callout-style-simple callout-note no-icon callout-titled" title="Task ideas">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -302,7 +478,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>engage with a GenAI chatbot about a particular topic (for example, your hobbies). Where do you spot instances of sycophancy?</li>
+<li>Play around with <a href="https://anthay.github.io/eliza.html">ELIZA</a>. Do you detect recurring patterns and rules that the system uses? How is interaction simulated?</li>
 </ul>
 </div>
 </div>
@@ -317,88 +493,14 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>key differences from human-to-human interaction</li>
+<li>What are potential harms of sycophantic GenAI chatbots?</li>
+<li>question about prompt engineering</li>
+<li>It is difficult to refrain from using anthropmorphic language due to the lack of a vocabulary. However, what are potential risks of using anthropomporhic language to describe GenAI chatbot’s behaviour?</li>
+<li>What do you think about the alterantives provided by <span class="citation" data-cites="inieanthropomorphizing2026">Inie et al. (<a href="#ref-inieanthropomorphizing2026" role="doc-biblioref">2026</a>)</span> in <a href="#tbl-alternatives" class="quarto-xref">Table&nbsp;1</a>? Do you find some categories more important than others?</li>
 </ul>
 </div>
 </div>
 </section>
-<section id="consequences-on-how-we-interact-with-genai-chatbots" class="level2">
-<h2 class="anchored" data-anchor-id="consequences-on-how-we-interact-with-genai-chatbots">Consequences on how we interact with GenAI chatbots</h2>
-<p>“As soon as computational artifacts demonstrate some evidence of recognizably human abilities, we are inclined to endow them with the rest” (Suchman 2007 [1987]: 41)”</p>
-<ul>
-<li>The <strong>ELIZA effect</strong>:
-<ul>
-<li>Making sense of and finding meaning in anything that resembles human language is deeply human and has existed long before LLMs</li>
-<li>ELIZA, created by Joseph Weizenbaum in 1966
-<ul>
-<li>a chatbot that replies to human prompts with the help of predefined key words and simple rule-based responses
-<ul>
-<li>Example:</li>
-</ul></li>
-<li>Already back then, participants felt heard by ELIZA and ..</li>
-<li>based on this system, ELIZA effect was coined
-<ul>
-<li>“The ELIZA effect is the tendency to read more understanding, empathy, memory, or intention into a computer system than it actually has.” (https://elizaemulator.com/eliza-effect)</li>
-</ul></li>
-</ul></li>
-<li>Therefore, it does not need a gigantic LLM trained on for humans to make sense of fluent language used in interactions</li>
-</ul></li>
-<li>Consequences of sycophancy
-<ul>
-<li>Sycophancy is highly prevalent in GenAI chatbot
-<ul>
-<li>For example, @ show that GenAI chatbot affirmed users’ actions 49% more often than humans, even if it involved illegality, deception or other harms</li>
-</ul></li>
-<li>While sycophancy may seem innocuous, the effects on humans, especially vulnerable people, are alaraming
-<ul>
-<li>Sycophantic GenAI chatbots may shift how users approach their closest relationships (<span class="citation" data-cites="ibrahim">(<a href="#ref-ibrahim" role="doc-biblioref"><strong>ibrahim?</strong></a>)</span>)</li>
-<li>It futher promotes dependence and undermine participants’ willingness to take responsibility and repair interpersonal conflicts (<span class="citation" data-cites="cheng">(<a href="#ref-cheng" role="doc-biblioref"><strong>cheng?</strong></a>)</span>)</li>
-</ul></li>
-</ul></li>
-<li>Prompt engineering (see Dingemanse)
-<ul>
-<li>since the advent of ChatGPT, <em>prompt engineering</em> has become a skill in itself, one that requires training and knowledge, one that is usually subsumed under the discipline of “AI Literacy” (which is different from Critical AI Literacy)</li>
-<li>However, <em>prompt engineering</em> is an odd skill to promote, considering that the models’ outputs are by design unstable and unpredictable</li>
-<li>Curiously, GenAI chatbots that are claimed to increase efficiency present a division of labour that results in additional work for the human user (<span class="citation" data-cites="Dingemanse">(<a href="#ref-Dingemanse" role="doc-biblioref"><strong>Dingemanse?</strong></a>)</span>) (formulating “the most effective” prompt, checking the output and revising the output)</li>
-</ul></li>
-<li>The effect of anthromopomorphic language
-<ul>
-<li><em>Anthropomorphization</em>: the attribution of human capabilities and characteristics to the inanimate system. <span class="citation" data-cites="Inie">(<a href="#ref-Inie" role="doc-biblioref"><strong>Inie?</strong></a>)</span></li>
-<li>Module developers describe the behaviour of GenAI chatbots using anthropomorphic language. “think”, ‘learn’, “understand”, “reason”, etc…</li>
-<li>Anthropomorphic language influence how such models are perceived, deployed and trusted (<span class="citation" data-cites="Inie">(<a href="#ref-Inie" role="doc-biblioref"><strong>Inie?</strong></a>)</span>)</li>
-</ul></li>
-</ul>
-<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Task ideas">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Task ideas
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>ELIZA effect: https://elizaemulator.com/</li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-simple callout-tip no-icon callout-titled" title="Discussion questions">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Discussion questions
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>While it’s difficult to refrain from using anthropmorphic language merely due to the lack of a respective vocabulary, what are potential risks of using such language to describe GenAI chatbot’s behaviour?</li>
-<li>What are potential harms of sycophantic GenAI chatbots? Think for example about asking for advice on a personal matter from GenAI chatbots</li>
-</ul>
-</div>
-</div>
 </section>
 </section>
 <section id="slides" class="level1">
@@ -412,8 +514,43 @@ ul.task-list li input[type="checkbox"] {
 <li>What is the <em>Eliza Effect</em>?</li>
 </ul>
 </section>
-<section id="further-resources-and-references" class="level1">
-<h1>Further resources and references</h1>
+<section id="references" class="level1">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-bender2021dangers" class="csl-entry" role="listitem">
+Bender, Emily M, Timnit Gebru, Angelina McMillan-Major, and Margaret Mitchell. 2021. <span>“On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?🦜.”</span> <em>Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency</em>, 610–23.
+</div>
+<div id="ref-bender2025ai" class="csl-entry" role="listitem">
+Bender, Emily M, and Alex Hanna. 2025. <em>The AI Con: How to Fight Big Tech’s Hype and Create the Future We Want</em>. Random House.
+</div>
+<div id="ref-chengsycophantic2026" class="csl-entry" role="listitem">
+Cheng, Myra, Cinoo Lee, Pranav Khadpe, Sunny Yu, Dyllan Han, and Dan Jurafsky. 2026. <span>“Sycophantic <span>AI</span> Decreases Prosocial Intentions and Promotes Dependence.”</span> <em>Science</em> 391 (6792). <a href="https://doi.org/10.1126/science.aec8352">https://doi.org/10.1126/science.aec8352</a>.
+</div>
+<div id="ref-dingemanse2026" class="csl-entry" role="listitem">
+Dingemanse, Mark. 2026. <span>“Interactional Foundations for Critical AI Literacies.”</span> In <em>A Research Agenda for Critical AI</em>, edited by Valdivia. <a href="https://preprint: 10.5281/zenodo.1945287">preprint: 10.5281/zenodo.1945287</a>.
+</div>
+<div id="ref-weizenbaum1983" class="csl-entry" role="listitem">
+<span>“ELIZA: A Computer Program for the Study of Nat- Ural Language Communication Between Man and Machine.”</span> n.d. <em>Communications of the ACM, 25th Anniversary Issue</em> 20 (1): 23–27.
+</div>
+<div id="ref-guestsuarezrooij2025" class="csl-entry" role="listitem">
+Guest, Suarez, O., and I. van Rooij. 2025. <em>Towards Critical Artificial Intelligence Literacies</em>. <a href="https://doi.org/10.5281/zenodo.17786243 ">https://doi.org/10.5281/zenodo.17786243 </a>.
+</div>
+<div id="ref-ibrahimsycophantic2026" class="csl-entry" role="listitem">
+Ibrahim, Lujain, Franziska Sofia Hafner, Myra Cheng, et al. 2026. <em>Sycophantic <span>AI</span> Makes Human Interaction Feel More Effortful and Less Satisfying over Time</em>. <a href="https://doi.org/10.48550/arXiv.2605.07912">https://doi.org/10.48550/arXiv.2605.07912</a>.
+</div>
+<div id="ref-inieanthropomorphizing2026" class="csl-entry" role="listitem">
+Inie, Nanna, Peter Zukerman, and Emily M. Bender. 2026. <span>“De-Anthropomorphizing <span>‘<span>AI</span>’</span>: <span>From</span> Wishful Mnemonics to Accurate Nomenclature.”</span> <em>First Monday</em>, ahead of print. <a href="https://doi.org/10.5210/fm.v31i2.14366">https://doi.org/10.5210/fm.v31i2.14366</a>.
+</div>
+<div id="ref-khadpe2020" class="csl-entry" role="listitem">
+Khadpe, Pranav, Ranjay Krishna, Li Fei-Fei, Jeffrey T. Hancock, and Michael S. Bernstein. 2020. <span>“Conceptual Metaphors Impact Perceptions of Human-AI Collaboration.”</span> <em>Proc. ACM Hum.-Comput. Interact.</em> (New York, NY, USA) 4 (CSCW2). <a href="https://doi.org/10.1145/3415234">https://doi.org/10.1145/3415234</a>.
+</div>
+<div id="ref-rayguest2026" class="csl-entry" role="listitem">
+Ray, Ishani, and Olivia Guest. 2026. <em>Contra Literacy-Laundering: Mechanistic Critical AI Literacy</em>. <a href="https://doi.org/10.5281/zenodo.21222977">https://doi.org/10.5281/zenodo.21222977</a>.
+</div>
+<div id="ref-suchman2007human" class="csl-entry" role="listitem">
+Suchman, Lucille Alice. 2007. <em>Human-Machine Reconfigurations: Plans and Situated Actions</em>. Cambridge University Press. <a href="https://doi.org/10.1017/CBO9780511808418">https://doi.org/10.1017/CBO9780511808418</a>.
+</div>
+</div>
 
 
 </section>

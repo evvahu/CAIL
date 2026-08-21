@@ -1,6 +1,5 @@
 ---
 title: "Interaction"
-bibliography: ../../references_interaction.bib
 callout-appearance: minimal
 format:    
   html:     
@@ -8,38 +7,42 @@ format:
 execute:   
   echo: false   
   warning: false
+
 ---
 
-# Overview of the content
+-------------------
 
-- how large language models differ by design from humans on all levels
-- how GenAI chatbots have been constructed to make human-chatbot interaction seem 'human-like' and 'engaging'
+### Overview
+
+- how large language models differ by design from humans
+- how GenAI chatbots have been constructed and marketed to make human-chatbot interaction seem "human-like" and "engaging"
 - the consequences thereof for the way we interact with such systems 
 
+
+-------------------
 
 # Content
 
 ## LLMs as *Stochastic parrots*
 
+![Irene Pepperberg's famous Alex who had a vocabulary of over 100 words](../../images/papagaio_alex.jpg){width=400}
 
-
-- By virtue of their architecture and training method, large language models (LLMs) that underly GenAI chatbots, mimic observed patterns in their input and generate these patterns probabilistically [@bender]
+- By virtue of their architecture and training method, large language models (LLMs) that underly GenAI chatbots, mimic observed patterns in their input and generate these patterns probabilistically [@bender2021dangers] (see [Data](../data) for what the input usually contains)
 - This is why they've been referred to as *stochastic parrots*
 	- *stochastic* referring to the probabilistic procedure by which words are generated
 	- *parrot* referring to the characteristics of the system's surface output
-- LLMs produce "form without meaning, statistical coherence without semantic grounding" (p.2 @guest)
+- LLMs produce "form without meaning, statistical coherence without semantic grounding" [p.2 in @rayguest2026]
 
 
 ::: {.callout-note title="Task ideas"}
-- watch video of Alex the parrot (insert link). How does the stochastic parrot metaphor align with what Alex produces and what LLMs produce?
+- watch [this video about Alex the parrot](https://www.youtube.com/watch?v=ldYkFdu5FJk). How does the stochastic parrot metaphor align with what Alex produces and what LLMs produce? How does the linguistic knowledge of parrots differ from the one of LLMs?
 :::
 
-![Irene Pepperberg's famous Alex who could ...](../../images/papagaio_alex.jpg)
 
 
-- In public discourse, the term *stochastic parrot* has been used more polemically with claims that current limits of the system (for example, shown by deficient or inadequate LLM output) will be overcome by technological improvements and scale (e.g. computational power, training data)  @guest
+- In public discourse, the term *stochastic parrot* has been used more polemically with claims that current limits of the system (for example, shown by deficient or inadequate LLM output) will be overcome by technological improvements and scale (e.g. computational power, training data) [@rayguest2026]
 - However, the intended use of *stochastic parrots* was to point out their architectural foundations and structure that make them categorically different systems from human language and human language use
-- in contrast to human language:
+- in contrast to human language [@rayguest2026,@bender2021dangers]:
 	- no causal contact with the world their outputs describe
 	- no grounded representations
 	- no communicative intent
@@ -57,78 +60,106 @@ execute:
 
 
 ::: {.callout-tip title="Discussion questions"}
-- Do you agree or disagree with Sam Altman's (CEO of OpenAI) claim “i am a stochastic parrot and so r u”? Why? https://x.com/sama/status/1599471830255177728?lang=es
+- Do you agree or disagree with Sam Altman's (CEO of OpenAI) claim “i am a stochastic parrot and so r u”? Why yes, why no? https://x.com/sama/status/1599471830255177728?lang=es
 :::
 
 
-::: {.callout-warning title="for linguistic students"}
-- Hocketts design features
-- key differences from human language knowledge, how children learn language
+::: {.callout-warning title="For linguistic students"}
+- Think about Hockett's design features: how do LLMs differ to what Hockett considers the design features of language?
+- What are similarities and differences between how LLMs learn language and how children learn language?
 :::
 
-## GenAI chatbots 
-*from LLMs to GenAI chatbots*
+## From LLMs to GenAI chatbots {#sec-fromllmtogenai}
+
 
 - The rhetoric style of GenAI chatbots
-	- Through Reinforcement Learning with Human Feedback (RLHF) (see Data), the behaviour of GenAI chatbots is guided by human feedback. 
-	- "beguilingly human-like response patterns" @Dingemanse
+	- The behaviour of GenAI chatbots is strongly guided by humans (see Reinforcement Learning with Human Feedback (RLHF) in[Data](../data)). Without human feedback, the 
+	- "beguilingly human-like response patterns" [@dingemanse2026]
 		- first-person (against norms in the field)
 		- their output sounds friendly, confident and coherent
-		- Sycophancy: the tendency of AI-based large language models to excessively agree with, flatter, or validate users @Cheng
-		- they always prioritise style over substance and their output may seem relevant but is not reliable  @
-		- as a result: they appear more intelligent than they are
-*insert picture blusky*
-- Interactive Embedding (see Dingemanse):
+		- **Sycophancy**: the tendency of AI-based large language models to excessively agree with, flatter, or validate users [@chengsycophantic2026]
+		- they prioritise style over substance and their output may seem relevant but is not reliable [@rayguest2026]
+		- as a result: they appear more intelligent than they are [e.g., @guestsuarezrooij2025]
+- Interactive Embedding (see, for instance, @dingemanse2026 and @bender2025ai):
 	- LLMs are presented in interfaces that mimic interaction
 	- Humans have a tendency to interpret language produced in interactions and as responses to our own utterances
 
 
+![[source](https://bsky.app/profile/smoothdunk2.bsky.social/post/3mchntbk4mc2c)](../../images/pizzacartoon.png){width=400}
+
+
 ::: {.callout-note title="Task ideas"}
-- engage with a GenAI chatbot about a particular topic (for example, your hobbies). Where do you spot instances of sycophancy? 
+Engage with a GenAI chatbot about a particular topic (for example, your hobbies). Where do you spot instances of sycophancy? 
 :::
 
 
 ::: {.callout-tip title="Discussion questions"}
-- key differences from human-to-human interaction
+What are differences (and similarities) between human-chatbot interaction and human-to-human interaction?
 :::
 
 
-## Consequences on how we interact with GenAI chatbots 
-"As soon as computational artifacts demonstrate some evidence of recognizably human abilities, we are inclined to endow them with the rest” (Suchman 2007 [1987]: 41)"
+## Consequences of human-chatbot interactions
+
+*"As soon as computational artifacts demonstrate some evidence of recognizably human abilities, we are inclined to endow them with the rest”* [p. 41 in @suchman2007human]
 
 
-- The **ELIZA effect**:
-	- Making sense of and finding meaning in anything that resembles human language is deeply human and has existed long before LLMs
-	- ELIZA, created by Joseph Weizenbaum in 1966
-		- a chatbot that replies to human prompts with the help of predefined key words and simple rule-based responses 
-			- Example: 
-		- Already back then, participants felt heard by ELIZA and .. 
-		- based on this system, ELIZA effect was coined
-			- "The ELIZA effect is the tendency to read more understanding, empathy, memory, or intention into a computer system than it actually has." (https://elizaemulator.com/eliza-effect)
+### The **ELIZA effect**
+
+- making sense of and finding meaning in anything that resembles human language is deeply human and has existed long before LLMs
+- **ELIZA** (created by Joseph Weizenbaum in 1966)
+	- a chatbot that replies to human prompts with the help of predefined key words and simple rule-based responses () 
+	- Already back then, users felt heard by the chatbot, some even thought that the chatbot was in fact a colleague [@weizenbaum1983] 
+	- based on this system, the *ELIZA effect* was coined
+		- "The ELIZA effect is the tendency to read more understanding, empathy, memory, or intention into a computer system than it actually has." (definition from https://elizaemulator.com/eliza-effect)
 	- Therefore, it does not need a gigantic LLM trained on for humans to make sense of fluent language used in interactions
-- Consequences of sycophancy
-	- Sycophancy is highly prevalent in GenAI chatbot
-		- For example, @ show that  GenAI chatbot affirmed users’ actions 49% more often than humans, even if it involved illegality, deception or other harms
-	- While sycophancy may seem innocuous, the effects on humans, especially vulnerable people, are alaraming
-		- Sycophantic GenAI chatbots may shift how users approach their closest relationships (@ibrahim)
-		- It futher promotes dependence and undermine participants’ willingness to take responsibility and repair interpersonal conflicts (@cheng)
-- Prompt engineering (see Dingemanse)
-	- since the advent of ChatGPT, *prompt engineering* has become a skill in itself, one that requires training and knowledge, one that is usually subsumed under the discipline of  "AI Literacy" (which is different from Critical AI Literacy)
-	- However, *prompt engineering* is an odd skill to promote, considering that the models' outputs are by design unstable and unpredictable 
-	- Curiously, GenAI chatbots that are claimed to increase efficiency present a division of labour that results in additional work for the human user (@Dingemanse) (formulating "the most effective" prompt, checking the output and revising the output) 
-- The effect of anthromopomorphic language
-	- *Anthropomorphization*: the attribution of human capabilities and characteristics to the inanimate system. @Inie
-	- Module developers describe the behaviour of GenAI chatbots using anthropomorphic language. "think", 'learn', "understand", "reason", etc...
-	- Anthropomorphic language influence how such models are perceived, deployed and trusted (@Inie)
+- Indeed, because of our tendency to ascribe intelligence to such systems, "the recommendation is that designers might do best to make available to the user the ways in which the system is not like a participant in interaction." [p. 41 in @suchman2007human]
+	- not only a recommendation, but a tenet in the field of Computational Linguistics, but disregarded by the commercial providers of GenAI chatbots [@bender2025ai]
 
+### Consequences of sycophancy
+
+- Sycophancy (see @sec-fromllmtogenai) is highly prevalent in GenAI chatbots
+	- For example, @chengsycophantic2026 show that GenAI chatbot affirmed users’ actions 49% more often than humans, even if it involved illegality, deception or other harms
+- While sycophancy may seem innocuous, the effects on humans, especially vulnerable people, are alarming
+	- Sycophantic GenAI chatbots may shift how users approach their closest relationships (@ibrahimsycophantic2026)
+	- It futher promotes dependence and undermine participants’ willingness to take responsibility and repair interpersonal conflicts (@chengsycophantic2026)
+
+### Prompt engineering
+
+- Since the advent of ChatGPT, *prompt engineering* has become a skill in itself, one that requires training and knowledge, one that is usually subsumed under the discipline of  "AI Literacy" (which is different from Critical AI Literacy)
+- However, *prompt engineering* is an odd skill to promote, considering that the models' outputs are by design unstable and unpredictable 
+- Curiously, GenAI chatbots that are claimed to increase efficiency present a division of labour that results in additional work for the human user (@dingemanse2026) (formulating "the most effective" prompt, checking the output and revising the output) 
+
+### The effect of anthromopomorphic language
+- *Anthropomorphization*: the attribution of human capabilities and characteristics to the inanimate system. [p.1 in @inieanthropomorphizing2026]
+	- Module developers and users describe the behaviour and function of GenAI chatbots using anthropomorphic language.
+	- Anthropomorphic language influence how such models are perceived, deployed and trusted [@khadpe2020]
+	- Anthropomorphic language can obscure how models actually work, making their output more magical and impressive than it actually is. 
+
+::: {style="font-size: 80%;"}
+
+| Category | Alternative strategies | Examples |
+| :-------- | :----------------------- | :-----------------|
+| Cognizer & Products of cognition | Instead of language that locates thinking in an algorithm, describe the algorithm as performing calculations or other algorithmic operations and the people using it doing the thinking. | *artificial intelligence* --> *probabilistic automation*, *model mistakes* -> *model errors*; *chatbots are good at ... * -> *chatbots are good for* |
+| Emotion | Ascribing emotions to computers, even speculatively or subtly, is not scientific. Should this arise in scholarly writing, it is worth looking at how the rhetorical goal could be achieved in some other way, or if it should in fact be abandoned. | |
+| Communication | Instead of verbs like ask, say, inform, discuss, use verbs appropriate to computers like input and output. Another strategy is to foreground the fact of simulation | *prompt* -> *text input*; *answer* -> *output*; *agent* -> *conversation simulator* |
+| Agent | Turns of phrase that locate agency with a machine often serve to obfuscate the interests and goals of people. We suggest revising to locate agency with people or choosing less agentive verbs. | *ChatGPT assisted students* -> *the students used ChatGPT* |
+| Human role analogy | Calling systems tutor or co-creator are  overclaims (Rehak, 2021) that describe what a developer might wish they could develop — for those who want to replace people in these roles. | Language that describes algorithms as tools that people use, rather than as human-like entities, more clearly indicates system functionality while also not telegraphing a plan to replace people. |
+| Names and pronouns | When naming a system, be mindful of the fact that all writing about that system will invoke the name. The act of bestowing a human name on a system entails anthropomorphizing it not only in the initial naming but every time the system will be discussed in the future. Pronouns, on the other hand, are a choice that can be made separately each time, but the choice can in some cases be subtle, e.g., pronouns that group algorithms and people together under one plural form like you or them.  Breaking the system out from the people and not using the collective pronoun is the better choice from the perspective of reducing anthropomorphization. | *who’s right?* -> *is the machine output correct?* |
+| Biological metaphors | In revising away from biological metaphors, it is worth asking how system functionality can be more precisely described, giving readers a clearer sense of what is actually happening. | *neural networks* -> *weighted networks* (Hunger, 2023); *the model consumes data* -> *data is used in setting model weights.* |
+: This table is adopted from Table 3  from *Suggestions for de-anthropomorphizing language.* in @inieanthropomorphizing2026 {#tbl-alternatives}
+
+:::
 
 ::: {.callout-note title="Task ideas"}
-- ELIZA effect: https://elizaemulator.com/
+- Play around with [ELIZA](https://anthay.github.io/eliza.html). Do you detect recurring patterns and rules that the system uses? How is interaction simulated? 
 :::
 
 ::: {.callout-tip title="Discussion questions"}
-- While it's difficult to refrain from using anthropmorphic language merely due to the lack of a respective vocabulary, what are potential risks of using such language to describe GenAI chatbot's behaviour? 
-- What are potential harms of sycophantic GenAI chatbots? Think for example about asking for advice on a personal matter from GenAI chatbots
+- What are potential harms of sycophantic GenAI chatbots?
+- question about prompt engineering
+- It is difficult to refrain from using anthropmorphic language due to the lack of a vocabulary. However, what are potential risks of using anthropomporhic language to describe GenAI chatbot's behaviour? 
+- What do you think about the alterantives provided by @inieanthropomorphizing2026 in @tbl-alternatives? Do you find some categories more important than others? 
+
 :::
 
 
@@ -143,6 +174,8 @@ execute:
 - What is the *Eliza Effect*?
 
 
-# Further resources and references
+# References
 
+::: {#refs}
+:::
 
