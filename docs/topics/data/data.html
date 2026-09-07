@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -126,8 +145,25 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content">Content</a>
+  <ul class="collapse">
+  <li><a href="#training-input" id="toc-training-input" class="nav-link" data-scroll-target="#training-input">Training input</a></li>
+  <li><a href="#reinforcement-learning-from-human-feedback" id="toc-reinforcement-learning-from-human-feedback" class="nav-link" data-scroll-target="#reinforcement-learning-from-human-feedback">Reinforcement Learning from Human Feedback</a></li>
+  <li><a href="#information-in-the-model-output-bias-stereotypes-political-views" id="toc-information-in-the-model-output-bias-stereotypes-political-views" class="nav-link" data-scroll-target="#information-in-the-model-output-bias-stereotypes-political-views">Information in the Model Output: Bias, Stereotypes, Political Views,…</a></li>
+  <li><a href="#plagiarism" id="toc-plagiarism" class="nav-link" data-scroll-target="#plagiarism">Plagiarism</a></li>
+  </ul></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#comprehension-questions" id="toc-comprehension-questions" class="nav-link" data-scroll-target="#comprehension-questions">Comprehension questions</a></li>
+  <li><a href="#further-links" id="toc-further-links" class="nav-link" data-scroll-target="#further-links">Further links</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -151,9 +187,165 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>https://www.soekia.ch/gpt.html</p>
+<hr>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<ul>
+<li></li>
+<li></li>
+</ul>
+<hr>
+</section>
+<section id="content" class="level1">
+<h1>Content</h1>
+<section id="training-input" class="level2">
+<h2 class="anchored" data-anchor-id="training-input">Training input</h2>
+<ul>
+<li>The training of LLMs involves modelling the probabilistic relationship between words of vast amounts of texts</li>
+<li>These texts are usually ``scraped’’ from the internet
+<ul>
+<li><em>web scraping</em>: technique to automatically download and process web content</li>
+</ul></li>
+<li>For instance, these datasets were reported by OpenAI to make up the training data for GPT-3:
+<ul>
+<li>Common Crawl (filtered): data collected over more than 13 years of web crawling</li>
+<li>WebText2: webpages referred to from Reddit posts with three or more upvotes</li>
+<li>Wikipedia: we all know this :-)</li>
+<li>Books1 and Book2: internet-based books corpora (<span style="color:red;">unclear what these actually include!</span>)</li>
+</ul></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/gpt_trainingdata.png" class="img-fluid figure-img"></p>
+<figcaption>Training data of GPT-3 as reported by OpenAI in <span class="citation" data-cites="brown2020language"><span class="nocase">Brown et al.</span> (<a href="#ref-brown2020language" role="doc-biblioref">2020</a>)</span></figcaption>
+</figure>
+</div>
+<ul>
+<li>although see: articles on AI companies buying second hand books</li>
+</ul>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Task ideas">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Task ideas
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled" title="Discussion questions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Discussion questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>What does internet data consist of?</li>
+<li>Do you think that this kind of data reflects (all of) human culture, cognition and</li>
+<li>What do you think may be possible consequences of training models on vast amount of text whose content is unknown to us?</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled" title="For linguistic students">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>For linguistic students
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>What is not in the training input that characterises language?</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="reinforcement-learning-from-human-feedback" class="level2">
+<h2 class="anchored" data-anchor-id="reinforcement-learning-from-human-feedback">Reinforcement Learning from Human Feedback</h2>
+<ul>
+<li>Based on this training input alone, GenAI chatbots would not be as eloquent as they are portrayed to be (see <a href="../../_site/topics/interaction/interaction.html">Interaction</a>).</li>
+<li>And additionally, such models would produce inappopriate, offensive, violent and sexual content (because of areas of the web that we (probably) don’t frequent…)
+<ul>
+<li>As OpenAi themselves put it: “These models are not aligned with their users.” <span class="citation" data-cites="ouyang2022traininglanguagemodelsfollow">(abstract, <a href="#ref-ouyang2022traininglanguagemodelsfollow" role="doc-biblioref"><strong>ouyang2022traininglanguagemodelsfollow?</strong></a>)</span></li>
+</ul></li>
+<li>Making LLMs adhere to certain rules and preferences and fulfil certain functions is called <em>Alignment</em></li>
+<li>In GenAI chatbots, this a technique called <em>Reinforcement learning from Human Feedback (RLHF)</em> is applied
+<ul>
+<li><em>RLHF</em> is a technique to incorporate human information to, for instance, LLMs</li>
+<li>There are different ways to do that, but the basic idea is the following (https://intuitionlabs.ai/articles/reinforcement-learning-human-feedback):</li>
+<li>choose different prompts or environments. (for instance, real user queries or tasks from a prompt dataset)</li>
+<li>for each prompt, get multiple responses from current model</li>
+<li>human annotators rank these responses, following certain instructions</li>
+<li>for a longer, but still relatively accessible explanation of RLHF see <a href="https://huggingface.co/blog/rlhf">huggingface’s post</a></li>
+</ul></li>
+</ul>
+<p><a href="../../images/anthropic_interface.png">An interface that annotators use to evaluate model output for Anthropic <span class="citation" data-cites="bai2022traininghelpfulharmlessassistant">(<span><strong>bai2022traininghelpfulharmlessassistant?</strong></span>)</span></a></p>
+<p>Who are the annotators?</p>
+<ul>
+<li>crowdworkers (also called <em>gig workers</em>, <em>platform workers</em> or <em>data workers</em>), maybe more added in another topic (hegemonic,…)</li>
+</ul>
+</section>
+<section id="information-in-the-model-output-bias-stereotypes-political-views" class="level2">
+<h2 class="anchored" data-anchor-id="information-in-the-model-output-bias-stereotypes-political-views">Information in the Model Output: Bias, Stereotypes, Political Views,…</h2>
+<ul>
+<li>The GenAI chatbot’s output depends on:
+<ol type="1">
+<li>the training data of the LLM</li>
+<li>manually annotated and evaluated datasets, which in turn, depend on instructions given to annotators</li>
+</ol></li>
+<li>As a consequence:
+<ul>
+<li>these tools are not <em>neutral</em> (as they are often claimed to be)</li>
+<li>companies decide what models produce (and the training data if certain patterns in the model’s output have not been overridden by RLHF after initially training the LLM)</li>
+<li>see article on….</li>
+</ul></li>
+<li>Importantly, they also exhibit biases and stereotypes</li>
+</ul>
+</section>
+<section id="plagiarism" class="level2">
+<h2 class="anchored" data-anchor-id="plagiarism">Plagiarism</h2>
+<p>LD: p.10 LD: p.13</p>
+</section>
+</section>
+<section id="slides" class="level1">
+<h1>Slides</h1>
+<p><a href="">Link to slides</a></p>
+</section>
+<section id="comprehension-questions" class="level1">
+<h1>Comprehension questions</h1>
+<ul>
+<li>https://www.soekia.ch/gpt.html</li>
+<li></li>
+<li></li>
+</ul>
+</section>
+<section id="further-links" class="level1">
+<h1>Further links</h1>
+<ul>
+<li>https://www.nytimes.com/2026/08/20/world/asia/ai-jobs-data-annotation-india-karur.html</li>
+</ul>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-brown2020language" class="csl-entry" role="listitem">
+<span class="nocase">Brown, Tom, Benjamin Mann, Nick Ryder, et al.</span> 2020. <span>“Language Models Are Few-Shot Learners.”</span> <em>Advances in Neural Information Processing Systems</em> 33: 1877–901.
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

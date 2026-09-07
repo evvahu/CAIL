@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -151,26 +170,35 @@ ul.task-list li input[type="checkbox"] {
 <li>Critical AI Literacies (CAILs) are about <em>thinking critically</em> about AI products, histories, and ecosystems</li>
 <li>Plural Literac<strong>ies</strong> as they involve different theoretical and practical perspectives on AI</li>
 <li>CAILs concern the knowledge necessary to going beyond the question of <em>how to use AI</em> to <em>when, where and why to use it, and importantly, when NOT to use it</em>, empowering students (and teachers) to become active decision-makers rather than passive consumers</li>
-<li>‘’CAILs centre human cognition and uphold the integrity of academic research and education.’’ [@], focusing on technical, cognitive, societal and environmental evidence rather than following the promises put forward by the technology industry</li>
+<li>‘’CAILs centre human cognition and uphold the integrity of academic research and education.’’ <span class="citation" data-cites="guestsuarezrooij2025">(<a href="#ref-guestsuarezrooij2025" role="doc-biblioref">Guest and Rooij 2025</a>)</span>, focusing on technical, cognitive, societal and environmental evidence rather than following the promises put forward by the technology industry</li>
+<li>Knowledge to `` tell apart nonsense hype from true theoretical computer scientific claims’’ (Olivia Guest, https://olivia.science/ai/)</li>
 </ul>
 </section>
 <section id="focus-of-this-collection" class="level1">
 <h1>Focus of this collection</h1>
+<p><strong>{chatbots + LLM + generative + ANN}</strong></p>
+<p>AI is a vague term which encompasses many different types of models and applications. Here, we focus on what is often referred to as <em>generative AI</em>, involving large language models (LLMs) built with Artificial Neural Networks (ANNs) and implemented through chatbot interfaces.</p>
+<p>A cartoon set theoretic view on various terms (see Table 1) used when discussing the superset AI</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai_overview.png" class="img-fluid figure-img"></p>
-<figcaption>reference guest</figcaption>
+<figcaption><span class="citation" data-cites="guest2025against"><span class="nocase">Guest et al.</span> (<a href="#ref-guest2025against" role="doc-biblioref">2025</a>)</span> suggest this cartoon set theoretic view on various terms used when discussing the superset AI</figcaption>
 </figure>
 </div>
-<ul>
-<li>chatbots + LLM + generative + ANN</li>
-</ul>
 </section>
 <section id="how-to-use-this-collection-of-information" class="level1">
 <h1>How to use this collection of information</h1>
+<p>Structure and how to use</p>
 </section>
 <section id="prerequisites" class="level1">
 <h1>Prerequisites</h1>
+<p>You should have already acquired a basic knowledge of AI, for example through completing the “Edulabs KI Crashkurs” offered by the University of Cologne (only available in German). Regarding, introductions to AI in English, we recommend <a href="https://thebullshitmachines.com/">The Bullshit Machines</a>.</p>
+<p>More concretely, you should be familiar with the following concepts:</p>
+<ol type="1">
+<li>the difference between deterministic and probabilistic models.</li>
+<li>LLMs, chatbots, and combination of both (ChatGPT is not equal to LLM)</li>
+<li></li>
+</ol>
 </section>
 <section id="ideas" class="level1">
 <h1>Ideas</h1>
@@ -178,14 +206,24 @@ ul.task-list li input[type="checkbox"] {
 <li>starting off a conversation about AI with students
 <ul>
 <li>Kahoot</li>
+<li>Padlets</li>
+<li></li>
 </ul></li>
 <li>forums for before-class preparation</li>
 </ul>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-guest2025against" class="csl-entry" role="listitem">
+<span class="nocase">Guest, Olivia, Marcela Suarez, Barbara Müller, et al.</span> 2025. <em>Against the Uncritical Adoption of’AI’technologies in Academia</em>.
+</div>
+<div id="ref-guestsuarezrooij2025" class="csl-entry" role="listitem">
+Guest, Suarez, O., and I. van Rooij. 2025. <em>Towards Critical Artificial Intelligence Literacies</em>. <a href="https://doi.org/10.5281/zenodo.17786243 ">https://doi.org/10.5281/zenodo.17786243 </a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

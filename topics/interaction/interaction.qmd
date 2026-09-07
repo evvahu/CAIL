@@ -130,6 +130,7 @@ What are differences (and similarities) between human-chatbot interaction and hu
 - Curiously, GenAI chatbots that are claimed to increase efficiency present a division of labour that results in additional work for the human user (@dingemanse2026) (formulating "the most effective" prompt, checking the output and revising the output) 
 
 ### The effect of anthromopomorphic language
+
 - *Anthropomorphization*: the attribution of human capabilities and characteristics to the inanimate system. [p.1 in @inieanthropomorphizing2026]
 	- Module developers and users describe the behaviour and function of GenAI chatbots using anthropomorphic language.
 	- Anthropomorphic language influence how such models are perceived, deployed and trusted [@khadpe2020]
@@ -158,8 +159,8 @@ What are differences (and similarities) between human-chatbot interaction and hu
 - What are potential harms of sycophantic GenAI chatbots?
 - question about prompt engineering
 - It is difficult to refrain from using anthropmorphic language due to the lack of a vocabulary. However, what are potential risks of using anthropomporhic language to describe GenAI chatbot's behaviour? 
+- Read this quote from OpenAI's introduction of their GPT-5 model in 2025: "GPT‑5 is a unified system with a smart, efficient model that answers most questions, a deeper reasoning model (GPT‑5 thinking) for harder problems, and a real‑time router that quickly decides which to use based on conversation type, complexity, tool needs, and your explicit intent (for example, if you say “think hard about this” in the prompt)." [@gpt5]. Where do you detect anthropomorphic language and how could this language influence people's beliefs and expectations about the model? 
 - What do you think about the alterantives provided by @inieanthropomorphizing2026 in @tbl-alternatives? Do you find some categories more important than others? 
-
 :::
 
 
