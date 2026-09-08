@@ -122,6 +122,7 @@ What are differences (and similarities) between human-chatbot interaction and hu
 - While sycophancy may seem innocuous, the effects on humans, especially vulnerable people, are alarming
 	- Sycophantic GenAI chatbots may shift how users approach their closest relationships (@ibrahimsycophantic2026)
 	- It futher promotes dependence and undermine participants’ willingness to take responsibility and repair interpersonal conflicts (@chengsycophantic2026)
+	- And it has even encouraged people to commit suicide [@hillnytimes]
 
 ### Prompt engineering
 

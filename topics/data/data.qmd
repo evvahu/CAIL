@@ -14,10 +14,10 @@ execute:
 
 ### Overview
 
-
--
--
-
+- learn about the training input and critically assess what this input includes
+- learn about Reinforcement Learning from Human Feedback, the human in the loop of creating GenAI chatbots
+- learn about the consequences of their design regarding their outputs 
+- learn why the use of such systems has claimed to lead to "automated plagiarism"
 
 -------------------
 
@@ -30,17 +30,32 @@ execute:
   - *web scraping*: technique to automatically download and process web content
 - For instance, these datasets were reported by OpenAI to make up the training data for GPT-3:
   - Common Crawl (filtered): data collected over more than 13 years of web crawling 
+    - check whether your website is included in Common Crawl: https://index.commoncrawl.org/
   - WebText2: webpages referred to from Reddit posts with three or more upvotes 
   - Wikipedia: we all know this :-) 
-  - Books1 and Book2: internet-based books corpora ([unclear what these actually include!]{style="color:red;"})
+  - Books1 and Book2: internet-based books corpora ([unclear what these actually include!]{style="color:#880D1E;"})
 
 ![Training data of GPT-3 as reported by OpenAI in @brown2020language](../../images/gpt_trainingdata.png)
 
 
-- although see: articles on AI companies buying second hand books 
+![Top websites in Google's C4 dataset, which is a filtered snapshot of Common Crawl [@Dodge2021DocumentingTE], the list itself is from an interesting and nicely illustrated article by The Washington Post [@schaul2026]](../../images/c4_dataset.png)
+
+
+![Languages of the articles included in the latest CommonCrawl snapshots as reported on [their website](https://commoncrawl.github.io/cc-crawl-statistics/plots/languages). The languages are identified by an automatic system.](../../images/languages_commoncrawl.png)
+
+
+### "High quality" input
+
+- The internet has been flooded with AI-generated content (for instance, AI-generated reviews, blog posts, etc.) 
+- Since the content is not always easily distinguishable from human-generated data, new models are inevitably trained on data that is polluted with AI-generated content
+- This type of "self-consumption" reduces the model's output quality and diversity [@briesch2024largelanguagemodelssuffer]
+
+[Outputs of models after being trained on their own data across several rounds (t=1 to 9) [@alemohammad2023selfconsuminggenerativemodelsmad]](../../images/syntheticloop.png)
+
+- Thus, AI companies have to resort to different data sources. They have been suspected to buy secondhand books online as these may offer valuable training data that cannot be scraped from the web (see [article in BBC](https://www.bbc.com/news/articles/cp3rprx2wl4o))
 
 ::: {.callout-note title="Task ideas"}
-- 
+- https://www.soekia.ch/gpt.html
 :::
 
 
@@ -59,40 +74,71 @@ execute:
 - Based on this training input alone, GenAI chatbots would not be as eloquent as they are portrayed to be (see [Interaction](../../_site/topics/interaction/interaction.html)). 
 - And additionally, such models would produce inappopriate, offensive, violent and sexual content (because of areas of the web that we (probably) don't frequent...)
   - As OpenAi themselves put it: "These models are not aligned with their users." [abstract, @ouyang2022traininglanguagemodelsfollow]
--  Making LLMs adhere to certain rules and preferences and fulfil certain functions is called *Alignment*
-- In GenAI chatbots, this a technique called *Reinforcement learning from Human Feedback (RLHF)* is applied
+-  Thus, LLMs have to be made to adhere to certain rules and preferences and fulfil certain functions, a process called *Alignment*
+- With GenAI chatbots, a technique called *Reinforcement learning from Human Feedback (RLHF)* is applied
   - *RLHF* is a technique to incorporate human information to, for instance, LLMs
   -  There are different ways to do that, but the basic idea is the following (https://intuitionlabs.ai/articles/reinforcement-learning-human-feedback):
     - choose different prompts or environments. (for instance, real user queries or tasks from a prompt dataset)
     - for each prompt, get multiple responses from current model
     - human annotators rank these responses, following certain instructions
-  - for a longer, but still relatively accessible explanation of RLHF see [huggingface's post](https://huggingface.co/blog/rlhf)
+  - for a longer, but relatively accessible explanation of RLHF see [huggingface's post](https://huggingface.co/blog/rlhf)
 
 [An interface that annotators use to evaluate model output for Anthropic [@bai2022traininghelpfulharmlessassistant]](../../images/anthropic_interface.png)
 
 
 Who are the annotators?
 
-- crowdworkers (also called *gig workers*, *platform workers* or *data workers*), maybe more added in another topic (hegemonic,...)
+- crowdworkers (also called *gig workers*, *platform workers* or *data workers*)
   - Casilli et al. 
+  - see reports: https://www.deutschlandfunk.de/ki-data-worker-clickworker-deep-learning-100.html#wie-ki-training-fair
 
-## Information in the Model Output: Bias, Stereotypes, Political Views,...
+## Output: wrong, dangerous, biased
 
-- The GenAI chatbot's output depends on:
+- GenAI chatbot's output depends on:
   1. the training data of the LLM
   2. manually annotated and evaluated datasets, which in turn, depend on instructions given to annotators
-- As a consequence: 
-  - these tools are not *neutral* (as they are often claimed to be)
-  - companies can influence what models produce by designing their guidelines accordingly
-  - see article on....
-  - Buyl et al. 
+- As a consequence, these tools are **not** neutral
+  - the output is guided by their training data despite RLHF
+  - creators (e.g. companies or scientists) can influence what models produce by designing their guidelines accordingly
 
-- Importantly, they also exhibit biases and stereotypes
+### Examples 
+
+**Wrong Information:**
+
+- When AI Overview in Google was initially introduced in 2024, the output to the question of how many Muslim presidents the U.S. has had was “The United States has had one Muslim president, Barack Hussein Obama.” [@cnbcgoogle]
+- Five leading GenAI chatbots gave wrong or misleading information about presidential candidates Kamela Harris and Donald Trump [@mendelson2026]
+- In the academic context, wrong citations... 
+- Because of the way that GenAI chatbots are designed, they don't have access to the most current information (e.g. news). Through *Retrieval Augmented Generation* (RAG), models are provided more current information. However, models extended with RAG still often give wrong information [@schaul2026].
 
 
+::: {.callout-tip title="Discussion questions"}
 
-- misleading health information: https://www.theguardian.com/technology/2026/jan/02/google-ai-overviews-risk-harm-misleading-health-information
+:::
 
+**Dangerous Information:**
+
+- Health advice provided by GenAI chatbots is often misleading or simply false, potentially leading to patient harm [@healthguardian, @draelosetal2026]
+- GenAI chatbots accelarate online disinformation campaigns [@funk2023]
+
+Also see [Interaction]() for the dangers of sycophantic GenAI chatbots. 
+
+**Biased Information:**
+
+- LLMs show biased responses in their descriptions of prominent persons and whether the bias was positive or negative depends on whether the LLMs were created by Chinese or US companies [@buyl2026large]
+- GenAI chatbots have been reported to alter drafts that involved sensitive topics (e.g. abortion, climate and religion), changing the underlying message (more or less subtly) [@guardianaimeaning]
+
+
+::: {.callout-tip title="Discussion questions"}
+- Companies increasingly use Generative AI tools in their recruitment processes [@rigotti2024fairness @dutta2026transforming]. Do you see any potential risks in making hiring decisions based on the output of an automatic tool? How does a biased decision (for example based on a person's national origin) made by a tool differ from a biased decision made by an employee in an HR department?
+:::
+
+The fact that companies have incredible power in deciding what GenAI chatbots produce is shown by the leak of a Meta's internal document that provided guidelines on how their chatbot *Meta AI* is allowed to engage with children:
+
+![From @horwitz](../../images/leak_protocol.png)
+
+And how their chatbot is allowed to talk about race:
+
+![From @horwitz](../../images/leak_race.png)
 
 
 ## Plagiarism
@@ -109,7 +155,7 @@ LD: p.13
 
 # Comprehension questions
 
-- https://www.soekia.ch/gpt.html
+- 
 -
 -
 

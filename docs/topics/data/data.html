@@ -153,9 +153,15 @@ div.csl-indent {
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content">Content</a>
   <ul class="collapse">
-  <li><a href="#training-input" id="toc-training-input" class="nav-link" data-scroll-target="#training-input">Training input</a></li>
+  <li><a href="#training-input" id="toc-training-input" class="nav-link" data-scroll-target="#training-input">Training input</a>
+  <ul class="collapse">
+  <li><a href="#high-quality-input" id="toc-high-quality-input" class="nav-link" data-scroll-target="#high-quality-input">“High quality” input</a></li>
+  </ul></li>
   <li><a href="#reinforcement-learning-from-human-feedback" id="toc-reinforcement-learning-from-human-feedback" class="nav-link" data-scroll-target="#reinforcement-learning-from-human-feedback">Reinforcement Learning from Human Feedback</a></li>
-  <li><a href="#information-in-the-model-output-bias-stereotypes-political-views" id="toc-information-in-the-model-output-bias-stereotypes-political-views" class="nav-link" data-scroll-target="#information-in-the-model-output-bias-stereotypes-political-views">Information in the Model Output: Bias, Stereotypes, Political Views,…</a></li>
+  <li><a href="#output-wrong-dangerous-biased" id="toc-output-wrong-dangerous-biased" class="nav-link" data-scroll-target="#output-wrong-dangerous-biased">Output: wrong, dangerous, biased</a>
+  <ul class="collapse">
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
+  </ul></li>
   <li><a href="#plagiarism" id="toc-plagiarism" class="nav-link" data-scroll-target="#plagiarism">Plagiarism</a></li>
   </ul></li>
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
@@ -191,8 +197,10 @@ div.csl-indent {
 <section id="overview" class="level3">
 <h3 class="anchored" data-anchor-id="overview">Overview</h3>
 <ul>
-<li></li>
-<li></li>
+<li>learn about the training input and critically assess what this input includes</li>
+<li>learn about Reinforcement Learning from Human Feedback, the human in the loop of creating GenAI chatbots</li>
+<li>learn about the consequences of their design regarding their outputs</li>
+<li>learn why the use of such systems has claimed to lead to “automated plagiarism”</li>
 </ul>
 <hr>
 </section>
@@ -202,16 +210,19 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="training-input">Training input</h2>
 <ul>
 <li>The training of LLMs involves modelling the probabilistic relationship between words of vast amounts of texts</li>
-<li>These texts are usually ``scraped’’ from the internet
+<li>These texts are usually “scraped” from the internet
 <ul>
 <li><em>web scraping</em>: technique to automatically download and process web content</li>
 </ul></li>
 <li>For instance, these datasets were reported by OpenAI to make up the training data for GPT-3:
 <ul>
-<li>Common Crawl (filtered): data collected over more than 13 years of web crawling</li>
+<li>Common Crawl (filtered): data collected over more than 13 years of web crawling
+<ul>
+<li>check whether your website is included in Common Crawl: https://index.commoncrawl.org/</li>
+</ul></li>
 <li>WebText2: webpages referred to from Reddit posts with three or more upvotes</li>
 <li>Wikipedia: we all know this :-)</li>
-<li>Books1 and Book2: internet-based books corpora (<span style="color:red;">unclear what these actually include!</span>)</li>
+<li>Books1 and Book2: internet-based books corpora (<span style="color:#880D1E;">unclear what these actually include!</span>)</li>
 </ul></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
@@ -220,8 +231,28 @@ div.csl-indent {
 <figcaption>Training data of GPT-3 as reported by OpenAI in <span class="citation" data-cites="brown2020language"><span class="nocase">Brown et al.</span> (<a href="#ref-brown2020language" role="doc-biblioref">2020</a>)</span></figcaption>
 </figure>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/c4_dataset.png" class="img-fluid figure-img"></p>
+<figcaption>Top websites in Google’s C4 dataset, which is a filtered snapshot of Common Crawl <span class="citation" data-cites="Dodge2021DocumentingTE">(<a href="#ref-Dodge2021DocumentingTE" role="doc-biblioref">Dodge et al. 2021</a>)</span>, the list itself is from an interesting and nicely illustrated article by The Washington Post <span class="citation" data-cites="schaul2026">(<a href="#ref-schaul2026" role="doc-biblioref">Jaźwińska and Chandrasekar 2025</a>)</span></figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/languages_commoncrawl.png" class="img-fluid figure-img"></p>
+<figcaption>Languages of the articles included in the latest CommonCrawl snapshots as reported on <a href="https://commoncrawl.github.io/cc-crawl-statistics/plots/languages">their website</a>. The languages are identified by an automatic system.</figcaption>
+</figure>
+</div>
+<section id="high-quality-input" class="level3">
+<h3 class="anchored" data-anchor-id="high-quality-input">“High quality” input</h3>
 <ul>
-<li>although see: articles on AI companies buying second hand books</li>
+<li>The internet has been flooded with AI-generated content (for instance, AI-generated reviews, blog posts, etc.)</li>
+<li>Since the content is not always easily distinguishable from human-generated data, new models are inevitably trained on data that is polluted with AI-generated content</li>
+<li>This type of “self-consumption” reduces the model’s output quality and diversity <span class="citation" data-cites="briesch2024largelanguagemodelssuffer">(<a href="#ref-briesch2024largelanguagemodelssuffer" role="doc-biblioref">Briesch et al. 2024</a>)</span></li>
+</ul>
+<p><a href="../../images/syntheticloop.png">Outputs of models after being trained on their own data across several rounds (t=1 to 9) <span class="citation" data-cites="alemohammad2023selfconsuminggenerativemodelsmad">(<span>Alemohammad et al. 2023</span>)</span></a></p>
+<ul>
+<li>Thus, AI companies have to resort to different data sources. They have been suspected to buy secondhand books online as these may offer valuable training data that cannot be scraped from the web (see <a href="https://www.bbc.com/news/articles/cp3rprx2wl4o">article in BBC</a>)</li>
 </ul>
 <div class="callout callout-style-simple callout-note no-icon callout-titled" title="Task ideas">
 <div class="callout-header d-flex align-content-center">
@@ -234,7 +265,7 @@ div.csl-indent {
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li></li>
+<li>https://www.soekia.ch/gpt.html</li>
 </ul>
 </div>
 </div>
@@ -271,47 +302,113 @@ div.csl-indent {
 </div>
 </div>
 </section>
+</section>
 <section id="reinforcement-learning-from-human-feedback" class="level2">
 <h2 class="anchored" data-anchor-id="reinforcement-learning-from-human-feedback">Reinforcement Learning from Human Feedback</h2>
 <ul>
 <li>Based on this training input alone, GenAI chatbots would not be as eloquent as they are portrayed to be (see <a href="../../_site/topics/interaction/interaction.html">Interaction</a>).</li>
 <li>And additionally, such models would produce inappopriate, offensive, violent and sexual content (because of areas of the web that we (probably) don’t frequent…)
 <ul>
-<li>As OpenAi themselves put it: “These models are not aligned with their users.” <span class="citation" data-cites="ouyang2022traininglanguagemodelsfollow">(abstract, <a href="#ref-ouyang2022traininglanguagemodelsfollow" role="doc-biblioref"><strong>ouyang2022traininglanguagemodelsfollow?</strong></a>)</span></li>
+<li>As OpenAi themselves put it: “These models are not aligned with their users.” <span class="citation" data-cites="ouyang2022traininglanguagemodelsfollow">(abstract, <a href="#ref-ouyang2022traininglanguagemodelsfollow" role="doc-biblioref">Ouyang et al. 2022</a>)</span></li>
 </ul></li>
-<li>Making LLMs adhere to certain rules and preferences and fulfil certain functions is called <em>Alignment</em></li>
-<li>In GenAI chatbots, this a technique called <em>Reinforcement learning from Human Feedback (RLHF)</em> is applied
+<li>Thus, LLMs have to be made to adhere to certain rules and preferences and fulfil certain functions, a process called <em>Alignment</em></li>
+<li>With GenAI chatbots, a technique called <em>Reinforcement learning from Human Feedback (RLHF)</em> is applied
 <ul>
 <li><em>RLHF</em> is a technique to incorporate human information to, for instance, LLMs</li>
 <li>There are different ways to do that, but the basic idea is the following (https://intuitionlabs.ai/articles/reinforcement-learning-human-feedback):</li>
 <li>choose different prompts or environments. (for instance, real user queries or tasks from a prompt dataset)</li>
 <li>for each prompt, get multiple responses from current model</li>
 <li>human annotators rank these responses, following certain instructions</li>
-<li>for a longer, but still relatively accessible explanation of RLHF see <a href="https://huggingface.co/blog/rlhf">huggingface’s post</a></li>
+<li>for a longer, but relatively accessible explanation of RLHF see <a href="https://huggingface.co/blog/rlhf">huggingface’s post</a></li>
 </ul></li>
 </ul>
-<p><a href="../../images/anthropic_interface.png">An interface that annotators use to evaluate model output for Anthropic <span class="citation" data-cites="bai2022traininghelpfulharmlessassistant">(<span><strong>bai2022traininghelpfulharmlessassistant?</strong></span>)</span></a></p>
+<p><a href="../../images/anthropic_interface.png">An interface that annotators use to evaluate model output for Anthropic <span class="citation" data-cites="bai2022traininghelpfulharmlessassistant">(<span>Bai et al. 2022</span>)</span></a></p>
 <p>Who are the annotators?</p>
 <ul>
-<li>crowdworkers (also called <em>gig workers</em>, <em>platform workers</em> or <em>data workers</em>), maybe more added in another topic (hegemonic,…)</li>
+<li>crowdworkers (also called <em>gig workers</em>, <em>platform workers</em> or <em>data workers</em>)
+<ul>
+<li>Casilli et al.&nbsp;</li>
+<li>see reports: https://www.deutschlandfunk.de/ki-data-worker-clickworker-deep-learning-100.html#wie-ki-training-fair</li>
+</ul></li>
 </ul>
 </section>
-<section id="information-in-the-model-output-bias-stereotypes-political-views" class="level2">
-<h2 class="anchored" data-anchor-id="information-in-the-model-output-bias-stereotypes-political-views">Information in the Model Output: Bias, Stereotypes, Political Views,…</h2>
+<section id="output-wrong-dangerous-biased" class="level2">
+<h2 class="anchored" data-anchor-id="output-wrong-dangerous-biased">Output: wrong, dangerous, biased</h2>
 <ul>
-<li>The GenAI chatbot’s output depends on:
+<li>GenAI chatbot’s output depends on:
 <ol type="1">
 <li>the training data of the LLM</li>
 <li>manually annotated and evaluated datasets, which in turn, depend on instructions given to annotators</li>
 </ol></li>
-<li>As a consequence:
+<li>As a consequence, these tools are <strong>not</strong> neutral
 <ul>
-<li>these tools are not <em>neutral</em> (as they are often claimed to be)</li>
-<li>companies decide what models produce (and the training data if certain patterns in the model’s output have not been overridden by RLHF after initially training the LLM)</li>
-<li>see article on….</li>
+<li>the output is guided by their training data despite RLHF</li>
+<li>creators (e.g.&nbsp;companies or scientists) can influence what models produce by designing their guidelines accordingly</li>
 </ul></li>
-<li>Importantly, they also exhibit biases and stereotypes</li>
 </ul>
+<section id="examples" class="level3">
+<h3 class="anchored" data-anchor-id="examples">Examples</h3>
+<p><strong>Wrong Information:</strong></p>
+<ul>
+<li>When AI Overview in Google was initially introduced in 2024, the output to the question of how many Muslim presidents the U.S. has had was “The United States has had one Muslim president, Barack Hussein Obama.” <span class="citation" data-cites="cnbcgoogle">(<a href="#ref-cnbcgoogle" role="doc-biblioref">Field 2024</a>)</span></li>
+<li>Five leading GenAI chatbots gave wrong or misleading information about presidential candidates Kamela Harris and Donald Trump <span class="citation" data-cites="mendelson2026">(<a href="#ref-mendelson2026" role="doc-biblioref">Mendelson 2024</a>)</span></li>
+<li>In the academic context, wrong citations…</li>
+<li>Because of the way that GenAI chatbots are designed, they don’t have access to the most current information (e.g.&nbsp;news). Through <em>Retrieval Augmented Generation</em> (RAG), models are provided more current information. However, models extended with RAG still often give wrong information <span class="citation" data-cites="schaul2026">(<a href="#ref-schaul2026" role="doc-biblioref">Jaźwińska and Chandrasekar 2025</a>)</span>.</li>
+</ul>
+<div class="callout callout-style-simple callout-tip no-icon callout-empty-content callout-titled" title="Discussion questions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Discussion questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<p><strong>Dangerous Information:</strong></p>
+<ul>
+<li>Health advice provided by GenAI chatbots is often misleading or simply false, potentially leading to patient harm <span class="citation" data-cites="healthguardian">Draelos et al. (<a href="#ref-draelosetal2026" role="doc-biblioref">2026</a>)</span></li>
+<li>GenAI chatbots accelarate online disinformation campaigns <span class="citation" data-cites="funk2023">(<a href="#ref-funk2023" role="doc-biblioref">Funk et al. 2023</a>)</span></li>
+</ul>
+<p>Also see <a href="">Interaction</a> for the dangers of sycophantic GenAI chatbots.</p>
+<p><strong>Biased Information:</strong></p>
+<ul>
+<li>LLMs show biased responses in their descriptions of prominent persons and whether the bias was positive or negative depends on whether the LLMs were created by Chinese or US companies <span class="citation" data-cites="buyl2026large">(<a href="#ref-buyl2026large" role="doc-biblioref"><span class="nocase">Buyl et al.</span> 2026</a>)</span></li>
+<li>GenAI chatbots have been reported to alter drafts that involved sensitive topics (e.g.&nbsp;abortion, climate and religion), changing the underlying message (more or less subtly) <span class="citation" data-cites="guardianaimeaning">(<a href="#ref-guardianaimeaning" role="doc-biblioref">Booth 2026</a>)</span></li>
+</ul>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled" title="Discussion questions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Discussion questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Companies increasingly use Generative AI tools in their recruitment processes <span class="citation" data-cites="rigotti2024fairness">Dutta and Naveen (<a href="#ref-dutta2026transforming" role="doc-biblioref">2026</a>)</span>. Do you see any potential risks in making hiring decisions based on the output of an automatic tool? How does a biased decision (for example based on a person’s national origin) made by a tool differ from a biased decision made by an employee in an HR department?</li>
+</ul>
+</div>
+</div>
+<p>The fact that companies have incredible power in deciding what GenAI chatbots produce is shown by the leak of a Meta’s internal document that provided guidelines on how their chatbot <em>Meta AI</em> is allowed to engage with children:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/leak_protocol.png" class="img-fluid figure-img"></p>
+<figcaption>From <span class="citation" data-cites="horwitz">Horwitz (<a href="#ref-horwitz" role="doc-biblioref">2025</a>)</span></figcaption>
+</figure>
+</div>
+<p>And how their chatbot is allowed to talk about race:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/leak_race.png" class="img-fluid figure-img"></p>
+<figcaption>From <span class="citation" data-cites="horwitz">Horwitz (<a href="#ref-horwitz" role="doc-biblioref">2025</a>)</span></figcaption>
+</figure>
+</div>
+</section>
 </section>
 <section id="plagiarism" class="level2">
 <h2 class="anchored" data-anchor-id="plagiarism">Plagiarism</h2>
@@ -325,7 +422,7 @@ div.csl-indent {
 <section id="comprehension-questions" class="level1">
 <h1>Comprehension questions</h1>
 <ul>
-<li>https://www.soekia.ch/gpt.html</li>
+<li></li>
 <li></li>
 <li></li>
 </ul>
@@ -339,8 +436,56 @@ div.csl-indent {
 <section id="references" class="level1">
 <h1>References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-alemohammad2023selfconsuminggenerativemodelsmad" class="csl-entry" role="listitem">
+Alemohammad, Sina, Josue Casco-Rodriguez, Lorenzo Luzi, et al. 2023. <em>Self-Consuming Generative Models Go MAD</em>. <a href="https://arxiv.org/abs/2307.01850">https://arxiv.org/abs/2307.01850</a>.
+</div>
+<div id="ref-bai2022traininghelpfulharmlessassistant" class="csl-entry" role="listitem">
+Bai, Yuntao, Andy Jones, Kamal Ndousse, et al. 2022. <em>Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback</em>. <a href="https://arxiv.org/abs/2204.05862">https://arxiv.org/abs/2204.05862</a>.
+</div>
+<div id="ref-guardianaimeaning" class="csl-entry" role="listitem">
+Booth, Robert. 2026. <span>“AI Altering Meaning of Users’ Drafts on Issues from Abortion to Climate, Study Finds.”</span> <a href="https://www.theguardian.com/technology/2026/jul/06/ai-altering-meaning-of-users-drafts-on-issues-from-abortion-to-climate-study-finds?CMP=fb_gu&amp;utm_medium=Social&amp;utm_source=Facebook#Echobox=1783349430">https://www.theguardian.com/technology/2026/jul/06/ai-altering-meaning-of-users-drafts-on-issues-from-abortion-to-climate-study-finds?CMP=fb_gu&amp;utm_medium=Social&amp;utm_source=Facebook#Echobox=1783349430</a>.
+</div>
+<div id="ref-briesch2024largelanguagemodelssuffer" class="csl-entry" role="listitem">
+Briesch, Martin, Dominik Sobania, and Franz Rothlauf. 2024. <em>Large Language Models Suffer from Their Own Output: An Analysis of the Self-Consuming Training Loop</em>. <a href="https://arxiv.org/abs/2311.16822">https://arxiv.org/abs/2311.16822</a>.
+</div>
 <div id="ref-brown2020language" class="csl-entry" role="listitem">
 <span class="nocase">Brown, Tom, Benjamin Mann, Nick Ryder, et al.</span> 2020. <span>“Language Models Are Few-Shot Learners.”</span> <em>Advances in Neural Information Processing Systems</em> 33: 1877–901.
+</div>
+<div id="ref-buyl2026large" class="csl-entry" role="listitem">
+<span class="nocase">Buyl, Maarten, Alexander Rogiers, Sander Noels, et al.</span> 2026. <span>“Large Language Models Reflect the Ideology of Their Creators.”</span> <em>Npj Artificial Intelligence</em> 2 (1): 7.
+</div>
+<div id="ref-Dodge2021DocumentingTE" class="csl-entry" role="listitem">
+Dodge, Jesse, Maarten Sap, Ana Marasović, et al. 2021. <span>“Documenting the English Colossal Clean Crawled Corpus.”</span> <em>ArXiv</em> abs/2104.08758. <a href="https://api.semanticscholar.org/CorpusID:233296858">https://api.semanticscholar.org/CorpusID:233296858</a>.
+</div>
+<div id="ref-draelosetal2026" class="csl-entry" role="listitem">
+Draelos, Rachel L, Samina Afreen, Barbara Blasko, et al. 2026. <span>“Large Language Models Provide Unsafe Answers to Patient-Posed Medical Questions.”</span> <em>Npj Digital Medicine</em> 9 (241). <a href="https://doi.org/10.1038/s41746-026-02428-5">https://doi.org/10.1038/s41746-026-02428-5</a>.
+</div>
+<div id="ref-dutta2026transforming" class="csl-entry" role="listitem">
+Dutta, Debolina, and PM Naveen. 2026. <span>“Transforming Recruitment and Selection Practices in Organizations Through Discriminative and Generative AI Adoption: A Structuration Lens.”</span> <em>Human Resource Management</em> 65 (1): 77–115.
+</div>
+<div id="ref-cnbcgoogle" class="csl-entry" role="listitem">
+Field, Hayden. 2024. <span>“Google Criticized as AI Overview Makes Obvious Errors, Such as Saying Former President Obama Is Muslim.”</span> <a href="https://www.cnbc.com/2024/05/24/google-criticized-as-ai-overview-makes-errors-like-saying-president-obama-is-muslim.html?msockid=3af41ee708ee6f9629a80af009f76e75">https://www.cnbc.com/2024/05/24/google-criticized-as-ai-overview-makes-errors-like-saying-president-obama-is-muslim.html?msockid=3af41ee708ee6f9629a80af009f76e75</a>.
+</div>
+<div id="ref-funk2023" class="csl-entry" role="listitem">
+Funk, Allie, Adrian Shahbaz, and Kian Vesteinsson. 2023. <span>“Freedom on the Net Report 2023: The Repressive Power of Artificial Intelligence.”</span> <a href="https://freedomhouse.org/report/freedom-net/2023/repressive-power-artificial-intelligence">https://freedomhouse.org/report/freedom-net/2023/repressive-power-artificial-intelligence</a>.
+</div>
+<div id="ref-healthguardian" class="csl-entry" role="listitem">
+Gregory, Andrew. 2026. <span>“Google AI Overviews Put People at Risk of Harm with Misleading Health Advice.”</span> <a href="https://www.theguardian.com/technology/2026/jan/02/google-ai-overviews-risk-harm-misleading-health-information">https://www.theguardian.com/technology/2026/jan/02/google-ai-overviews-risk-harm-misleading-health-information</a>.
+</div>
+<div id="ref-horwitz" class="csl-entry" role="listitem">
+Horwitz, Jeff. 2025. <span>“Meta’s AI Rules Have Let Bots Hold <span>‘Sensual’</span> Chats with Kids, Offer False Medical Info.”</span> <a href="https://www.reuters.com/investigates/special-report/meta-ai-chatbot-guidelines/">https://www.reuters.com/investigates/special-report/meta-ai-chatbot-guidelines/</a>.
+</div>
+<div id="ref-schaul2026" class="csl-entry" role="listitem">
+Jaźwińska, Klaudia, and Aisvarya Chandrasekar. 2025. <span>“AI Search Has a Citation Problem.”</span> <a href="https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php">https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php</a>.
+</div>
+<div id="ref-mendelson2026" class="csl-entry" role="listitem">
+Mendelson, Aaron. 2024. <span>“AI Models Generate Misinformation about Presidential Candidates.”</span> <a href="https://www.proofnews.org/ai-models-struggle-to-get-the-facts-straight-about-kamala-harris-2/">https://www.proofnews.org/ai-models-struggle-to-get-the-facts-straight-about-kamala-harris-2/</a>.
+</div>
+<div id="ref-ouyang2022traininglanguagemodelsfollow" class="csl-entry" role="listitem">
+Ouyang, Long, Jeff Wu, Xu Jiang, et al. 2022. <em>Training Language Models to Follow Instructions with Human Feedback</em>. <a href="https://arxiv.org/abs/2203.02155">https://arxiv.org/abs/2203.02155</a>.
+</div>
+<div id="ref-rigotti2024fairness" class="csl-entry" role="listitem">
+Rigotti, Carlotta, and Eduard Fosch-Villaronga. 2024. <span>“Fairness, AI &amp; Recruitment.”</span> <em>Computer Law &amp; Security Review</em> 53: 105966.
 </div>
 </div>
 
