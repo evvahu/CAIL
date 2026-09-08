@@ -16,7 +16,8 @@ format:
 
 # General questions
 
-- First, students can ask themselves if their cognitive labour is being affected by an artifact; and if ‘yes’ then they can ask what that relationship means for their specific context. (Guest, Suarez et al.) 
-- Is this simulation actually equivalent to the labour, the learning or the care it replaces? (Ray and Guest) 
-- whose labour gets replaced? (less relevant for students)
+- Is your cognitive labour being affected by using a GenAI chatbot (or any AI tool)? [adapted from @guestsuarezrooij2025]
 - Do I learn what I am supposed to learn?
+- Is the use of AI justifiable given the ethical and environmental concerns of AI tools?
+
+

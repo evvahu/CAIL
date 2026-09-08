@@ -29,7 +29,7 @@ A cartoon set theoretic view on various terms (see Table 1) used when discussing
 
 # How to use this collection of information
 
-Structure and how to use
+[To be added:]{} Structure and how to use
 
 
 
@@ -42,7 +42,8 @@ More concretely, you should be familiar with the following concepts:
 
 1. the difference between deterministic and probabilistic models. 
 2. LLMs, chatbots, and combination of both (ChatGPT is not equal to LLM)
-3.
+3. ...
+4. ...
 
 
 
@@ -51,8 +52,8 @@ More concretely, you should be familiar with the following concepts:
 - starting off a conversation about AI with students
   - Kahoot
   - Padlets
-  - 
+  - ...
 - forums for before-class preparation
-
+- ... 
 
 

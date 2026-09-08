@@ -11,11 +11,6 @@ execute:
 
 # Discussion questions
 
-
-
 - How may the engagement with AI harm the development of ideas?
-  - Think about the goals of the design of the tool vs. your own particular goals (pointer to Interaction)
-- How does human-to-human interaction fundamentally differ from human-AI interaction?
-- How are GenAI models trained to produce and “learn” language? How does this differ from how a child learns language?
-
-- What is the difference between regarding research as a process rather than as a product? Why should “serendipity” matter to this process? (LD)
+  - Think about the goals of the design of the tool vs. your own particular goals ([add pointer to Interaction]{style="color:red"})
+- What is the difference between regarding research as a process rather than as a product? Why should “serendipity” matter to this process? ([add reference LD]{style="color:red"})

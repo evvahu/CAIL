@@ -13,4 +13,3 @@ execute:
 # Discussion questions
 
 - Do we by citing a chatbot or acknowledging the use of a chatbot avoid plagiarising? 
-    - from LD10: "But what does it mean for students to cite a chatbot as an information source when the system’s own source for the information is buried in undocumented training data?” (LD p.10)"

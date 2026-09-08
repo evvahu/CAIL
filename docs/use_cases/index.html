@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -220,11 +239,11 @@ window.Quarto = {
 <section id="general-questions" class="level1">
 <h1>General questions</h1>
 <ul>
-<li>First, students can ask themselves if their cognitive labour is being affected by an artifact; and if ‘yes’ then they can ask what that relationship means for their specific context. (Guest, Suarez et al.)</li>
-<li>Is this simulation actually equivalent to the labour, the learning or the care it replaces? (Ray and Guest)</li>
-<li>whose labour gets replaced? (less relevant for students)</li>
+<li>Is your cognitive labour being affected by using a GenAI chatbot (or any AI tool)? <span class="citation" data-cites="guestsuarezrooij2025">(adapted from <a href="#ref-guestsuarezrooij2025" role="doc-biblioref">Guest and Rooij 2025</a>)</span></li>
 <li>Do I learn what I am supposed to learn?</li>
+<li>Is the use of AI justifiable given the ethical and environmental concerns of AI tools?</li>
 </ul>
+
 
 
 
@@ -232,7 +251,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1786002880382" data-listing-reading-time-sort="1" data-listing-word-count-sort="84">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1788862654587" data-listing-reading-time-sort="1" data-listing-word-count-sort="58">
 <a href="../use_cases/development_ideas/development_ideas.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
@@ -241,7 +260,14 @@ window.Quarto = {
 Development of Ideas
 </h5>
 <div class="card-text listing-description delink">
-How may the engagement with AI harm the development of ideas?
+
+
+<ul>
+<li>How may the engagement with AI harm the development of ideas?
+<ul>
+<li>Think about the goals of the design of the tool vs.&nbsp;your own particular goals (<span style="color:red">add pointer to Interaction</span>)</li>
+</ul></li>
+<li>…<span style="color:red"></span></li></ul>
 </div>
 <div class="card-attribution card-text-small start">
 <div class="listing-author">
@@ -251,7 +277,7 @@ How may the engagement with AI harm the development of ideas?
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1786003165483" data-listing-reading-time-sort="1" data-listing-word-count-sort="128">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1788862901885" data-listing-reading-time-sort="1" data-listing-word-count-sort="129">
 <a href="../use_cases/literature_review/literature_review.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
@@ -263,7 +289,7 @@ Literature Search and Review
 
 
 <ul>
-<li>What are the limitations of these sytems given their training data? i.e.&nbsp;is the information needed actually in the training data? (in relation to linguistics: information…</li><li></li></ul>
+<li>What are the limitations of these sytems given their training data? i.e.&nbsp;is the information needed actually in the training data? (in relation to linguistics: information…</li><li><span style="color:red"></span></li></ul>
 </div>
 <div class="card-attribution card-text-small start">
 <div class="listing-author">
@@ -273,7 +299,7 @@ Literature Search and Review
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1786002852650" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1788862678723" data-listing-reading-time-sort="1" data-listing-word-count-sort="17">
 <a href="../use_cases/wording_orthography/wording.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
@@ -285,9 +311,11 @@ Wording and orthography
 
 
 <ul>
-<li>Do we by citing a chatbot or acknowledging the use of a chatbot avoid plagiarising?
-<ul>
-<li>from LD10: “But what does it mean for students to cite a chatbot as an information…</li></ul></li></ul>
+<li>Do we by citing a chatbot or acknowledging the use of a chatbot avoid plagiarising?</li>
+</ul>
+
+
+
 </div>
 <div class="card-attribution card-text-small start">
 <div class="listing-author">
@@ -299,7 +327,11 @@ Wording and orthography
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-guestsuarezrooij2025" class="csl-entry" role="listitem">
+Guest, Suarez, O., and I. van Rooij. 2025. <em>Towards Critical Artificial Intelligence Literacies</em>. <a href="https://doi.org/10.5281/zenodo.17786243 ">https://doi.org/10.5281/zenodo.17786243 </a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

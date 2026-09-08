@@ -9,13 +9,25 @@ format:
 
 ---
 
-# Critical AI Literacy: Reflective use (or non-use) of GenerativeAI chatbot systems
+# Critical Artificial Intelligence Literacy (CAIL): Reflective use (or non-use) of Generative AI chatbot systems
 
 
-- what this is about
-- goals and motivation
-  - collecting information and resources on Critical AI Literacy 
-  - not reinventing the wheel but making them accessible and retrievable, and therefore, more easily applicable in teaching 
-- acknowledge main sources
-- authors
+- This website was created in an effort to gather resources and information on Critical AI Literacy and make them accessible to lecturers and students, primarily in Linguistics, but also to those working in related disciplines (e.g. Psychology).
+- The resources and information can be used to teach aspects of CAIL and directly relate them to the topics and scientific practices taught in the course.
+- It is dynamic in the sense that its content can be extended at any point. Users can be added to the github repository and propose new content. 
+- We are not reinventing the wheel but making them accessible and retrievable, and therefore, more easily applicable in teaching 
 
+### Our main inspriation and sources come from:
+
+- [This living document](https://docs.google.com/document/d/1TAXqYGid8sQz8v1ngTLD1qZBx2rNKHeKn9mcfWbFzRQ/edit?tab=t.0) on teaching Critical AI Literacies created by Lauren M. E. Goodlad and Sharon Stoergerand and now maintained by members of Critical AI @ Rutgers 
+- Olivia Guest and Iris Van Rooij's work on CAIL. Most notably, the following publications: @guestsuarezrooij2025 and @guest2025against
+
+
+### Projects members:
+
+- Eva Scheel-Huber
+- Thomas Ortmann
+- Annika Meyer
+
+
+### Acknowledgments: 
