@@ -15,7 +15,7 @@ format:
 - This website was created in an effort to gather resources and information on Critical AI Literacy and make them accessible to lecturers and students, primarily in Linguistics, but also to those working in related disciplines (e.g. Psychology).
 - The resources and information can be used to teach aspects of CAIL and directly relate them to the topics and scientific practices taught in the course.
 - It is dynamic in the sense that its content can be extended at any point. Users can be added to the github repository and propose new content. 
-- We are not reinventing the wheel but making them accessible and retrievable, and therefore, more easily applicable in teaching 
+- We are not reinventing the wheel but making information accessible and retrievable, and therefore, more easily applicable in teaching 
 
 ### Our main inspriation and sources come from:
 
