@@ -83,7 +83,7 @@ execute:
     - human annotators rank these responses, following certain instructions
   - for a longer, but relatively accessible explanation of RLHF see [huggingface's post](https://huggingface.co/blog/rlhf)
 
-[An interface that annotators use to evaluate model output for Anthropic [@bai2022traininghelpfulharmlessassistant]](../../images/anthropic_interface.png)
+![An interface that annotators use to evaluate model output for Anthropic [@bai2022traininghelpfulharmlessassistant]](../../images/anthropic_interface.png)
 
 
 Who are the annotators?
