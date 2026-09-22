@@ -1,7 +1,7 @@
 ---
 title: "Topics"
-listing:
-  type: grid
+#listing:
+#  type: grid
 page-layout: full
 
 comments: false
@@ -13,11 +13,17 @@ format:
 ---
 
 
-
 # General questions
 
 - Is your cognitive labour being affected by using a GenAI chatbot (or any AI tool)? [adapted from @guestsuarezrooij2025]
-- Do I learn what I am supposed to learn?
-- Is the use of AI justifiable given the ethical and environmental concerns of AI tools?
+- Do you learn what you are supposed to learn?
+- Can the use of AI be justified given the ethical and environmental concerns of AI tools?
+- What exactly do you expect to gain by using GenAI chatbot (or any AI tool)? Could the task me carried out using other means? 
+
+
+
+
+
+- for the use of AI in coding and learning how to code, see [Chapter 15](https://elenlefoll.github.io/RstatsTextbook/15_AI.html) in @lefoll
 
 

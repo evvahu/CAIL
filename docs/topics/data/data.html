@@ -156,6 +156,7 @@ div.csl-indent {
   <li><a href="#training-input" id="toc-training-input" class="nav-link" data-scroll-target="#training-input">Training input</a>
   <ul class="collapse">
   <li><a href="#high-quality-input" id="toc-high-quality-input" class="nav-link" data-scroll-target="#high-quality-input">“High quality” input</a></li>
+  <li><a href="#the-lack-of-documentation" id="toc-the-lack-of-documentation" class="nav-link" data-scroll-target="#the-lack-of-documentation">The lack of documentation</a></li>
   </ul></li>
   <li><a href="#reinforcement-learning-from-human-feedback" id="toc-reinforcement-learning-from-human-feedback" class="nav-link" data-scroll-target="#reinforcement-learning-from-human-feedback">Reinforcement Learning from Human Feedback</a></li>
   <li><a href="#output-wrong-dangerous-biased" id="toc-output-wrong-dangerous-biased" class="nav-link" data-scroll-target="#output-wrong-dangerous-biased">Output: wrong, dangerous, biased</a>
@@ -302,6 +303,24 @@ div.csl-indent {
 </div>
 </div>
 </section>
+<section id="the-lack-of-documentation" class="level3">
+<h3 class="anchored" data-anchor-id="the-lack-of-documentation">The lack of documentation</h3>
+<ul>
+<li><em>Open Science</em> has emerged as one of the key values in our scientific practices. According to the <span class="citation" data-cites="unesco">UNESCO (<a href="#ref-unesco" role="doc-biblioref">n.d.</a>)</span>, Open Science includes, among other, open access to scientific knowledge (including open access to scientific publications, <strong>data</strong>, educational resources, software and hardware).</li>
+<li>Additionally, the <a href="https://artificialintelligenceact.eu/">EU’s AI Act</a> centers around open source driven development of AI systems.</li>
+<li>However, most of the GenAI chatbots and systems do not comply with the values of Open Science. This is a large topic in and of itself and here we only address the issue with regard to the <em>training data</em>. For a more in-depth discussion of Research Integrity and Open Science, see <span class="citation" data-cites="liesenfelddingemanse2024">Liesenfeld and Dingemanse (<a href="#ref-liesenfelddingemanse2024" role="doc-biblioref">2024</a>)</span> and <span class="citation" data-cites="dingemanse2024">Dingemanse (<a href="#ref-dingemanse2024" role="doc-biblioref">2024</a>)</span></li>
+<li>The lack of documentation and publishing the training data has been called “documentation debt” <span class="citation" data-cites="bender2021dangers">(<a href="#ref-bender2021dangers" role="doc-biblioref">Bender et al. 2021</a>)</span>. The problems and dangers of documentation debt are the following:
+<ul>
+<li>the lack of documentation thwarts accountability, in other words “undocumented training data perpetuates harm without recourse.” <span class="citation" data-cites="bender2021dangers">(p.&nbsp;651 <a href="#ref-bender2021dangers" role="doc-biblioref">Bender et al. 2021</a>)</span>
+<ul>
+<li>lack of accountability with regard to the included material and their authors, data privacy concerns and harmful content</li>
+</ul></li>
+<li>Without any documentation, it is impossible to detect patterns in the training data that lead to biases and harmful content.</li>
+<li>The sheer size of the data is problematic too since documenting it post-hoc is difficult</li>
+</ul></li>
+<li>Biases and harmful content produced by LLMs and GenAI chatbots are only discovered after the systems are made public. Post-hoc inspection by researchers has shown that LLMs and GenAI chatbots produce persistent toxic content and reproduce stereotypes (e.g.&nbsp;a negative bias against Muslim <span class="citation" data-cites="abid2021large">Abid et al. (<a href="#ref-abid2021large" role="doc-biblioref">2021</a>)</span>, see below for more).</li>
+</ul>
+</section>
 </section>
 <section id="reinforcement-learning-from-human-feedback" class="level2">
 <h2 class="anchored" data-anchor-id="reinforcement-learning-from-human-feedback">Reinforcement Learning from Human Feedback</h2>
@@ -330,10 +349,11 @@ div.csl-indent {
 </div>
 <p>Who are the annotators?</p>
 <ul>
-<li>crowdworkers (also called <em>gig workers</em>, <em>platform workers</em> or <em>data workers</em>)
+<li>This work is outsourced to crowdworkers (also called <em>gig workers</em>, <em>platform workers</em> or <em>data workers</em>)
 <ul>
-<li>Casilli et al.&nbsp;</li>
-<li>see reports: https://www.deutschlandfunk.de/ki-data-worker-clickworker-deep-learning-100.html#wie-ki-training-fair</li>
+<li>they are low-paid, self-employed and often live outside of the US or Europe, for instance in India, the Philippines, Kenya and Uganda (see <a href="https://time.com/6247678/openai-chatgpt-kenya-workers/">here</a> and <a href="https://www.washingtonpost.com/world/2023/08/28/scale-ai-remotasks-philippines-artificial-intelligence/">here</a> and <a href="https://www.nytimes.com/2026/08/20/world/asia/ai-jobs-data-annotation-india-karur.html">here</a>).</li>
+<li>The work entails traumatic exposure to disturbing content</li>
+<li>For more on this topic, check out the work by <a href="https://milamiceli.com/">Milagros Miceli’s</a> work and her project <a href="https://data-workers.org/"><em>Data Workers’ Inquiry</em></a></li>
 </ul></li>
 </ul>
 </section>
@@ -360,19 +380,6 @@ div.csl-indent {
 <li>In the academic context, wrong citations…</li>
 <li>Because of the way that GenAI chatbots are designed, they don’t have access to the most current information (e.g.&nbsp;news). Through <em>Retrieval Augmented Generation</em> (RAG), models are provided more current information. However, models extended with RAG still often give wrong information <span class="citation" data-cites="schaul2026">(<a href="#ref-schaul2026" role="doc-biblioref">Jaźwińska and Chandrasekar 2025</a>)</span>.</li>
 </ul>
-<div class="callout callout-style-simple callout-tip no-icon callout-empty-content callout-titled" title="Discussion questions">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Discussion questions
-</div>
-</div>
-<div class="callout-body-container callout-body">
-
-</div>
-</div>
 <p><strong>Dangerous Information:</strong></p>
 <ul>
 <li>Health advice provided by GenAI chatbots is often misleading or simply false, potentially leading to patient harm <span class="citation" data-cites="healthguardian">Draelos et al. (<a href="#ref-draelosetal2026" role="doc-biblioref">2026</a>)</span></li>
@@ -383,7 +390,14 @@ div.csl-indent {
 <ul>
 <li>LLMs show biased responses in their descriptions of prominent persons and whether the bias was positive or negative depends on whether the LLMs were created by Chinese or US companies <span class="citation" data-cites="buyl2026large">(<a href="#ref-buyl2026large" role="doc-biblioref"><span class="nocase">Buyl et al.</span> 2026</a>)</span></li>
 <li>GenAI chatbots have been reported to alter drafts that involved sensitive topics (e.g.&nbsp;abortion, climate and religion), changing the underlying message (more or less subtly) <span class="citation" data-cites="guardianaimeaning">(<a href="#ref-guardianaimeaning" role="doc-biblioref">Booth 2026</a>)</span></li>
+<li>Language models exhibit racial prejudices against African Americans <span class="citation" data-cites="hofmann2024ai">(<a href="#ref-hofmann2024ai" role="doc-biblioref">Hofmann et al. 2024</a>)</span></li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/AAE_study.png" class="img-fluid figure-img"></p>
+<figcaption>The characteristics (on the right) ascribed by LLMs to the authors of two sentences with the same underlying meaning but one in a Standard American English and the other one in an African American English <span class="citation" data-cites="hofmann2024ai">(<a href="#ref-hofmann2024ai" role="doc-biblioref">Hofmann et al. 2024</a>)</span></figcaption>
+</figure>
+</div>
 <div class="callout callout-style-simple callout-tip no-icon callout-titled" title="Discussion questions">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -395,7 +409,8 @@ div.csl-indent {
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Companies increasingly use Generative AI tools in their recruitment processes <span class="citation" data-cites="rigotti2024fairness">Dutta and Naveen (<a href="#ref-dutta2026transforming" role="doc-biblioref">2026</a>)</span>. Do you see any potential risks in making hiring decisions based on the output of an automatic tool? How does a biased decision (for example based on a person’s national origin) made by a tool differ from a biased decision made by an employee in an HR department?</li>
+<li>Companies increasingly use Generative AI tools in their recruitment processes <span class="citation" data-cites="rigotti2024fairness dutta2026transforming">(<a href="#ref-rigotti2024fairness" role="doc-biblioref">Rigotti and Fosch-Villaronga 2024</a>; <a href="#ref-dutta2026transforming" role="doc-biblioref">Dutta and Naveen 2026</a>)</span>. Do you see any potential risks in making hiring decisions based on the output of an automatic tool? How does a biased decision (for example based on a person’s national origin) made by a tool differ from a biased decision made by an employee in an HR department?</li>
+<li>How do you think that bias in the data can influence your or others’ writings and the creation of new (research) ideas?</li>
 </ul>
 </div>
 </div>
@@ -413,11 +428,58 @@ div.csl-indent {
 <figcaption>From <span class="citation" data-cites="horwitz">Horwitz (<a href="#ref-horwitz" role="doc-biblioref">2025</a>)</span></figcaption>
 </figure>
 </div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Task ideas">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Task ideas
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>The study by <span class="citation" data-cites="agarwal2025ai">Agarwal et al. (<a href="#ref-agarwal2025ai" role="doc-biblioref">2025</a>)</span> show that the use of AI led Indian students “to adopt Western writing styles, altering not just what is written but also how it is written”. Read this study and discuss its methodology and findings. You may discuss the topic of homogenisation of writing styles and whether this is, in your opinion, a problem. You may also think about how interacting with a GenAI chatbot may alter and/or bias your writing in both topic and style.</li>
+</ul>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/agarwal_etal.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 1 in <span class="citation" data-cites="agarwal2025ai">Agarwal et al. (<a href="#ref-agarwal2025ai" role="doc-biblioref">2025</a>)</span></figcaption>
+</figure>
+</div>
 </section>
 </section>
 <section id="plagiarism" class="level2">
 <h2 class="anchored" data-anchor-id="plagiarism">Plagiarism</h2>
-<p>LD: p.10 LD: p.13</p>
+<ul>
+<li>LLMs and therefore GenAI chatbots produce texts based on their training data. This input contains texts whose source is unknown to the user.</li>
+<li>Importantly, the texts in the training data may contain ideas and intellectual property that are not appropriately cited in the output of an LLM or GenAI chatbot. Therefore, strictly speaking, the use of any GenAI chatbot inevitably leads to “automated plagiarism” <span class="citation" data-cites="rooij2022">Rooij (<a href="#ref-rooij2022" role="doc-biblioref">n.d.</a>)</span></li>
+<li>In certain contexts, GenAI chatbots cite their sources (albeit sometimes incorrectly [@]). For instance, if one asks for studies regarding a certain topic or a summary of the current research. However, in the strict sense of “automated plagiarism”, any text that the tool outputs is considered plagiarism.</li>
+<li>Cases that make the problem of automatic plagiarism particularly evident:
+<ul>
+<li>Perplexity AI reproduced content from news articles without citing it (see <a href="https://www.forbes.com/sites/randalllane/2024/06/11/why-perplexitys-cynical-theft-represents-everything-that-could-go-wrong-with-ai/">here</a> and <a href="https://www.wired.com/story/perplexity-plagiarized-our-story-about-how-perplexity-is-a-bullshit-machine/">here</a>)</li>
+<li>Artists from different fields (music, art, literature,…) have complained and sued different companies for “stealing” their copyrighted art to train their models (see for instance <a href="https://www.hollywoodreporter.com/business/business-news/artists-score-major-win-copyright-case-against-ai-art-generators-1235973601/">here</a>)</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled" title="Discussion questions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Discussion questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Do you consider the use of GenAI chatbots plagiarism? Think about different use cases. Where do you draw the line between plagiarism and non-plagiarism?</li>
+<li>Many universities now prescribe that students cite GenAI chatbots as an information source. Do you think that solves the problem of plagiarism?</li>
+<li>Can students use GenAI chatbots ‘ethically’ if they simply cite the use of the GenAI chatbot? In other words, is the lack of consent, credit and compensation of those texts included in the training data an ethical issue? (LD)</li>
+</ul>
+</div>
+</div>
 </section>
 </section>
 <section id="slides" class="level1">
@@ -434,18 +496,24 @@ div.csl-indent {
 </section>
 <section id="further-links" class="level1">
 <h1>Further links</h1>
-<ul>
-<li>https://www.nytimes.com/2026/08/20/world/asia/ai-jobs-data-annotation-india-karur.html</li>
-</ul>
 </section>
 <section id="references" class="level1">
 <h1>References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-abid2021large" class="csl-entry" role="listitem">
+Abid, Abubakar, Maheen Farooqi, and James Zou. 2021. <span>“Large Language Models Associate Muslims with Violence.”</span> <em>Nature Machine Intelligence</em> 3 (6): 461–63.
+</div>
+<div id="ref-agarwal2025ai" class="csl-entry" role="listitem">
+Agarwal, Dhruv, Mor Naaman, and Aditya Vashistha. 2025. <span>“AI Suggestions Homogenize Writing Toward Western Styles and Diminish Cultural Nuances.”</span> <em>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems</em>, 1–21. https://doi.org/<a href="https://doi.org/10.1145/3706598.3713564">https://doi.org/10.1145/3706598.3713564</a>.
+</div>
 <div id="ref-alemohammad2023selfconsuminggenerativemodelsmad" class="csl-entry" role="listitem">
 Alemohammad, Sina, Josue Casco-Rodriguez, Lorenzo Luzi, et al. 2023. <em>Self-Consuming Generative Models Go MAD</em>. <a href="https://arxiv.org/abs/2307.01850">https://arxiv.org/abs/2307.01850</a>.
 </div>
 <div id="ref-bai2022traininghelpfulharmlessassistant" class="csl-entry" role="listitem">
 Bai, Yuntao, Andy Jones, Kamal Ndousse, et al. 2022. <em>Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback</em>. <a href="https://arxiv.org/abs/2204.05862">https://arxiv.org/abs/2204.05862</a>.
+</div>
+<div id="ref-bender2021dangers" class="csl-entry" role="listitem">
+Bender, Emily M, Timnit Gebru, Angelina McMillan-Major, and Margaret Mitchell. 2021. <span>“On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?🦜.”</span> <em>Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency</em>, 610–23.
 </div>
 <div id="ref-guardianaimeaning" class="csl-entry" role="listitem">
 Booth, Robert. 2026. <span>“AI Altering Meaning of Users’ Drafts on Issues from Abortion to Climate, Study Finds.”</span> <a href="https://www.theguardian.com/technology/2026/jul/06/ai-altering-meaning-of-users-drafts-on-issues-from-abortion-to-climate-study-finds?CMP=fb_gu&amp;utm_medium=Social&amp;utm_source=Facebook#Echobox=1783349430">https://www.theguardian.com/technology/2026/jul/06/ai-altering-meaning-of-users-drafts-on-issues-from-abortion-to-climate-study-finds?CMP=fb_gu&amp;utm_medium=Social&amp;utm_source=Facebook#Echobox=1783349430</a>.
@@ -458,6 +526,9 @@ Briesch, Martin, Dominik Sobania, and Franz Rothlauf. 2024. <em>Large Language M
 </div>
 <div id="ref-buyl2026large" class="csl-entry" role="listitem">
 <span class="nocase">Buyl, Maarten, Alexander Rogiers, Sander Noels, et al.</span> 2026. <span>“Large Language Models Reflect the Ideology of Their Creators.”</span> <em>Npj Artificial Intelligence</em> 2 (1): 7.
+</div>
+<div id="ref-dingemanse2024" class="csl-entry" role="listitem">
+Dingemanse, Mark. 2024. <em>Generative AI and Research Integrity</em>. https://doi.org/<a href="https://doi.org/10.31219/osf.io/2c48n">https://doi.org/10.31219/osf.io/2c48n</a>.
 </div>
 <div id="ref-Dodge2021DocumentingTE" class="csl-entry" role="listitem">
 Dodge, Jesse, Maarten Sap, Ana Marasović, et al. 2021. <span>“Documenting the English Colossal Clean Crawled Corpus.”</span> <em>ArXiv</em> abs/2104.08758. <a href="https://api.semanticscholar.org/CorpusID:233296858">https://api.semanticscholar.org/CorpusID:233296858</a>.
@@ -477,11 +548,17 @@ Funk, Allie, Adrian Shahbaz, and Kian Vesteinsson. 2023. <span>“Freedom on the
 <div id="ref-healthguardian" class="csl-entry" role="listitem">
 Gregory, Andrew. 2026. <span>“Google AI Overviews Put People at Risk of Harm with Misleading Health Advice.”</span> <a href="https://www.theguardian.com/technology/2026/jan/02/google-ai-overviews-risk-harm-misleading-health-information">https://www.theguardian.com/technology/2026/jan/02/google-ai-overviews-risk-harm-misleading-health-information</a>.
 </div>
+<div id="ref-hofmann2024ai" class="csl-entry" role="listitem">
+Hofmann, Valentin, Pratyusha Ria Kalluri, Dan Jurafsky, and Sharese King. 2024. <span>“AI Generates Covertly Racist Decisions about People Based on Their Dialect.”</span> <em>Nature</em> 633 (8028): 147–54.
+</div>
 <div id="ref-horwitz" class="csl-entry" role="listitem">
 Horwitz, Jeff. 2025. <span>“Meta’s AI Rules Have Let Bots Hold <span>‘Sensual’</span> Chats with Kids, Offer False Medical Info.”</span> <a href="https://www.reuters.com/investigates/special-report/meta-ai-chatbot-guidelines/">https://www.reuters.com/investigates/special-report/meta-ai-chatbot-guidelines/</a>.
 </div>
 <div id="ref-schaul2026" class="csl-entry" role="listitem">
 Jaźwińska, Klaudia, and Aisvarya Chandrasekar. 2025. <span>“AI Search Has a Citation Problem.”</span> <a href="https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php">https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php</a>.
+</div>
+<div id="ref-liesenfelddingemanse2024" class="csl-entry" role="listitem">
+Liesenfeld, Andreas, and Mark Dingemanse. 2024. <span>“Rethinking Open Source Generative AI: Open-Washing and the EU AI Act.”</span> <em>Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency</em> (New York, NY, USA), FAccT ’24, 1774–87. <a href="https://doi.org/10.1145/3630106.3659005">https://doi.org/10.1145/3630106.3659005</a>.
 </div>
 <div id="ref-mendelson2026" class="csl-entry" role="listitem">
 Mendelson, Aaron. 2024. <span>“AI Models Generate Misinformation about Presidential Candidates.”</span> <a href="https://www.proofnews.org/ai-models-struggle-to-get-the-facts-straight-about-kamala-harris-2/">https://www.proofnews.org/ai-models-struggle-to-get-the-facts-straight-about-kamala-harris-2/</a>.
@@ -491,6 +568,12 @@ Ouyang, Long, Jeff Wu, Xu Jiang, et al. 2022. <em>Training Language Models to Fo
 </div>
 <div id="ref-rigotti2024fairness" class="csl-entry" role="listitem">
 Rigotti, Carlotta, and Eduard Fosch-Villaronga. 2024. <span>“Fairness, AI &amp; Recruitment.”</span> <em>Computer Law &amp; Security Review</em> 53: 105966.
+</div>
+<div id="ref-rooij2022" class="csl-entry" role="listitem">
+Rooij, Iris van. n.d. <em>Against Automated Plagiarism.</em> https://doi.org/<a href="https://doi.org/10.5281/zenodo.15866638">https://doi.org/10.5281/zenodo.15866638</a>.
+</div>
+<div id="ref-unesco" class="csl-entry" role="listitem">
+UNESCO. n.d. <em>UNESCO Recommendation on Open Science</em>. https://doi.org/<a href="https://doi.org/10.54677/MNMH8546">https://doi.org/10.54677/MNMH8546</a>.
 </div>
 </div>
 

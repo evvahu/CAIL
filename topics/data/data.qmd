@@ -69,6 +69,20 @@ execute:
 - What is not in the training input that characterises language?
 :::
 
+
+### The lack of documentation
+
+- *Open Science* has emerged as one of the key values in our scientific practices. According to the @unesco, Open Science includes, among other, open access to scientific knowledge (including open access to scientific publications, **data**, educational resources, software and hardware).
+- Additionally, the [EU's AI Act](https://artificialintelligenceact.eu/) centers around open source driven development of AI systems. 
+- However, most of the GenAI chatbots and systems do not comply with the values of Open Science. This is a large topic in and of itself and here we only address the issue with regard to the *training data*. For a more in-depth discussion of Research Integrity and Open Science, see @liesenfelddingemanse2024 and @dingemanse2024
+- The lack of documentation and publishing the training data has been called "documentation debt" [@bender2021dangers]. The problems and dangers of documentation debt are the following:
+  - the lack of documentation thwarts accountability, in other words "undocumented training data perpetuates harm without recourse." [p. 651 @bender2021dangers]
+    - lack of accountability with regard to the included material and their authors, data privacy concerns and harmful content
+  - Without any documentation, it is impossible to detect patterns in the training data that lead to biases and harmful content. 
+  - The sheer size of the data is problematic too since documenting it post-hoc is difficult
+- Biases and harmful content produced by LLMs and GenAI chatbots are only discovered after the systems are made public. Post-hoc inspection by researchers has shown that LLMs and GenAI chatbots produce persistent toxic content and reproduce stereotypes (e.g. a negative bias against Muslim @abid2021large, see below for more). 
+
+
 ## Reinforcement Learning from Human Feedback
 
 - Based on this training input alone, GenAI chatbots would not be as eloquent as they are portrayed to be (see [Interaction](../../_site/topics/interaction/interaction.html)). 
@@ -88,9 +102,10 @@ execute:
 
 Who are the annotators?
 
-- crowdworkers (also called *gig workers*, *platform workers* or *data workers*)
-  - Casilli et al. 
-  - see reports: https://www.deutschlandfunk.de/ki-data-worker-clickworker-deep-learning-100.html#wie-ki-training-fair
+- This work is outsourced to crowdworkers (also called *gig workers*, *platform workers* or *data workers*)
+  - they are low-paid, self-employed and often live outside of the US or Europe, for instance in India, the Philippines, Kenya and Uganda  (see [here](https://time.com/6247678/openai-chatgpt-kenya-workers/) and [here](https://www.washingtonpost.com/world/2023/08/28/scale-ai-remotasks-philippines-artificial-intelligence/) and [here](https://www.nytimes.com/2026/08/20/world/asia/ai-jobs-data-annotation-india-karur.html)). 
+  -  The work entails traumatic exposure to disturbing content
+  - For more on this topic, check out the work by [Milagros Miceli's](https://milamiceli.com/) work and her project [*Data Workers' Inquiry*](https://data-workers.org/)
 
 ## Output: wrong, dangerous, biased
 
@@ -111,10 +126,6 @@ Who are the annotators?
 - Because of the way that GenAI chatbots are designed, they don't have access to the most current information (e.g. news). Through *Retrieval Augmented Generation* (RAG), models are provided more current information. However, models extended with RAG still often give wrong information [@schaul2026].
 
 
-::: {.callout-tip title="Discussion questions"}
-
-:::
-
 **Dangerous Information:**
 
 - Health advice provided by GenAI chatbots is often misleading or simply false, potentially leading to patient harm [@healthguardian, @draelosetal2026]
@@ -126,10 +137,15 @@ Also see [Interaction]() for the dangers of sycophantic GenAI chatbots.
 
 - LLMs show biased responses in their descriptions of prominent persons and whether the bias was positive or negative depends on whether the LLMs were created by Chinese or US companies [@buyl2026large]
 - GenAI chatbots have been reported to alter drafts that involved sensitive topics (e.g. abortion, climate and religion), changing the underlying message (more or less subtly) [@guardianaimeaning]
+- Language models exhibit racial prejudices against African Americans [@hofmann2024ai] 
+
+
+![The characteristics (on the right) ascribed by LLMs to the authors of two sentences with the same underlying meaning but one in a Standard American English and the other one in an African American English [@hofmann2024ai]](../../images/AAE_study.png)
 
 
 ::: {.callout-tip title="Discussion questions"}
-- Companies increasingly use Generative AI tools in their recruitment processes [@rigotti2024fairness @dutta2026transforming]. Do you see any potential risks in making hiring decisions based on the output of an automatic tool? How does a biased decision (for example based on a person's national origin) made by a tool differ from a biased decision made by an employee in an HR department?
+- Companies increasingly use Generative AI tools in their recruitment processes [@rigotti2024fairness; @dutta2026transforming]. Do you see any potential risks in making hiring decisions based on the output of an automatic tool? How does a biased decision (for example based on a person's national origin) made by a tool differ from a biased decision made by an employee in an HR department?
+- How do you think that bias in the data can influence your or others' writings and the creation of new (research) ideas?
 :::
 
 The fact that companies have incredible power in deciding what GenAI chatbots produce is shown by the leak of a Meta's internal document that provided guidelines on how their chatbot *Meta AI* is allowed to engage with children:
@@ -141,10 +157,30 @@ And how their chatbot is allowed to talk about race:
 ![From @horwitz](../../images/leak_race.png)
 
 
+::: {.callout-note title="Task ideas"}
+- The study by @agarwal2025ai show that the use of AI led Indian students "to adopt Western writing styles, altering not just what is written but also how it is written". Read this study and discuss its methodology and findings. You may discuss the topic of homogenisation of writing styles and whether this is, in your opinion, a problem. You may also think about how interacting with a GenAI chatbot may alter and/or bias your writing in both topic and style.
+:::
+
+![Figure 1 in @agarwal2025ai](../../images/agarwal_etal.png)
+
+
 ## Plagiarism
 
-LD: p.10
-LD: p.13
+- LLMs and therefore GenAI chatbots produce texts based on their training data. This input contains texts whose source is unknown to the user. 
+- Importantly, the texts in the training data may contain ideas and intellectual property that are not appropriately cited in the output of an LLM or GenAI chatbot. Therefore, strictly speaking, the use of any GenAI chatbot inevitably leads to "automated plagiarism" @rooij2022
+- In certain contexts, GenAI chatbots cite their sources (albeit sometimes incorrectly [@]). For instance, if one asks for studies regarding a certain topic or a summary of the current research. However, in the strict sense of "automated plagiarism", any text that the tool outputs is considered plagiarism. 
+- Cases that make the problem of automatic plagiarism particularly evident: 
+  - Perplexity AI reproduced content from news articles without citing it (see [here](https://www.forbes.com/sites/randalllane/2024/06/11/why-perplexitys-cynical-theft-represents-everything-that-could-go-wrong-with-ai/) and [here](https://www.wired.com/story/perplexity-plagiarized-our-story-about-how-perplexity-is-a-bullshit-machine/))
+  - Artists from different fields (music, art, literature,...) have complained and sued different companies for "stealing" their copyrighted art to train their models (see for instance [here](https://www.hollywoodreporter.com/business/business-news/artists-score-major-win-copyright-case-against-ai-art-generators-1235973601/))
+
+
+
+::: {.callout-tip title="Discussion questions"}
+- Do you consider the use of GenAI chatbots plagiarism? Think about different use cases. Where do you draw the line between plagiarism and non-plagiarism?
+- Many universities now prescribe that students cite GenAI chatbots as an information source. Do you think that solves the problem of plagiarism? 
+- Can students use GenAI chatbots 'ethically' if they simply cite the use of the GenAI chatbot? In other words, is the lack of consent, credit and compensation of those texts included in the training data an ethical issue? (LD)
+:::
+
 
 
 
@@ -160,8 +196,6 @@ LD: p.13
 -
 
 # Further links
-
-- https://www.nytimes.com/2026/08/20/world/asia/ai-jobs-data-annotation-india-karur.html
 
 
 # References
