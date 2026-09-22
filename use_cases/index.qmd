@@ -1,5 +1,5 @@
 ---
-title: "Topics"
+title: "Use cases"
 #listing:
 #  type: grid
 page-layout: full
@@ -20,7 +20,11 @@ format:
 - Can the use of AI be justified given the ethical and environmental concerns of AI tools?
 - What exactly do you expect to gain by using GenAI chatbot (or any AI tool)? Could the task me carried out using other means? 
 
+# Specific use cases
 
+- [Development of ideas](development_ideas/development_ideas.qmd)
+- [Literature review](literature_review/literature_review.qmd)
+- [Writing](wording_orthography/wording.qmd)
 
 
 

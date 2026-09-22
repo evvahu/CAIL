@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Further References and Resources"
 format:
   html:
     theme: 
@@ -8,9 +8,6 @@ format:
     toc: true
 ---
 
-# References
+![Image [Letter Word Text Taxonomy](https://betterimagesofai.org/images?artist=TeresaBerndtsson&title=LetterWordTextTaxonomy) from [Teresa Berntsson](https://www.linkedin.com/in/teresa-berndtsson/) originally from the [Better images of AI](https://betterimagesofai.org/images)'s collection licensed by [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) and discovered on [Dagmar Monett's page](https://monettdiaz.com/books-critical-ai.html)](images/TeresaBerndtsson-LetterWordTextTaxonomy-640x853.png)
 
-
-
-# Resources
 
