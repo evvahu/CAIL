@@ -158,7 +158,10 @@ div.csl-indent {
   <li><a href="#high-quality-input" id="toc-high-quality-input" class="nav-link" data-scroll-target="#high-quality-input">“High quality” input</a></li>
   <li><a href="#the-lack-of-documentation" id="toc-the-lack-of-documentation" class="nav-link" data-scroll-target="#the-lack-of-documentation">The lack of documentation</a></li>
   </ul></li>
-  <li><a href="#reinforcement-learning-from-human-feedback" id="toc-reinforcement-learning-from-human-feedback" class="nav-link" data-scroll-target="#reinforcement-learning-from-human-feedback">Reinforcement Learning from Human Feedback</a></li>
+  <li><a href="#reinforcement-learning-from-human-feedback" id="toc-reinforcement-learning-from-human-feedback" class="nav-link" data-scroll-target="#reinforcement-learning-from-human-feedback">Reinforcement Learning from Human Feedback</a>
+  <ul class="collapse">
+  <li><a href="#who-are-the-annotators" id="toc-who-are-the-annotators" class="nav-link" data-scroll-target="#who-are-the-annotators">Who are the annotators?</a></li>
+  </ul></li>
   <li><a href="#output-wrong-dangerous-biased" id="toc-output-wrong-dangerous-biased" class="nav-link" data-scroll-target="#output-wrong-dangerous-biased">Output: wrong, dangerous, biased</a>
   <ul class="collapse">
   <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
@@ -215,7 +218,7 @@ div.csl-indent {
 <ul>
 <li><em>web scraping</em>: technique to automatically download and process web content</li>
 </ul></li>
-<li>For instance, these datasets were reported by OpenAI to make up the training data for GPT-3:
+<li>For example, the following datasets (<a href="#fig-gpt3" class="quarto-xref">Figure&nbsp;1</a>) were reported by OpenAI to make up the training data for GPT-3:
 <ul>
 <li>Common Crawl (filtered): data collected over more than 13 years of web crawling
 <ul>
@@ -225,23 +228,37 @@ div.csl-indent {
 <li>Wikipedia: we all know this :-)</li>
 <li>Books1 and Book2: internet-based books corpora (<span style="color:#880D1E;">unclear what these actually include!</span>)</li>
 </ul></li>
+<li>A breakdown of Google’s C4 dataset, a filtered snapshot of Common Crawl, (<a href="#fig-c4" class="quarto-xref">Figure&nbsp;2</a>) gives some indication of what type of text genres are included in the training data.</li>
+<li>A look at the languages in the Common Crawl (<a href="#fig-langcc" class="quarto-xref">Figure&nbsp;3</a>) show the dominance of the English language in LLM’s training inputs.</li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/gpt_trainingdata.png" class="img-fluid figure-img"></p>
-<figcaption>Training data of GPT-3 as reported by OpenAI in <span class="citation" data-cites="brown2020language"><span class="nocase">Brown et al.</span> (<a href="#ref-brown2020language" role="doc-biblioref">2020</a>)</span></figcaption>
+<div id="fig-gpt3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gpt3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../images/gpt_trainingdata.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gpt3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Training data of GPT-3 as reported by OpenAI in <span class="citation" data-cites="brown2020language"><span class="nocase">Brown et al.</span> (<a href="#ref-brown2020language" role="doc-biblioref">2020</a>)</span>
+</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/c4_dataset.png" class="img-fluid figure-img"></p>
-<figcaption>Top websites in Google’s C4 dataset, which is a filtered snapshot of Common Crawl <span class="citation" data-cites="Dodge2021DocumentingTE">(<a href="#ref-Dodge2021DocumentingTE" role="doc-biblioref">Dodge et al. 2021</a>)</span>, the list itself is from an interesting and nicely illustrated article by The Washington Post <span class="citation" data-cites="schaul2026">(<a href="#ref-schaul2026" role="doc-biblioref">Jaźwińska and Chandrasekar 2025</a>)</span></figcaption>
+<div id="fig-c4" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-c4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../images/c4_dataset.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-c4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Top websites in Google’s C4 dataset, which is a filtered snapshot of Common Crawl <span class="citation" data-cites="Dodge2021DocumentingTE">(<a href="#ref-Dodge2021DocumentingTE" role="doc-biblioref">Dodge et al. 2021</a>)</span>, the list itself is from an interesting and nicely illustrated article by The Washington Post <span class="citation" data-cites="schaul2026">(<a href="#ref-schaul2026" role="doc-biblioref">Jaźwińska and Chandrasekar 2025</a>)</span>
+</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/languages_commoncrawl.png" class="img-fluid figure-img"></p>
-<figcaption>Languages of the articles included in the latest CommonCrawl snapshots as reported on <a href="https://commoncrawl.github.io/cc-crawl-statistics/plots/languages">their website</a>. The languages are identified by an automatic system.</figcaption>
+<div id="fig-langcc" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-langcc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../images/languages_commoncrawl.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-langcc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Languages of the articles included in the latest CommonCrawl snapshots as reported on <a href="https://commoncrawl.github.io/cc-crawl-statistics/plots/languages">their website</a>. The languages are identified by an automatic system.
+</figcaption>
 </figure>
 </div>
 <section id="high-quality-input" class="level3">
@@ -249,9 +266,18 @@ div.csl-indent {
 <ul>
 <li>The internet has been flooded with AI-generated content (for instance, AI-generated reviews, blog posts, etc.)</li>
 <li>Since the content is not always easily distinguishable from human-generated data, new models are inevitably trained on data that is polluted with AI-generated content</li>
-<li>This type of “self-consumption” reduces the model’s output quality and diversity <span class="citation" data-cites="briesch2024largelanguagemodelssuffer">(<a href="#ref-briesch2024largelanguagemodelssuffer" role="doc-biblioref">Briesch et al. 2024</a>)</span></li>
+<li>This type of “self-consumption” reduces the model’s output quality and diversity <span class="citation" data-cites="briesch2024largelanguagemodelssuffer">(<a href="#ref-briesch2024largelanguagemodelssuffer" role="doc-biblioref">Briesch et al. 2024</a>)</span>. <a href="#fig-synthdata" class="quarto-xref">Figure&nbsp;4</a> shows an example for image generation.</li>
 </ul>
-<p><a href="../../images/syntheticloop.png">Outputs of models after being trained on their own data across several rounds (t=1 to 9) <span class="citation" data-cites="alemohammad2023selfconsuminggenerativemodelsmad">(<span>Alemohammad et al. 2023</span>)</span></a></p>
+<div id="fig-synthdata" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-synthdata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../images/syntheticloop.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-synthdata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Outputs of models after being trained on their own data across several rounds (t=1 to 9) <span class="citation" data-cites="alemohammad2023selfconsuminggenerativemodelsmad">(<a href="#ref-alemohammad2023selfconsuminggenerativemodelsmad" role="doc-biblioref">Alemohammad et al. 2023</a>)</span>
+</figcaption>
+</figure>
+</div>
 <ul>
 <li>Thus, AI companies have to resort to different data sources. They have been suspected to buy secondhand books online as these may offer valuable training data that cannot be scraped from the web (see <a href="https://www.bbc.com/news/articles/cp3rprx2wl4o">article in BBC</a>)</li>
 </ul>
@@ -266,7 +292,9 @@ div.csl-indent {
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>https://www.soekia.ch/gpt.html</li>
+<li>Only in German available: Use the GPT model provided by <a href="https://www.soekia.ch/gpt.html">Soekia</a>. Use different types of text genres to generate texts. How does the types of texts you include as training data affect the model’s output?</li>
+<li>Choose a topic that you think is not well-represented on the internet. Ask a GenAI chatbot about this topic and analyse the chatbot’s output about this topic.<br>
+</li>
 </ul>
 </div>
 </div>
@@ -281,8 +309,8 @@ div.csl-indent {
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>What does internet data consist of?</li>
-<li>Do you think that this kind of data reflects (all of) human culture, cognition and</li>
+<li>What does internet data consist of? Are there types of texts on the web that you think are more appropriate or more effective than others to train LLMs on?</li>
+<li>Do you think that the internet data data reflects (all of) human culture and cognition?</li>
 <li>What do you think may be possible consequences of training models on vast amount of text whose content is unknown to us?</li>
 </ul>
 </div>
@@ -298,7 +326,7 @@ div.csl-indent {
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>What is not in the training input that characterises language?</li>
+<li>What is not in the training input that is available to humans who learn and use language to communicate?</li>
 </ul>
 </div>
 </div>
@@ -306,19 +334,22 @@ div.csl-indent {
 <section id="the-lack-of-documentation" class="level3">
 <h3 class="anchored" data-anchor-id="the-lack-of-documentation">The lack of documentation</h3>
 <ul>
-<li><em>Open Science</em> has emerged as one of the key values in our scientific practices. According to the <span class="citation" data-cites="unesco">UNESCO (<a href="#ref-unesco" role="doc-biblioref">n.d.</a>)</span>, Open Science includes, among other, open access to scientific knowledge (including open access to scientific publications, <strong>data</strong>, educational resources, software and hardware).</li>
+<li><em>Open Science</em> has emerged as one of the key values in our scientific practices. According to the <span class="citation" data-cites="unesco">UNESCO (<a href="#ref-unesco" role="doc-biblioref">2021</a>)</span>, Open Science includes, among other, open access to scientific knowledge (including open access to scientific publications, <strong>data</strong>, educational resources, software and hardware).</li>
 <li>Additionally, the <a href="https://artificialintelligenceact.eu/">EU’s AI Act</a> centers around open source driven development of AI systems.</li>
-<li>However, most of the GenAI chatbots and systems do not comply with the values of Open Science. This is a large topic in and of itself and here we only address the issue with regard to the <em>training data</em>. For an overview of GenerativeAI with regard to Research Integrity, see <span class="citation" data-cites="dingemanse2024">Dingemanse (<a href="#ref-dingemanse2024" role="doc-biblioref">2024</a>)</span>. For open source, see <span class="citation" data-cites="liesenfelddingemanse2024">Liesenfeld and Dingemanse (<a href="#ref-liesenfelddingemanse2024" role="doc-biblioref">2024</a>)</span>, who claim that open source is multi-dimensional and not binary, and the <a href="https://osai-index.eu/">European Source AI Index</a> where LLMs are evaluated based on multiple open source criteria</li>
-<li>The lack of documentation and publishing the training data has been called “documentation debt” <span class="citation" data-cites="bender2021dangers">(<a href="#ref-bender2021dangers" role="doc-biblioref">Bender et al. 2021</a>)</span>. The problems and dangers of documentation debt are the following:
+<li>However, most of the GenAI chatbots and systems do not comply with the values of Open Science. This is a large topic in and of itself and here we only address the issue with regard to the <em>training data</em>.
+<ul>
+<li>For an overview of GenerativeAI with regard to Research Integrity, see <span class="citation" data-cites="dingemanse2024">Dingemanse (<a href="#ref-dingemanse2024" role="doc-biblioref">2024</a>)</span>. For open source, see <span class="citation" data-cites="liesenfelddingemanse2024">Liesenfeld and Dingemanse (<a href="#ref-liesenfelddingemanse2024" role="doc-biblioref">2024</a>)</span>, who claim that open source is multi-dimensional and not binary, and the <a href="https://osai-index.eu/">European Source AI Index</a> where LLMs are evaluated based on multiple open source criteria</li>
+</ul></li>
+<li>The lack of documentation and publishing of the training data has been called “documentation debt” <span class="citation" data-cites="bender2021dangers">(<a href="#ref-bender2021dangers" role="doc-biblioref">Bender et al. 2021</a>)</span>. The problems and dangers of documentation debt are the following:
 <ul>
 <li>the lack of documentation thwarts accountability, in other words “undocumented training data perpetuates harm without recourse.” <span class="citation" data-cites="bender2021dangers">(p.&nbsp;651 <a href="#ref-bender2021dangers" role="doc-biblioref">Bender et al. 2021</a>)</span>
 <ul>
 <li>lack of accountability with regard to the included material and their authors, data privacy concerns and harmful content</li>
 </ul></li>
 <li>Without any documentation, it is impossible to detect patterns in the training data that lead to biases and harmful content.</li>
-<li>The sheer size of the data is problematic too since documenting it post-hoc is difficult</li>
+<li>The sheer size of the data is problematic too since documenting it and grasping its contents in the first place is extremely challenging and time-consuming</li>
 </ul></li>
-<li>Biases and harmful content produced by LLMs and GenAI chatbots are only discovered after the systems are made public. Post-hoc inspection by researchers has shown that LLMs and GenAI chatbots produce persistent toxic content and reproduce stereotypes (e.g.&nbsp;a negative bias against Muslim <span class="citation" data-cites="abid2021large">Abid et al. (<a href="#ref-abid2021large" role="doc-biblioref">2021</a>)</span>, see below for more).</li>
+<li>Biases and harmful content produced by LLMs and GenAI chatbots are only discovered after the systems are made public. Post-hoc inspection by researchers has shown that LLMs and GenAI chatbots produce persistent toxic content and reproduce stereotypes (e.g.&nbsp;a negative bias against Muslim <span class="citation" data-cites="abid2021large">(<a href="#ref-abid2021large" role="doc-biblioref">Abid et al. 2021</a>)</span>, see below for more).</li>
 </ul>
 </section>
 </section>
@@ -334,28 +365,35 @@ div.csl-indent {
 <li>With GenAI chatbots, a technique called <em>Reinforcement learning from Human Feedback (RLHF)</em> is applied
 <ul>
 <li><em>RLHF</em> is a technique to incorporate human information to, for instance, LLMs</li>
-<li>There are different ways to do that, but the basic idea is the following (https://intuitionlabs.ai/articles/reinforcement-learning-human-feedback):</li>
-<li>choose different prompts or environments. (for instance, real user queries or tasks from a prompt dataset)</li>
-<li>for each prompt, get multiple responses from current model</li>
-<li>human annotators rank these responses, following certain instructions</li>
+<li>There are different ways to do that, but the basic idea is the following (<a href="https://intuitionlabs.ai/articles/reinforcement-learning-human-feedback">source</a>):</li>
+<li>choose different prompts or environments, for example, real user queries or tasks from a prompt dataset. Examples are shown in <a href="#fig-interface" class="quarto-xref">Figure&nbsp;5</a></li>
+<li>for each prompt, get multiple responses from the model</li>
+<li>human annotators then rank these responses, following certain instructions</li>
+<li>the model will then be updated based on this human feedback</li>
 <li>for a longer, but relatively accessible explanation of RLHF see <a href="https://huggingface.co/blog/rlhf">huggingface’s post</a></li>
 </ul></li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/anthropic_interface.png" class="img-fluid figure-img"></p>
-<figcaption>An interface that annotators use to evaluate model output for Anthropic <span class="citation" data-cites="bai2022traininghelpfulharmlessassistant">(<a href="#ref-bai2022traininghelpfulharmlessassistant" role="doc-biblioref">Bai et al. 2022</a>)</span></figcaption>
+<div id="fig-interface" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-interface-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../images/anthropic_interface.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-interface-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: An interface that annotators use to evaluate model output for Anthropic <span class="citation" data-cites="bai2022traininghelpfulharmlessassistant">(<a href="#ref-bai2022traininghelpfulharmlessassistant" role="doc-biblioref">Bai et al. 2022</a>)</span>
+</figcaption>
 </figure>
 </div>
-<p>Who are the annotators?</p>
+<section id="who-are-the-annotators" class="level3">
+<h3 class="anchored" data-anchor-id="who-are-the-annotators">Who are the annotators?</h3>
 <ul>
-<li>This work is outsourced to crowdworkers (also called <em>gig workers</em>, <em>platform workers</em> or <em>data workers</em>)
+<li>The manual annotation tasks involved in RLHF are usually outsourced to crowdworkers (also called <em>gig workers</em>, <em>platform workers</em> or <em>data workers</em>)
 <ul>
 <li>they are low-paid, self-employed and often live outside of the US or Europe, for instance in India, the Philippines, Kenya and Uganda (see <a href="https://time.com/6247678/openai-chatgpt-kenya-workers/">here</a> and <a href="https://www.washingtonpost.com/world/2023/08/28/scale-ai-remotasks-philippines-artificial-intelligence/">here</a> and <a href="https://www.nytimes.com/2026/08/20/world/asia/ai-jobs-data-annotation-india-karur.html">here</a>).</li>
-<li>The work entails traumatic exposure to disturbing content</li>
+<li>The work often entails traumatic exposure to disturbing content</li>
 <li>For more on this topic, check out the work by <a href="https://milamiceli.com/">Milagros Miceli’s</a> work and her project <a href="https://data-workers.org/"><em>Data Workers’ Inquiry</em></a></li>
 </ul></li>
 </ul>
+</section>
 </section>
 <section id="output-wrong-dangerous-biased" class="level2">
 <h2 class="anchored" data-anchor-id="output-wrong-dangerous-biased">Output: wrong, dangerous, biased</h2>
@@ -367,8 +405,8 @@ div.csl-indent {
 </ol></li>
 <li>As a consequence, these tools are <strong>not</strong> neutral
 <ul>
-<li>the output is guided by their training data despite RLHF</li>
-<li>creators (e.g.&nbsp;companies or scientists) can influence what models produce by designing their guidelines accordingly</li>
+<li>the output is influenced by the LLM’s training data despite RLHF</li>
+<li>creators (e.g.&nbsp;companies or researchers) can influence what models produce by designing their guidelines accordingly</li>
 </ul></li>
 </ul>
 <section id="examples" class="level3">
@@ -391,7 +429,7 @@ div.csl-indent {
 <li>LLMs show biased responses in their descriptions of prominent persons and whether the bias was positive or negative depends on whether the LLMs were created by Chinese or US companies <span class="citation" data-cites="buyl2026large">(<a href="#ref-buyl2026large" role="doc-biblioref"><span class="nocase">Buyl et al.</span> 2026</a>)</span></li>
 <li>GenAI chatbots have been reported to alter drafts that involved sensitive topics (e.g.&nbsp;abortion, climate and religion), changing the underlying message (more or less subtly) <span class="citation" data-cites="guardianaimeaning">(<a href="#ref-guardianaimeaning" role="doc-biblioref">Booth 2026</a>)</span></li>
 <li>Language models exhibit racial prejudices against African Americans <span class="citation" data-cites="hofmann2024ai">(<a href="#ref-hofmann2024ai" role="doc-biblioref">Hofmann et al. 2024</a>)</span></li>
-<li>Such biases persist in “explicitly unbiased LLMs” <span class="citation" data-cites="bai2025">(<a href="#ref-bai2025" role="doc-biblioref"><strong>bai2025?</strong></a>)</span></li>
+<li>Such biases persist in “explicitly unbiased LLMs” <span class="citation" data-cites="bai2025">(<a href="#ref-bai2025" role="doc-biblioref">Bai et al. 2025</a>)</span></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -490,9 +528,10 @@ div.csl-indent {
 <section id="comprehension-questions" class="level1">
 <h1>Comprehension questions</h1>
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li>What does the training data of LLMs (therefore GenAI chatbots) consist of? What do we know about it?</li>
+<li>What is model <em>alignment</em>?</li>
+<li>What step in the design of a GenAI chatbot makes their output seem eloquent and appropriate for public use? How does it roughly work?</li>
+<li>What are potential problems in the output of GenAI chatbots that stem from the training data and RLHF?</li>
 </ul>
 </section>
 <section id="further-links" class="level1">
@@ -509,6 +548,9 @@ Agarwal, Dhruv, Mor Naaman, and Aditya Vashistha. 2025. <span>“AI Suggestions 
 </div>
 <div id="ref-alemohammad2023selfconsuminggenerativemodelsmad" class="csl-entry" role="listitem">
 Alemohammad, Sina, Josue Casco-Rodriguez, Lorenzo Luzi, et al. 2023. <em>Self-Consuming Generative Models Go MAD</em>. <a href="https://arxiv.org/abs/2307.01850">https://arxiv.org/abs/2307.01850</a>.
+</div>
+<div id="ref-bai2025" class="csl-entry" role="listitem">
+Bai, Xuechunzi, Angelina Wang, Ilia Sucholutsky, and Thomas L. Griffiths. 2025. <span>“Explicitly Unbiased Large Language Models Still Form Biased Associations.”</span> <em>Proceedings of the National Academy of Sciences</em> 122 (8): e2416228122. <a href="https://doi.org/10.1073/pnas.2416228122">https://doi.org/10.1073/pnas.2416228122</a>.
 </div>
 <div id="ref-bai2022traininghelpfulharmlessassistant" class="csl-entry" role="listitem">
 Bai, Yuntao, Andy Jones, Kamal Ndousse, et al. 2022. <em>Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback</em>. <a href="https://arxiv.org/abs/2204.05862">https://arxiv.org/abs/2204.05862</a>.
@@ -574,7 +616,7 @@ Rigotti, Carlotta, and Eduard Fosch-Villaronga. 2024. <span>“Fairness, AI &amp
 Rooij, Iris van. n.d. <em>Against Automated Plagiarism.</em> https://doi.org/<a href="https://doi.org/10.5281/zenodo.15866638">https://doi.org/10.5281/zenodo.15866638</a>.
 </div>
 <div id="ref-unesco" class="csl-entry" role="listitem">
-UNESCO. n.d. <em>UNESCO Recommendation on Open Science</em>. https://doi.org/<a href="https://doi.org/10.54677/MNMH8546">https://doi.org/10.54677/MNMH8546</a>.
+UNESCO. 2021. <em>UNESCO Recommendation on Open Science</em>. https://doi.org/<a href="https://doi.org/10.54677/MNMH8546">https://doi.org/10.54677/MNMH8546</a>.
 </div>
 </div>
 

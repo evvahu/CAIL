@@ -28,45 +28,49 @@ execute:
 - The training of LLMs involves modelling the probabilistic relationship between words of vast amounts of texts
 - These texts are usually "scraped" from the internet 
   - *web scraping*: technique to automatically download and process web content
-- For instance, these datasets were reported by OpenAI to make up the training data for GPT-3:
+- For example, the following datasets (@fig-gpt3) were reported by OpenAI to make up the training data for GPT-3:
   - Common Crawl (filtered): data collected over more than 13 years of web crawling 
     - check whether your website is included in Common Crawl: https://index.commoncrawl.org/
   - WebText2: webpages referred to from Reddit posts with three or more upvotes 
   - Wikipedia: we all know this :-) 
   - Books1 and Book2: internet-based books corpora ([unclear what these actually include!]{style="color:#880D1E;"})
-
-![Training data of GPT-3 as reported by OpenAI in @brown2020language](../../images/gpt_trainingdata.png)
-
-
-![Top websites in Google's C4 dataset, which is a filtered snapshot of Common Crawl [@Dodge2021DocumentingTE], the list itself is from an interesting and nicely illustrated article by The Washington Post [@schaul2026]](../../images/c4_dataset.png)
+- A breakdown of Google's C4 dataset, a filtered snapshot of Common Crawl, (@fig-c4) gives some indication of what type of text genres are included in the training data.
+- A look at the languages in the Common Crawl (@fig-langcc) show the dominance of the English language in LLM's training inputs. 
 
 
-![Languages of the articles included in the latest CommonCrawl snapshots as reported on [their website](https://commoncrawl.github.io/cc-crawl-statistics/plots/languages). The languages are identified by an automatic system.](../../images/languages_commoncrawl.png)
+![Training data of GPT-3 as reported by OpenAI in @brown2020language](../../images/gpt_trainingdata.png){#fig-gpt3}
+
+
+![Top websites in Google's C4 dataset, which is a filtered snapshot of Common Crawl [@Dodge2021DocumentingTE], the list itself is from an interesting and nicely illustrated article by The Washington Post [@schaul2026]](../../images/c4_dataset.png){#fig-c4}
+
+
+![Languages of the articles included in the latest CommonCrawl snapshots as reported on [their website](https://commoncrawl.github.io/cc-crawl-statistics/plots/languages). The languages are identified by an automatic system.](../../images/languages_commoncrawl.png){#fig-langcc}
 
 
 ### "High quality" input
 
 - The internet has been flooded with AI-generated content (for instance, AI-generated reviews, blog posts, etc.) 
 - Since the content is not always easily distinguishable from human-generated data, new models are inevitably trained on data that is polluted with AI-generated content
-- This type of "self-consumption" reduces the model's output quality and diversity [@briesch2024largelanguagemodelssuffer]
+- This type of "self-consumption" reduces the model's output quality and diversity [@briesch2024largelanguagemodelssuffer]. @fig-synthdata shows an example for image generation. 
 
-[Outputs of models after being trained on their own data across several rounds (t=1 to 9) [@alemohammad2023selfconsuminggenerativemodelsmad]](../../images/syntheticloop.png)
+![Outputs of models after being trained on their own data across several rounds (t=1 to 9) [@alemohammad2023selfconsuminggenerativemodelsmad]](../../images/syntheticloop.png){#fig-synthdata}
 
 - Thus, AI companies have to resort to different data sources. They have been suspected to buy secondhand books online as these may offer valuable training data that cannot be scraped from the web (see [article in BBC](https://www.bbc.com/news/articles/cp3rprx2wl4o))
 
 ::: {.callout-note title="Task ideas"}
-- https://www.soekia.ch/gpt.html
+- Only in German available: Use the GPT model provided by [Soekia](https://www.soekia.ch/gpt.html). Use different types of text genres to generate texts. How does the types of texts you include as training data affect the model's output? 
+- Choose a topic that you think is not well-represented on the internet. Ask a GenAI chatbot about this topic and analyse the chatbot's output about this topic.  
 :::
 
 
 ::: {.callout-tip title="Discussion questions"}
-- What does internet data consist of? 
-- Do you think that this kind of data reflects (all of) human culture, cognition and 
+- What does internet data consist of? Are there types of texts on the web that you think are more appropriate or more effective than others to train LLMs on? 
+- Do you think that the internet data data reflects (all of) human culture and cognition?
 - What do you think may be possible consequences of training models on vast amount of text whose content is unknown to us? 
 :::
 
 ::: {.callout-warning title="For linguistic students"}
-- What is not in the training input that characterises language?
+- What is not in the training input that is available to humans who learn and use language to communicate? 
 :::
 
 
@@ -74,13 +78,14 @@ execute:
 
 - *Open Science* has emerged as one of the key values in our scientific practices. According to the @unesco, Open Science includes, among other, open access to scientific knowledge (including open access to scientific publications, **data**, educational resources, software and hardware).
 - Additionally, the [EU's AI Act](https://artificialintelligenceact.eu/) centers around open source driven development of AI systems. 
-- However, most of the GenAI chatbots and systems do not comply with the values of Open Science. This is a large topic in and of itself and here we only address the issue with regard to the *training data*. For an overview of GenerativeAI with regard to Research Integrity, see @dingemanse2024. For open source, see @liesenfelddingemanse2024, who claim that open source is multi-dimensional and not binary, and the [European Source AI Index](https://osai-index.eu/) where LLMs are evaluated based on multiple open source criteria
-- The lack of documentation and publishing the training data has been called "documentation debt" [@bender2021dangers]. The problems and dangers of documentation debt are the following:
+- However, most of the GenAI chatbots and systems do not comply with the values of Open Science. This is a large topic in and of itself and here we only address the issue with regard to the *training data*. 
+  - For an overview of GenerativeAI with regard to Research Integrity, see @dingemanse2024. For open source, see @liesenfelddingemanse2024, who claim that open source is multi-dimensional and not binary, and the [European Source AI Index](https://osai-index.eu/) where LLMs are evaluated based on multiple open source criteria
+- The lack of documentation and publishing of the training data has been called "documentation debt" [@bender2021dangers]. The problems and dangers of documentation debt are the following:
   - the lack of documentation thwarts accountability, in other words "undocumented training data perpetuates harm without recourse." [p. 651 @bender2021dangers]
     - lack of accountability with regard to the included material and their authors, data privacy concerns and harmful content
   - Without any documentation, it is impossible to detect patterns in the training data that lead to biases and harmful content. 
-  - The sheer size of the data is problematic too since documenting it post-hoc is difficult
-- Biases and harmful content produced by LLMs and GenAI chatbots are only discovered after the systems are made public. Post-hoc inspection by researchers has shown that LLMs and GenAI chatbots produce persistent toxic content and reproduce stereotypes (e.g. a negative bias against Muslim @abid2021large, see below for more). 
+  - The sheer size of the data is problematic too since documenting it and grasping its contents in the first place is extremely challenging and time-consuming
+- Biases and harmful content produced by LLMs and GenAI chatbots are only discovered after the systems are made public. Post-hoc inspection by researchers has shown that LLMs and GenAI chatbots produce persistent toxic content and reproduce stereotypes (e.g. a negative bias against Muslim [@abid2021large], see below for more). 
 
 
 ## Reinforcement Learning from Human Feedback
@@ -91,20 +96,21 @@ execute:
 -  Thus, LLMs have to be made to adhere to certain rules and preferences and fulfil certain functions, a process called *Alignment*
 - With GenAI chatbots, a technique called *Reinforcement learning from Human Feedback (RLHF)* is applied
   - *RLHF* is a technique to incorporate human information to, for instance, LLMs
-  -  There are different ways to do that, but the basic idea is the following (https://intuitionlabs.ai/articles/reinforcement-learning-human-feedback):
-    - choose different prompts or environments. (for instance, real user queries or tasks from a prompt dataset)
-    - for each prompt, get multiple responses from current model
-    - human annotators rank these responses, following certain instructions
+  -  There are different ways to do that, but the basic idea is the following ([source](https://intuitionlabs.ai/articles/reinforcement-learning-human-feedback)):
+    - choose different prompts or environments, for example, real user queries or tasks from a prompt dataset. Examples are shown in @fig-interface
+    - for each prompt, get multiple responses from the model
+    - human annotators then rank these responses, following certain instructions
+    - the model will then be updated based on this human feedback
   - for a longer, but relatively accessible explanation of RLHF see [huggingface's post](https://huggingface.co/blog/rlhf)
 
-![An interface that annotators use to evaluate model output for Anthropic [@bai2022traininghelpfulharmlessassistant]](../../images/anthropic_interface.png)
+![An interface that annotators use to evaluate model output for Anthropic [@bai2022traininghelpfulharmlessassistant]](../../images/anthropic_interface.png){#fig-interface}
 
 
-Who are the annotators?
+### Who are the annotators?
 
-- This work is outsourced to crowdworkers (also called *gig workers*, *platform workers* or *data workers*)
+- The manual annotation tasks involved in RLHF are usually outsourced to crowdworkers (also called *gig workers*, *platform workers* or *data workers*)
   - they are low-paid, self-employed and often live outside of the US or Europe, for instance in India, the Philippines, Kenya and Uganda  (see [here](https://time.com/6247678/openai-chatgpt-kenya-workers/) and [here](https://www.washingtonpost.com/world/2023/08/28/scale-ai-remotasks-philippines-artificial-intelligence/) and [here](https://www.nytimes.com/2026/08/20/world/asia/ai-jobs-data-annotation-india-karur.html)). 
-  -  The work entails traumatic exposure to disturbing content
+  -  The work often entails traumatic exposure to disturbing content
   - For more on this topic, check out the work by [Milagros Miceli's](https://milamiceli.com/) work and her project [*Data Workers' Inquiry*](https://data-workers.org/)
 
 ## Output: wrong, dangerous, biased
@@ -113,8 +119,8 @@ Who are the annotators?
   1. the training data of the LLM
   2. manually annotated and evaluated datasets, which in turn, depend on instructions given to annotators
 - As a consequence, these tools are **not** neutral
-  - the output is guided by their training data despite RLHF
-  - creators (e.g. companies or scientists) can influence what models produce by designing their guidelines accordingly
+  - the output is influenced by the LLM's training data despite RLHF
+  - creators (e.g. companies or researchers) can influence what models produce by designing their guidelines accordingly
 
 ### Examples 
 
@@ -191,9 +197,10 @@ And how their chatbot is allowed to talk about race:
 
 # Comprehension questions
 
-- 
--
--
+- What does the training data of LLMs (therefore GenAI chatbots) consist of? What do we know about it?
+- What is model *alignment*?
+- What step in the design of a GenAI chatbot makes their output seem eloquent and appropriate for public use? How does it roughly work? 
+- What are potential problems in the output of GenAI chatbots that stem from the training data and RLHF? 
 
 # Further links
 
