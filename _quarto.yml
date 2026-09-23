@@ -4,15 +4,22 @@ project:
 
 
 website:
-  title: "Critical AI Literacy"
-  navbar:
-    left:
+  sidebar:
+    style: "floating"
+    search: true
+    title: "Critical AI Literacy"
+    logo: images/terminator.png
+    contents:
       - href: index.qmd
-        text: Home
+        text: "Home"
       - href: about.qmd
-        text: About
-      - href: topics/index.qmd
-        text: Topics
+        text: "About"
+      - section: "Topics"
+        href: topics/index.qmd
+        contents:
+          - topics/data/data.qmd
+          - topics/interaction/interaction.qmd
+          - topics/environment/environment.qmd
       - href: use_cases/index.qmd
         text: Use cases
       - href: alternatives.qmd

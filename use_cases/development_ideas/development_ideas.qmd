@@ -11,6 +11,10 @@ execute:
 
 # Discussion questions
 
-- How may the engagement with AI harm the development of ideas?
+- How may the engagement with AI both positively and negatively influence the development of ideas?
   - Think about the goals of the design of the tool vs. your own particular goals ([add pointer to Interaction]{style="color:red"})
+  - Think about bias in the model output ([add pointer to Data]{style="color:red"})
 - What is the difference between regarding research as a process rather than as a product? Why should “serendipity” matter to this process? ([add reference LD]{style="color:red"})
+
+# Teaching ideas
+

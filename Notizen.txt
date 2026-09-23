@@ -1,3 +1,5 @@
 
 - LLMs as teachers: 
     - bias: LLMs are Biased Teachers: Evaluating LLM Bias in Personalized Education (https://aclanthology.org/2025.findings-naacl.314.pdf)
+
+- Sam Altman boasted that “They \[the Gen-Z\ generation] don’t really make life decisions without asking ChatGPT what they should do,” and “It has the full context on every person in their life and what they’ve talked about.” ([source](https://qz.com/chatgpt-open-ai-sam-altman-genz-users-students-1851780458)). What do you think about this statement? Do you think it's true? Do you see any issues if it were true?

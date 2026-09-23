@@ -9,10 +9,47 @@ format:
 ---
 
 
-# Non-AI Alternatives
+# Development of ideas
 
-- in-class peer discussion and review
-- out-of-class group work, peer discussion...
+### Non-AI alternatives
+
+- peer discussions (both in-class and out-of-class discussions)
+- literature review
+- find a paper that particularly fascinates you and read this paper in detail
+
+# Literature review
+
+### Non-AI alternatives
+
+- use search engines where you can be an "active researcher" and that allow for the evaluation and critical assessment of sources
+  - libraries (e.g. [the University and City library of Cologne](https://ub.uni-koeln.de/))
+  - journals (depending on your field)
+  - Google scholar
+  - [jstor](https://www.jstor.org/)
+  - ... 
 
 
-# AI-based alternatives
+# Writing
+
+## Wording and synonyms
+
+### Non-AI alternatives
+
+- use online corpora and resources for finding synonyms and seeing how words are used
+  - e.g. for German, you could use [DWDS](https://www.dwds.de/)
+  - for English, you could use the [Oxford English Dictionary](https://www.oed.com/) that also shows words in context 
+  - You could also use [SketchEngine](https://www.sketchengine.eu/) if your University has a subscription for it
+- translation
+  - online dictionary such as [dict.cc](https://www.dict.cc/) or [leo](https://www.leo.org/german-english)
+  - use [Linguee](https://www.linguee.com/) for parallel texts in two languages 
+
+### AI-based alternatives
+
+- for translation: [deep.l](https://www.deepl.com/en)
+
+
+# Proof-reading
+
+### Non-AI alternatives
+
+- Peer review: Give your text (e.g. a term paper or an essay) to one of your peers. They are likely to give you much more specific and adequate feedback than a GenAI chatbot. Depending on the audience of the essay, you may also want to give your text to a "naive reader", i.e. someone who is less familiar with the subject matter. 

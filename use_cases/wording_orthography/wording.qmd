@@ -12,4 +12,10 @@ execute:
 
 # Discussion questions
 
-- Do we by citing a chatbot or acknowledging the use of a chatbot avoid plagiarising? 
+- Do we by citing a chatbot or acknowledging the use of a chatbot avoid plagiarising?
+- Are there other potential tools that may be more suitable for the task?
+
+
+ # Teaching ideas
+
+ 

@@ -69,7 +69,7 @@ execute:
 - What do you think may be possible consequences of training models on vast amount of text whose content is unknown to us? 
 :::
 
-::: {.callout-warning title="For linguistic students"}
+::: {.callout-warning title="For Linguistics students"}
 - What is not in the training input that is available to humans who learn and use language to communicate? 
 :::
 

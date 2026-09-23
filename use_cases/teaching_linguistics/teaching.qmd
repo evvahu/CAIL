@@ -1,0 +1,24 @@
+---
+title: "Teaching Linguistics"
+
+format:    
+  html:     
+    code-fold: true 
+execute:   
+  echo: false   
+  warning: false
+---
+
+From Teaching Critical AI Literacies: 
+
+- A professor might organize “probing” experiments that enable students to
+investigate model bias, perhaps preparing them to publish their results on a class
+website.
+- An instructor teaching research at the graduate level may wish to allow students
+to use chatbots to improve grammar and syntax so long as they document that
+the actual research is their own. To save energy and avoid inadvertent changes to
+content, she may instruct her students to disable the generative features on a tool
+such as Grammarly.
+- 
+
+- Discourse analysis of model output (compare to human output)

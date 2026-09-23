@@ -16,13 +16,12 @@ format:
 - CAILs communicate the knowledge necessary to "tell apart nonsense hype from true theoretical computer scientific claims" (Olivia Guest, https://olivia.science/ai/)
 
 
-# Terminology "AI"
+# Terminology "AI" and the focus of this collection
 
-## **{chatbots + LLM + generative + ANN}** 
 
-Despite common usage of the term "AI", there is no such thing as "the AI". In fact, AI is a very vague term which encompasses many different types of models and applications. 
+Despite how the term "AI" is commonly used, there is no such thing as "the AI". In fact, AI is a very vague term which encompasses many different types of models and applications. 
 
-Here, we focus on what is often referred to as *generative AI*, involving large language models (LLMs) built with Artificial Neural Networks (ANNs) and implemented through chatbot interfaces. 
+Here, we focus on what is often referred to as *generative AI*, involving large language models (LLMs) built with Artificial Neural Networks (ANNs) and implemented through chatbot interfaces. In other words, we deal with the set of **{chatbot, LLM, generative, ANN}**.
 We refer to these models as "GenAI chatbots". Leaving out the AI in "GenAI chatbots", as it is devoid of any information regarding the underlying model and technology, we only end up with *generative* and *chatbots* which, in theory, could also be built based on a simple model (in terms of the number of parameters), such as a "Bernoulli naive Bayes". For the sake of simplicity, we gloss over some of the nuances of the terminology. 
 
 ![@guest2025against suggest this cartoon set theoretic view on various terms used when discussing the superset AI](images/ai_overview.png)
@@ -30,7 +29,7 @@ We refer to these models as "GenAI chatbots". Leaving out the AI in "GenAI chatb
 Nonetheless, being as specific as possible about a particular application that is considered "AI" is crucial. 
 Talking about "the AI" also evokes a mythical image of AI, seeing it as a creature that is difficult to tame and self-acting, where in fact, the "creators", i.e. the companies (and researchers), themselves should be in charge to mitigate any risks accompanied with such systems. Vague terminology further makes obscure the underlying technology, often arousing unwarranted awe about their capabilities in society.
 
-![The terminator, a cyborg assassin from 2029 so watch out once we've reached that year. [source](https://www.imdb.com/title/tt0088247/mediaviewer/rm1817347072/)](images/terminator.png)
+![The terminator, a cyborg assassin from 2029 so watch out once we've reached that year. [source](https://www.imdb.com/title/tt0088247/mediaviewer/rm1817347072/)](images/terminator.png){width=300}
 
 
 Simply calling things "an/the AI" impedes making a distinction between useful, ethical applications and unwanted, unethical applications. It even leads people to be "in favour" or "against" AI, when, in fact, such a binary stance may not be appropriate nor desirable. Rather than considering AI either as the doom of society or the solution to all of our problems, talking about different AI systems allows us for a more nuanced discussion about how these systems should be treated, regulated and used in society. The environmental costs of *AI* offers a pertinent example here (see Topic on Environment). There are many ways in which systems that would be considered *AI* help to protect the environemnt, for instance in detecting forest fires early (see description of such projects [here](https://www.hiig.de/en/ai-for-environmental-protection/)). However, these systems are very different in their architectures, electricity and water consumptions and functions from the GenAI chatbot systems we discuss here. Claims that *AI* in general will save our planet if we only invest more and more in it are thus misguided. 
