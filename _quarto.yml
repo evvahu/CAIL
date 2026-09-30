@@ -8,7 +8,7 @@ website:
     style: "floating"
     search: true
     title: "Critical AI Literacy"
-    logo: images/terminator.png
+    #logo: images/terminator.png
     contents:
       - href: index.qmd
         text: "Home"
