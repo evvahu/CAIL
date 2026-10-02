@@ -25,8 +25,6 @@ format:
 - how GenAI chatbots have been constructed and marketed to make human-chatbot interaction seem "human-like" and "engaging"
 - the consequences thereof for the way we interact with such systems 
 
-## Environment
-
 
 ## Privacy
 
@@ -43,3 +41,5 @@ format:
 - what prompt injection is and why instructions from an AI system cannot automatically be trusted
 - how GenAI chatbots can be used by attackers for phishing, social engineering and other forms of manipulation
 - why both users and organisations have a role to play in using GenAI systems securely
+
+## Environment
