@@ -28,4 +28,18 @@ format:
 ## Environment
 
 
-## Privacy & Security
+## Privacy
+
+- what personal data actually is - and why it includes much more than your name and (email-)address 
+- how digital services collect, combine and infer information about people
+- how data protection principles such as data minimisation, purpose limitation and transparency apply to digital technologies
+- why Generative AI creates particular challenges for data protection
+
+
+## Security
+
+- what information security actually means - and why it is not simply a matter of having a strong password
+- how GenAI chatbots can create new security risks when they code, process documents, webpages, messages or confidential information
+- what prompt injection is and why instructions from an AI system cannot automatically be trusted
+- how GenAI chatbots can be used by attackers for phishing, social engineering and other forms of manipulation
+- why both users and organisations have a role to play in using GenAI systems securely

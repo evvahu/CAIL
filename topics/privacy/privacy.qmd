@@ -1,10 +1,181 @@
 ---
 title: "Privacy"
-
+callout-appearance: minimal
 format:    
   html:     
     code-fold: true 
 execute:   
   echo: false   
   warning: false
+
 ---
+
+-------------------
+
+### Overview
+
+- what personal data actually is - and why it includes much more than your name and (email-)address 
+- how digital services collect, combine and infer information about people
+- how data protection principles such as data minimisation, purpose limitation and transparency apply to digital technologies
+- why Generative AI creates particular challenges for data protection
+
+-------------------
+
+# Content
+
+## Privacy, data protection -- the same thing?
+
+Not quite. In everyday conversation, we often use *privacy* and *data protection* almost interchangeably. Privacy is mainly concerned with protecting a person’s private sphere, whereas data protection governs how personal data may be collected, used, shared and otherwise processed -- including information that is already publicly available.
+
+In other words, data protection is not simply about keeping secrets.
+
+Your name on a university website may be public. Your publications may be public. Your professional email address may be public. They are nevertheless still personal data. 
+
+This becomes especially interesting when such information is collected at scale -- for example, when large parts of the public web are scraped and used to train a language model. That is important. But it can distract us from a much more immediate question:
+
+*What are we voluntarily putting into the model right now?*
+
+
+## What is personal data?
+
+The GDPR defines personal data very broadly as any information relating to an identified or identifiable natural person [@euart4].
+
+Some examples of personal data are obvious, such as name, address, telephone number, or email. However, others are less obvious:
+
+- an IP address
+- device information
+- location information
+- a voice recording
+- photographs
+- health information
+- employment information
+- examination results
+
+This distinction matters because digital platforms rarely rely on only one isolated piece of information. Data can be combined.
+
+A single data point may reveal very little: “Someone searched for running shoes.” 
+Excellent – no name. However, combine it with location data, browsing history, shopping behaviour and app usage, however, and the picture can become considerably more detailed.
+
+Digital services can therefore obtain information about us in several ways:
+
+- **Provided data** is information we actively submit, such as our name, a photograph or the text we enter into a chatbot.
+- **Observed data** is generated or collected through our use of a service, such as location information, browsing behaviour or interaction logs.
+- **Inferred data** is information that a system derives or predicts from other information - for example, possible interests, preferences or characteristics.
+
+This is one reason why privacy is not simply about having something to hide. Information that is perfectly appropriate in one context may become intrusive when transferred into another [@nissenbaum2004]
+
+- Your doctor knowing what medication you take? Expected.
+- Your lecturer knowing? Probably not.
+- Your fitness app knowing? Perhaps.
+- Your fitness app sharing it with an advertising platform? That is a rather different question.
+
+::: {.callout-note title="Task ideas"}
+Make a list of the digital services you have used since waking up today. For each service, consider:
+
+1. What information did you actively provide?
+2. What information could the service observe automatically?
+3. What additional information could potentially be inferred?
+4. Would you consider all three categories equally personal?
+
+Compare your answers with another student.
+
+:::
+
+## The GDPR: not just a cookie banner
+
+The GDPR is frequently associated with cookie banners - this is slightly unfortunate. Cookie banners are to data protection roughly what airport security trays are to international aviation law: highly visible, occasionally irritating, but very much not the whole subject.
+
+The GDPR establishes fundamental principles for processing personal data [@euart5]:
+
+- lawfulness, fairness and transparency
+- purpose limitation
+- data minimisation
+- accuracy
+- storage limitation
+- integrity and confidentiality
+- accountability
+
+
+::: {.callout-note title="Task ideas"}
+
+Engage with the fundamental principles for processing personal data and find examples and their relevance from your own interactions with GenAI today for the following areas:
+
+1. Purpose limitation
+2. Data minimisation
+3. Storage limitation
+
+Compare your answers with another student.
+
+:::
+
+::: {.callout-tip title="Discussion questions"}
+
+- What is the difference between “useful data” and “necessary data”?
+- Why might organisations have incentives to collect more information than they currently need?
+- Should organisations be allowed to retain data because it might become useful for future research or product development?
+- Can data minimisation conflict with goals such as personalisation or improving AI systems?
+- Before entering personal information into a GenAI chatbot, what questions should users ask themselves?
+
+:::
+
+## Why do GenAI chatbots make this more complicated?
+
+Generative AI does not make the basic principles of data protection disappear. But it can make applying them more difficult. Let’s look at it in three stages.
+
+### Training
+
+AI systems may be developed using very large datasets, potentially including information about identifiable people.
+This raises questions, such as:
+
+- Where did the data come from?
+- Did it contain personal data?
+- For what purpose was that data originally collected?
+- Can information about individuals still be extracted or reproduced by the resulting model?
+
+Thus, the fact that information came from the public internet does not automatically mean that data-protection questions disappear. Nor can we simply assume that an AI model is anonymous because it does not resemble a traditional database.
+
+### Inputs
+
+Consider what happens when you enter a prompt into a GenAI chatbot. The prompt might contain personal data about you - but it might just as easily contain information about somebody else:
+
+“Can you improve this email to my employee Sarah Müller? She has been absent for three weeks because she has recently been diagnosed with Morbus Crohn…”
+
+Suddenly, a simple writing task involves information about an identifiable person, including information about their health and employment.
+
+Before entering information into a GenAI system, it is therefore useful to ask:
+
+- Does this prompt contain personal data?
+- Is all of that information actually necessary for the task?
+- Does it contain information about somebody other than me?
+- Do I know what happens to my input after I submit it?
+
+There are further complications. AI systems may combine information from different sources, infer additional information about individuals, or generate statements about people that are inaccurate. Questions of purpose limitation, data minimisation, transparency and accuracy therefore become particularly important.
+
+### Outputs
+
+Generative AI systems can also produce information about identifiable people.
+And that information may be inaccurate. Imagine asking a chatbot about a real person and receiving a plausible-sounding but false statement about their employment history, qualifications or behaviour. 
+
+::: {.callout-tip title="Discussion questions"}
+
+- How can AI-generated false statements about identifiable people create problems for the GDPR’s accuracy principle?
+- Imagine a student accidentally enters confidential personal information about another student into a GenAI system. Consider the student, the university, and the AI provider -- What kinds of responsibility might each of them have?
+
+:::
+
+
+# Comprehension Questions
+
+
+1. What counts as personal data under the GDPR?
+2. What is the difference between directly provided, observed and inferred information?
+3. What does data minimisation mean?
+4. What does purpose limitation mean?
+5. Why can Generative AI systems create particular data-protection challenges?
+6. Why is data protection not only a matter of individual responsibility?
+
+# References
+
+::: {#refs}
+:::
+
