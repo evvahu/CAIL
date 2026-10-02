@@ -49,20 +49,14 @@ Regarding, introductions to AI in English, we recommend [The Bullshit Machines](
 
 More concretely, you should be familiar with the following concepts: 
 
-1. the difference between deterministic and probabilistic models. 
-2. LLMs, chatbots, and combination of both (ChatGPT is not equal to LLM)
-3. ...
-4. ...
+1. you know that the term *AI* is vague, mainly used for marketing purposes, and not a new phenomenon
+2. you also know the type of systems that are usually subsumed under *AI*, such as Generative AI chatbots or recommendation systems.
+3. you know that Generative AI chatbots are based on Large Language Models (LLMs) underly.
+4. you know that LLMs are a type of model whereas GenAI chatbots are complex sytems. Thus, you know that chatbots (e.g. ChatGPT) are not equal to LLMs. 
+5. you know how Large Language Models on a very conceptual level work. For instance, you know that they are *probabilistic* rather than *deterministic* models. This means that you are aware that GenAI chatbots do not say *the truth* and cannot be used as a knowledge resource.
+6. you know where AI systems are integrated, e.g. where you might use or come across them in your daily life
+7. you know that AI is accompanied by many problems, such as data privacy, data theft, environmental cost, monopolisation, etc. 
+8. you are familiar with some of the acts (EU AI act, university-internal acts, etc.) that offer initial attempts to regularise AI
 
-
-
-# Ideas 
-
-- starting off a conversation about AI with students
-  - Kahoot
-  - Padlets
-  - ...
-- forums for before-class preparation
-- ... 
 
 
