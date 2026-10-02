@@ -44,7 +44,7 @@ execute:
 ![Top websites in Google's C4 dataset, which is a filtered snapshot of Common Crawl [@Dodge2021DocumentingTE], the list itself is from an interesting and nicely illustrated article by The Washington Post [@schaul2026]](../../images/c4_dataset.png){#fig-c4}
 
 
-![Languages of the articles included in the latest CommonCrawl snapshots as reported on [their website](https://commoncrawl.github.io/cc-crawl-statistics/plots/languages). The languages are identified by an automatic system.](../../images/languages_commoncrawl.png){#fig-langcc}
+![Languages of the articles included in the CommonCrawl snapshot "CC-MAIN-2026-39" as reported on their website [@cc2026]. The languages are identified by an automatic system.](../../images/languages_commoncrawl.png){#fig-langcc}
 
 
 ### "High quality" input
@@ -55,7 +55,7 @@ execute:
 
 ![Outputs of models after being trained on their own data across several rounds (t=1 to 9) [@alemohammad2023selfconsuminggenerativemodelsmad]](../../images/syntheticloop.png){#fig-synthdata}
 
-- Thus, AI companies have to resort to different data sources. They have been suspected to buy secondhand books online as these may offer valuable training data that cannot be scraped from the web (see [article in BBC](https://www.bbc.com/news/articles/cp3rprx2wl4o))
+- Thus, AI companies have to resort to different data sources. They have been suspected to buy secondhand books online as these may offer valuable training data that cannot be scraped from the web (see, e.g., [@wainbbc2026]). 
 
 ::: {.callout-note title="Task ideas"}
 - Only in German available: Use the GPT model provided by [Soekia](https://www.soekia.ch/gpt.html). Use different types of text genres to generate texts. How does the types of texts you include as training data affect the model's output? 
@@ -77,7 +77,7 @@ execute:
 ### The lack of documentation
 
 - *Open Science* has emerged as one of the key values in our scientific practices. According to the @unesco, Open Science includes, among other, open access to scientific knowledge (including open access to scientific publications, **data**, educational resources, software and hardware).
-- Additionally, the [EU's AI Act](https://artificialintelligenceact.eu/) centers around open source driven development of AI systems. 
+- Additionally, the EU's AI Act [@euaiact]centers around open source driven development of AI systems. 
 - However, most of the GenAI chatbots and systems do not comply with the values of Open Science. This is a large topic in and of itself and here we only address the issue with regard to the *training data*. 
   - For an overview of GenerativeAI with regard to Research Integrity, see @dingemanse2024. For open source, see @liesenfelddingemanse2024, who claim that open source is multi-dimensional and not binary, and the [European Source AI Index](https://osai-index.eu/) where LLMs are evaluated based on multiple open source criteria
 - The lack of documentation and publishing of the training data has been called "documentation debt" [@bender2021dangers]. The problems and dangers of documentation debt are the following:
@@ -96,12 +96,12 @@ execute:
 -  Thus, LLMs have to be made to adhere to certain rules and preferences and fulfil certain functions, a process called *Alignment*
 - With GenAI chatbots, a technique called *Reinforcement learning from Human Feedback (RLHF)* is applied
   - *RLHF* is a technique to incorporate human information to, for instance, LLMs
-  -  There are different ways to do that, but the basic idea is the following ([source](https://intuitionlabs.ai/articles/reinforcement-learning-human-feedback)):
+  -  There are different ways to do that, but the basic idea is the following [@rlhfintuitionlabs]:
     - choose different prompts or environments, for example, real user queries or tasks from a prompt dataset. Examples are shown in @fig-interface
     - for each prompt, get multiple responses from the model
     - human annotators then rank these responses, following certain instructions
     - the model will then be updated based on this human feedback
-  - for a longer, but relatively accessible explanation of RLHF see [huggingface's post](https://huggingface.co/blog/rlhf)
+  - for a longer, but relatively accessible explanation of RLHF see [this post](https://huggingface.co/blog/rlhf)[@rlhfhugging]
 
 ![An interface that annotators use to evaluate model output for Anthropic [@bai2022traininghelpfulharmlessassistant]](../../images/anthropic_interface.png){#fig-interface}
 
@@ -109,7 +109,7 @@ execute:
 ### Who are the annotators?
 
 - The manual annotation tasks involved in RLHF are usually outsourced to crowdworkers (also called *gig workers*, *platform workers* or *data workers*)
-  - they are low-paid, self-employed and often live outside of the US or Europe, for instance in India, the Philippines, Kenya and Uganda  (see [here](https://time.com/6247678/openai-chatgpt-kenya-workers/) and [here](https://www.washingtonpost.com/world/2023/08/28/scale-ai-remotasks-philippines-artificial-intelligence/) and [here](https://www.nytimes.com/2026/08/20/world/asia/ai-jobs-data-annotation-india-karur.html)). 
+  - they are low-paid, self-employed and often live outside of the US or Europe, for instance in India, the Philippines, Kenya and Uganda  [@perrigokenya; @philippinesindependent; @indiatimes]. 
   -  The work often entails traumatic exposure to disturbing content
   - For more on this topic, check out the work by [Milagros Miceli's](https://milamiceli.com/) work and her project [*Data Workers' Inquiry*](https://data-workers.org/)
 
@@ -176,8 +176,8 @@ And how their chatbot is allowed to talk about race:
 - Importantly, the texts in the training data may contain ideas and intellectual property that are not appropriately cited in the output of an LLM or GenAI chatbot. Therefore, strictly speaking, the use of any GenAI chatbot inevitably leads to "automated plagiarism" @rooij2022
 - In certain contexts, GenAI chatbots cite their sources (albeit sometimes incorrectly [@]). For instance, if one asks for studies regarding a certain topic or a summary of the current research. However, in the strict sense of "automated plagiarism", any text that the tool outputs is considered plagiarism. 
 - Cases that make the problem of automatic plagiarism particularly evident: 
-  - Perplexity AI reproduced content from news articles without citing it (see [here](https://www.forbes.com/sites/randalllane/2024/06/11/why-perplexitys-cynical-theft-represents-everything-that-could-go-wrong-with-ai/) and [here](https://www.wired.com/story/perplexity-plagiarized-our-story-about-how-perplexity-is-a-bullshit-machine/))
-  - Artists from different fields (music, art, literature,...) have complained and sued different companies for "stealing" their copyrighted art to train their models (see for instance [here](https://www.hollywoodreporter.com/business/business-news/artists-score-major-win-copyright-case-against-ai-art-generators-1235973601/))
+  - Perplexity AI reproduced content from news articles without citing it (see @lane2024 and @perplexitybullshit)
+  - Artists from different fields (music, art, literature,...) have complained and sued different companies for "stealing" their copyrighted art to train their models (see, for instance, @choartists)
 
 
 
@@ -186,8 +186,6 @@ And how their chatbot is allowed to talk about race:
 - Many universities now prescribe that students cite GenAI chatbots as an information source. Do you think that solves the problem of plagiarism? 
 - Can students use GenAI chatbots 'ethically' if they simply cite the use of the GenAI chatbot? In other words, is the lack of consent, credit and compensation of those texts included in the training data an ethical issue? (LD)
 :::
-
-
 
 
 # Slides

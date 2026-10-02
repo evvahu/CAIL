@@ -38,7 +38,7 @@ execute:
 :::
 
 ::: {.callout-warning title="For Linguistics students"}
-- Students of Linguistics or related disciplines may want read more about semantic grounding and the "symbol grounding problem". Paper suggestion @vogt2006 ([link](https://ilk.uvt.nl/~pvogt/publications/acsChapter.pdf))
+- Students of Linguistics or related disciplines may want read more about semantic grounding and the "symbol grounding problem". Paper suggestion @vogt2006 ([link to the paper](https://ilk.uvt.nl/~pvogt/publications/acsChapter.pdf))
 :::
 
 
@@ -61,7 +61,7 @@ execute:
 
 
 ::: {.callout-tip title="Discussion questions"}
-- Do you agree or disagree with Sam Altman's (CEO of OpenAI) claim "i am a stochastic parrot and so r u" ([source](https://x.com/sama/status/1599471830255177728?lang=es))? Why yes, why no? 
+- Do you agree or disagree with Sam Altman's (CEO of OpenAI) claim "i am a stochastic parrot and so r u" [@altmanparrot]? Why yes, why no? 
 :::
 
 
@@ -86,7 +86,7 @@ execute:
 	- Humans have a tendency to interpret language produced in interactions and as responses to our own utterances
 
 
-![[source](https://bsky.app/profile/smoothdunk2.bsky.social/post/3mchntbk4mc2c)](../../images/pizzacartoon.png){width=400}
+![from @pizzacartoon](../../images/pizzacartoon.png){width=400}
 
 
 
@@ -107,7 +107,7 @@ What are differences (and similarities) between human-chatbot interactions and h
 	- a chatbot that replies to human prompts with the help of predefined key words and simple rule-based responses
 	- Already back then, users felt heard by the chatbot, some even thought that the chatbot was in fact a colleague [@weizenbaum1983] 
 	- based on this system, the *ELIZA effect* was coined
-		- "The ELIZA effect is the tendency to read more understanding, empathy, memory, or intention into a computer system than it actually has." (definition from https://elizaemulator.com/eliza-effect)
+		- "The ELIZA effect is the tendency to read more understanding, empathy, memory, or intention into a computer system than it actually has." (definition from @elizaemu)
 	- Therefore, it does not need a gigantic LLM trained on for humans to make sense of fluent language used in interactions
 - Indeed, because of our tendency to ascribe intelligence to such systems, "the recommendation is that designers might do best to make available to the user the ways in which the system is not like a participant in interaction." [p. 41 in @suchman2007human]
 	- not only a recommendation, but a tenet in the field of Computational Linguistics. Nevertheless, it is disregarded by the commercial providers of GenAI chatbots [@bender2025ai]
