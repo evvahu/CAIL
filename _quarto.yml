@@ -19,6 +19,8 @@ website:
         contents:
           - topics/data/data.qmd
           - topics/interaction/interaction.qmd
+          - topics/privacy/privacy.qmd
+          - topics/security/security.qmd
           - topics/environment/environment.qmd
       - href: use_cases/index.qmd
         text: Use cases
