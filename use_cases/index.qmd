@@ -27,8 +27,8 @@ format:
 ## Discussion questions
 
 - How may the engagement with AI both positively and negatively influence the development of ideas?
-  - Think about the goals of the design of the tool vs. your own particular goals ((see [Interaction](../interaction)))
-  - Think about bias in the model output (see [Data](../data))
+  - Think about the goals of the design of the tool vs. your own particular goals ((see [Interaction](../topics/interaction/interaction.qmd)))
+  - Think about bias in the model output (see [Data](../topics/data/data.qmd))
 - What is the difference between regarding research as a process rather than as a product? Why should “serendipity” matter to this process? (from @teachingcails)
 
 ## Teaching ideas
