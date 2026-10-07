@@ -1,6 +1,6 @@
 ---
 website:
-  title: "Critical AI Literacy"
+  title: "Critical AI Literacies"
 format:
   html:
     theme: 
@@ -9,11 +9,11 @@ format:
 
 ---
 
-# Critical Artificial Intelligence Literacy (CAIL): Reflective use (or non-use) of Generative AI chatbot systems
+# Critical Artificial Intelligence Literacies (CAILs): Reflective use (or non-use) of Generative AI chatbot systems
 
 
-- This website was created in an effort to gather resources and information on Critical AI Literacy and make them accessible to lecturers and students, primarily in Linguistics, but also to those working in related disciplines (e.g. Psychology).
-- The resources and information can be used to teach aspects of CAIL and directly relate them to the topics and scientific practices taught in the course.
+- This website was created in an effort to gather resources and information on Critical AI Literacies and make them accessible to lecturers and students, primarily in Linguistics, but also to those working in related disciplines (e.g. Psychology).
+- The resources and information can be used to teach aspects of CAILs and directly relate them to the topics and scientific practices taught in the course.
 - It is dynamic in the sense that its content can be extended at any point. Users can be added to the github repository and propose new content. 
 - We are not reinventing the wheel but making information accessible and retrievable, and therefore, more easily applicable in teaching.
 - Given the fast-developing, hyped nature of the field, the aim is to impart conceptual knowledge rather than to keep up with daily news and the latest model versions. 
@@ -26,16 +26,25 @@ format:
 
 ### Projects members:
 
-- Eva Scheel-Huber
+- Eva Scheel-Huber (contact: <mark><!-- fhetydagzzzgjds --> eva.scheel-huber  \[at\]<!-- sdfjsdhfkjypcs -->uni-koeln<!-- asjoxp -->.de</mark>))
 - Thomas Ortmann
 - Annika Meyer
 
 
 ### Acknowledgments: 
 
+- 
 -
 -
--
+
+### Feedback
+
+We highly welcome any feedback, ideas or resources that can be integrated into the website. There are three options to do so:
+
+1. Directly integrate them into this Quarto-based website and suggest the changes through a pull-request. Contact Eva if you want to do so.
+2. Open an issue in the git repository
+3. Get in touch with Eva via email. 
+
 
 
 ### References

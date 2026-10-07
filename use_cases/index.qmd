@@ -18,7 +18,8 @@ format:
 - Is your cognitive labour being affected by using a GenAI chatbot (or any AI tool)? [adapted from @guestsuarezrooij2025]
 - Do you learn what you are supposed to learn?
 - Can the use of AI be justified given the ethical and environmental concerns of AI tools?
-- What exactly do you expect to gain by using GenAI chatbot (or any AI tool)? Could the task me carried out using other means? 
+- What exactly do you expect to gain by using GenAI chatbot (or any AI tool)? 
+- Could the task me carried out using other means? 
 
 
 # Development of ideas
@@ -26,9 +27,9 @@ format:
 ## Discussion questions
 
 - How may the engagement with AI both positively and negatively influence the development of ideas?
-  - Think about the goals of the design of the tool vs. your own particular goals ([add pointer to Interaction]{style="color:red"})
-  - Think about bias in the model output ([add pointer to Data]{style="color:red"})
-- What is the difference between regarding research as a process rather than as a product? Why should “serendipity” matter to this process? ([add reference LD]{style="color:red"})
+  - Think about the goals of the design of the tool vs. your own particular goals ((see [Interaction](../interaction)))
+  - Think about bias in the model output (see [Data](../data))
+- What is the difference between regarding research as a process rather than as a product? Why should “serendipity” matter to this process? (from @teachingcails)
 
 ## Teaching ideas
 
@@ -38,7 +39,7 @@ format:
 
 - What are the limitations of these sytems given their training data? Is the information needed actually in the training data?
 - What is the point of citation, practically as well as ethically? 
-- How does a collaboratively built resource such as Wikipedia, or a peer-reviewed academic resource, differ from generative AI tools such as ChatGPT or Perplexity AI? (from LD)
+- How does a collaboratively built resource such as Wikipedia, or a peer-reviewed academic resource, differ from generative AI tools such as ChatGPT or Perplexity AI? (from @teachingcails)
 
 
 ## Teaching ideas
