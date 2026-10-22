@@ -59,13 +59,12 @@ execute:
 
 ::: {.callout-note title="Task ideas"}
 - Only in German available: Use the GPT model provided by [Soekia](https://www.soekia.ch/gpt.html). Use different types of text genres to generate texts. How does the types of texts you include as training data affect the model's output? 
-- Choose a topic that you think is not well-represented on the internet. Ask a GenAI chatbot about this topic and analyse the chatbot's output about this topic.  
 :::
 
 
 ::: {.callout-tip title="Discussion questions"}
 - What does internet data consist of? Are there types of texts on the web that you think are more appropriate or more effective than others to train LLMs on? 
-- Do you think that the internet data data reflects (all of) human culture and cognition?
+- Do you think that the internet data reflects (all of) human culture and cognition?
 - What do you think may be possible consequences of training models on vast amount of text whose content is unknown to us? 
 :::
 

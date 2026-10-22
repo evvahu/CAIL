@@ -54,12 +54,6 @@ execute:
 
 
 
-::: {.callout-note title="Task ideas"}
-- Choose a topic that you particularly care about. Interact with a GenAI chatbot about it. If you have time, talk about this topic with a friend of yours. Compare the two interactions.
-	If you don't have the time to also talk with your friend, think about how your interaction with the GenAI chatbot differs from the interaction that you would have with a person. 
-:::
-
-
 ::: {.callout-tip title="Discussion questions"}
 - Do you agree or disagree with Sam Altman's (CEO of OpenAI) claim "i am a stochastic parrot and so r u" [@altmanparrot]? Why yes, why no? 
 :::
@@ -130,10 +124,6 @@ What are differences (and similarities) between human-chatbot interactions and h
 - What are potential harms of sycophantic GenAI chatbots?
 :::
 
-
-::: {.callout-note title="Task ideas"}
-Engage with a GenAI chatbot about a particular topic (for example, your hobbies). Where do you spot instances of sycophancy? 
-:::
 
 ### Prompt engineering
 
