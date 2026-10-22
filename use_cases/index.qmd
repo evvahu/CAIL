@@ -1,5 +1,5 @@
 ---
-title: "Use cases"
+title: "Scientific Practice and AI"
 #listing:
 #  type: grid
 page-layout: full
@@ -11,6 +11,11 @@ format:
         - cosmo
         - ../styles.scss
 ---
+
+# Introduction
+
+TBD
+
 
 
 # General questions
@@ -31,7 +36,10 @@ format:
   - Think about bias in the model output (see [Data](../topics/data/data.qmd))
 - What is the difference between regarding research as a process rather than as a product? Why should “serendipity” matter to this process? (from @teachingcails)
 
-## Teaching ideas
+## Non-AI alternatives
+
+- peer discussions (both in-class and out-of-class discussions)
+- find a paper about a topic that particularly fascinates you and read this paper in detail, explore the references cited in there
 
 # Literature review
 
@@ -42,7 +50,15 @@ format:
 - How does a collaboratively built resource such as Wikipedia, or a peer-reviewed academic resource, differ from generative AI tools such as ChatGPT or Perplexity AI? (from @teachingcails)
 
 
-## Teaching ideas
+## Non-AI alternatives
+
+- use search engines where you can be an "active researcher" and that allow for the evaluation and critical assessment of sources
+  - libraries (e.g. [the University and City library of Cologne](https://ub.uni-koeln.de/))
+  - journals (depending on your field)
+  - Google scholar
+  - [jstor](https://www.jstor.org/)
+  - ... 
+
 
 # Writing
 
@@ -51,23 +67,21 @@ format:
 - Do we by citing a chatbot or acknowledging the use of a chatbot avoid plagiarising?
 - Are there other potential tools that may be more suitable for the task?
 
-## Teaching ideas
+## Non-AI alternatives
 
-- Ask students to write a short essay (approx. 300 words) on a particular topic. The students are then asked to compare two texts, one written by a classmate and one written by a GenAI chatbot without knowing who wrote which one. Subsequently the students can discuss how the two texts differ in style and content and whether they could tell who wrote which text. 
-
+- use online corpora and resources for finding synonyms and seeing how words are used in which context
+  - e.g. for German, you could use [DWDS](https://www.dwds.de/)
+  - for English, you could use the [Oxford English Dictionary](https://www.oed.com/) that also shows words in context 
+  - You could also use [SketchEngine](https://www.sketchengine.eu/) if your University has a subscription for it
+- translation
+  - online dictionary such as [dict.cc](https://www.dict.cc/) or [leo](https://www.leo.org/german-english)
+  - use [Linguee](https://www.linguee.com/) for parallel texts in two languages 
+- thesauri such as [thesaurus.com](https://www.thesaurus.com) that also gives you example sentences
+- Peer review: Give your text (e.g. a term paper or an essay) to one of your peers. They are likely to give you much more specific and adequate feedback than a GenAI chatbot. Depending on the audience of the essay, you may also want to give your text to a "naive reader", i.e. someone who is less familiar with the subject matter. 
 
 # Coding
 
 - for the use of AI in coding and learning how to code, see [Chapter 15](https://elenlefoll.github.io/RstatsTextbook/15_AI.html) in @lefoll
-
-
-# Linguistics-specific
-
-## Discussion questions
-
-
-## Teaching ideas
-
 
 
 # References

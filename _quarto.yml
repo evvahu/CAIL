@@ -24,8 +24,6 @@ website:
           - topics/environment/environment.qmd
       - href: use_cases/index.qmd
         text: Use cases
-      - href: alternatives.qmd
-        text: Alternatives
       - href: references_resources.qmd
         text: References and further resources
 
