@@ -23,7 +23,7 @@ website:
           - topics/security/security.qmd
           - topics/environment/environment.qmd
       - href: use_cases/index.qmd
-        text: Use cases
+        text: Scientific Practice and AI
       - href: references_resources.qmd
         text: References and further resources
 
