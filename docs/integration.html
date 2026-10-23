@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Alternatives</title>
+<title>Integration of CAILs in Linguistics Courses</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -42,7 +61,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-b69fdc5119c9349c80d2b3282ffd4097.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6b3cf88439d95378b7ec368861ae3398.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ab4ceab9f089059e2a3a7790892d5acb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,37 +93,123 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="quarto-light">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./integration.html">Integration of CAILs in Linguistics Courses</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Critical AI Literacy</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./topics/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Topics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./topics/data/data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./topics/interaction/interaction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Interaction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./topics/privacy/privacy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Privacy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./topics/security/security.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Security</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./topics/environment/environment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Environment</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./use_cases/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Scientific Practice and AI</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./integration.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Integration of CAILs in Linguistics Courses</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references_resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References and further resources</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#development-of-ideas" id="toc-development-of-ideas" class="nav-link active" data-scroll-target="#development-of-ideas">Development of ideas</a>
-  <ul class="collapse">
-  <li><a href="#non-ai-alternatives" id="toc-non-ai-alternatives" class="nav-link" data-scroll-target="#non-ai-alternatives">Non-AI alternatives</a></li>
-  </ul></li>
-  <li><a href="#literature-review" id="toc-literature-review" class="nav-link" data-scroll-target="#literature-review">Literature review</a>
-  <ul class="collapse">
-  <li><a href="#non-ai-alternatives-1" id="toc-non-ai-alternatives-1" class="nav-link" data-scroll-target="#non-ai-alternatives-1">Non-AI alternatives</a></li>
-  </ul></li>
-  <li><a href="#writing" id="toc-writing" class="nav-link" data-scroll-target="#writing">Writing</a>
-  <ul class="collapse">
-  <li><a href="#wording-and-synonyms" id="toc-wording-and-synonyms" class="nav-link" data-scroll-target="#wording-and-synonyms">Wording and synonyms</a>
-  <ul class="collapse">
-  <li><a href="#non-ai-alternatives-2" id="toc-non-ai-alternatives-2" class="nav-link" data-scroll-target="#non-ai-alternatives-2">Non-AI alternatives</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#proof-reading" id="toc-proof-reading" class="nav-link" data-scroll-target="#proof-reading">Proof-reading</a>
-  <ul class="collapse">
-  <li><a href="#non-ai-alternatives-3" id="toc-non-ai-alternatives-3" class="nav-link" data-scroll-target="#non-ai-alternatives-3">Non-AI alternatives</a></li>
-  </ul></li>
+  <li><a href="#the-intention-behind-this-page" id="toc-the-intention-behind-this-page" class="nav-link active" data-scroll-target="#the-intention-behind-this-page">The intention behind this page</a></li>
+  <li><a href="#potential-topics" id="toc-potential-topics" class="nav-link" data-scroll-target="#potential-topics">Potential topics</a></li>
   </ul>
 </nav>
     </div>
@@ -113,7 +218,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Alternatives</h1>
+<h1 class="title">Integration of CAILs in Linguistics Courses</h1>
 </div>
 
 
@@ -130,68 +235,33 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="development-of-ideas" class="level1">
-<h1>Development of ideas</h1>
-<section id="non-ai-alternatives" class="level3">
-<h3 class="anchored" data-anchor-id="non-ai-alternatives">Non-AI alternatives</h3>
-<ul>
-<li>peer discussions (both in-class and out-of-class discussions)</li>
-<li>find a paper about a topic that particularly fascinates you and read this paper in detail, explore the references cited in there</li>
-</ul>
+<p><span class="highlight">This page is still heavily under construction and will benefit from any contribution and input from other people]</span></p>
+<section id="the-intention-behind-this-page" class="level2">
+<h2 class="anchored" data-anchor-id="the-intention-behind-this-page">The intention behind this page</h2>
+<p>CAILs are interdisciplinary and thus it is not surprising that many academic disciplines have in some way or another much to say about AI and the critical view on it. For instance, the language and cognitive sciences have for a long time studied how humans interact and how communication unfolds successfully. These are questions that are also raised for human-AI interaction (see <a href="./topics/interaction/interaction.html">Interaction</a>).</p>
+<p>Teaching more subject-specific topics conveys scientific knowledge to students and allows them to spot the pseudoscientific claims circulating in the media and advertisements. Therefore, it may be an effective way to encourage students to think critically about AI technologies. And moreover, it teaches students knowledge and skills that are deeply relevant for the future. Such “future skills” are often a selling point of AI tool developers. However, while the marketing of commercial products promotes knowing how to use GenAI Chatbots (e.g.&nbsp;to become more efficient) as a future skill, CAILs promote knowing <em>about</em> GenAI Chatbots and AI in general. This is poignantly expressed by <span class="citation" data-cites="guest2025against"><span class="nocase">Guest et al.</span> (<a href="#ref-guest2025against" role="doc-biblioref">2025</a>)</span>:</p>
+<p><em>“Ironically, in a world full of AI displacements (Guest 2025) and AI misinformation, actually more skill would be needed to catch, counter, and compensate for the problems and mistakes introduced by AI technologies (Bainbridge 1983), but as AI technologies increasingly infiltrate academia, students will be robbed of the opportunity to learn those necessary skills.”</em></p>
+<p>On this page, we therefore aim to collect OER teaching material and reading lists for integrating topics of CAILs in a seminar or lecture or developing a whole seminar surrounding a particular topic.</p>
+<p>Initially, the page is limited to the field of Linguistics and related disciplines. But it could at any point be expanded to any field of study.</p>
 </section>
-</section>
-<section id="literature-review" class="level1">
-<h1>Literature review</h1>
-<section id="non-ai-alternatives-1" class="level3">
-<h3 class="anchored" data-anchor-id="non-ai-alternatives-1">Non-AI alternatives</h3>
+<section id="potential-topics" class="level2">
+<h2 class="anchored" data-anchor-id="potential-topics">Potential topics</h2>
 <ul>
-<li>use search engines where you can be an “active researcher” and that allow for the evaluation and critical assessment of sources
-<ul>
-<li>libraries (e.g.&nbsp;<a href="https://ub.uni-koeln.de/">the University and City library of Cologne</a>)</li>
-<li>journals (depending on your field)</li>
-<li>Google scholar</li>
-<li><a href="https://www.jstor.org/">jstor</a></li>
-<li>…</li>
-</ul></li>
-</ul>
-</section>
-</section>
-<section id="writing" class="level1">
-<h1>Writing</h1>
-<section id="wording-and-synonyms" class="level2">
-<h2 class="anchored" data-anchor-id="wording-and-synonyms">Wording and synonyms</h2>
-<section id="non-ai-alternatives-2" class="level3">
-<h3 class="anchored" data-anchor-id="non-ai-alternatives-2">Non-AI alternatives</h3>
-<ul>
-<li>use online corpora and resources for finding synonyms and seeing how words are used in which context
-<ul>
-<li>e.g.&nbsp;for German, you could use <a href="https://www.dwds.de/">DWDS</a></li>
-<li>for English, you could use the <a href="https://www.oed.com/">Oxford English Dictionary</a> that also shows words in context</li>
-<li>You could also use <a href="https://www.sketchengine.eu/">SketchEngine</a> if your University has a subscription for it</li>
-</ul></li>
-<li>translation
-<ul>
-<li>online dictionary such as <a href="https://www.dict.cc/">dict.cc</a> or <a href="https://www.leo.org/german-english">leo</a></li>
-<li>use <a href="https://www.linguee.com/">Linguee</a> for parallel texts in two languages</li>
-</ul></li>
-<li>thesauri such as <a href="https://www.thesaurus.com">thesaurus.com</a> that also gives you example sentences</li>
-</ul>
-</section>
-</section>
-</section>
-<section id="proof-reading" class="level1">
-<h1>Proof-reading</h1>
-<section id="non-ai-alternatives-3" class="level3">
-<h3 class="anchored" data-anchor-id="non-ai-alternatives-3">Non-AI alternatives</h3>
-<ul>
-<li>Peer review: Give your text (e.g.&nbsp;a term paper or an essay) to one of your peers. They are likely to give you much more specific and adequate feedback than a GenAI chatbot. Depending on the audience of the essay, you may also want to give your text to a “naive reader”, i.e.&nbsp;someone who is less familiar with the subject matter.</li>
+<li>Human-AI</li>
+<li>Discourse Analysis of AI-generated text</li>
+<li>AI from the viewpoint of Computational Modelling, Cognitive Science, etc.</li>
+<li>Using automatic tools (but not necessarily GenAI chatbots) in annotating linguistic data</li>
 </ul>
 
 
-</section>
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-guest2025against" class="csl-entry" role="listitem">
+<span class="nocase">Guest, Olivia, Marcela Suarez, Barbara Müller, et al.</span> 2025. <em>Against the Uncritical Adoption of’AI’technologies in Academia</em>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

@@ -24,6 +24,8 @@ website:
           - topics/environment/environment.qmd
       - href: use_cases/index.qmd
         text: Scientific Practice and AI
+      - href: integration.qmd
+        text: Integration of CAILs in Linguistics Courses
       - href: references_resources.qmd
         text: References and further resources
 

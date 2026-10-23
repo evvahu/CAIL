@@ -14,34 +14,69 @@ format:
 
 # Introduction
 
-TBD
+<span class = 'highlight'>This page is still heavily under construction and will benefit from any contribution and input from other people]</span>
 
+During their studies, students should not only acquire knowledge of their specific degree, but also, and possibly even more importantly, scientific skills and the principles of good scientific practice. 
+This section discusses some of these skills and principles and offers discussion questions that lecturers can use in their teaching to make students reflect on their own learning and how this may be harmed by using GenAI chatbots. Offloading fundamental parts of academic work, such as writing and the development of new ideas, to GenAI chatbots may severely restrict students to develop independent and critical thinking.
+
+Skills:
+
+- Development of ideas (e.g., research questions)
+- Literature review
+- Writing
+- Coding
+- ...
+
+Principles of good scientific practice partially are already covered under "skills". However, other aspects, such as open science and reproducibility,are not discussed yet. These are principles that have only taken root relatively recently in many research fields, but are now threatened by the use of GenAI chatbots as well as the developers of such tools: 
+
+- [Open Science]{style="color:#64605f"}
+- [Replicability and Reproducibility]{style="color:#64605f"}
+- ...
 
 
 # General questions
 
+Some general reflection questions that students and lecturers alike may ask themselves:
+
 - Is your cognitive labour being affected by using a GenAI chatbot (or any AI tool)? [adapted from @guestsuarezrooij2025]
+  - First you may want to discuss what *cognitive labour* actually is, why *labour* can be negatively connotated as it's *effortful*, but why it is also necessary (especially in learning and thinking)
 - Do you learn what you are supposed to learn?
+  - Teachers should ideally always make clear what students are supposed to learn from a specific task or assessment. What are the goals that they have in mind? Based on this, you can discuss whether or not the use of a GenAI chatbot would lead them to this goal. 
 - Can the use of AI be justified given the ethical and environmental concerns of AI tools?
+  - As with any ethical question, this is a decision that every individual (and potential user) has to make themselves. Using GenAI chatbots can be compared to using an environmentally more damaging means of transportation, like a car or a plane instead of riding a train. It can also be compared to deciding to continue eating meat, to curb one's meat consumption or to strike it out your diet completely. The important question is that students are aware of the environmental damage inflicted by GenAI chatbots and that they can then, based on that knowledge, make a more informed decision. 
 - What exactly do you expect to gain by using a GenAI chatbot (or any AI tool)? 
-- Could the task me carried out using other means? 
+  - Lecturers may point to aspects such as time gain (often students may be stressed and challenged with their workload), cognitive offloading and the evasion of friction or also the insecurity of being able to complete something on their own without external help. 
+- Could the task be carried out using other means? 
+  - Most likely, the question will be yes to this question. You can discuss why alternatives may be more effective and also fun than simply reverting to a GenAI chatbot. 
+- What is the difference between regarding learning as a process rather than as a product? (adapted from @teachingcails))
+  - In the academic context, grades are (unfortunately) (still) a central tool to screen and verify students' progress and the fulfillment of the required learning goals. However, students are often graded with respect to a *product* and the *process* that got the student to this product is left unnoticed. Therefore, lecturers may want to discuss the importance of the *process* rather than the *product* and ask their students why simply using a GenAI chabot may get them the product but not make them learn something in the process. 
+    - Many studies with students have now shown that when students use GenAI chatbots, the immediate product may be better. However, the effect  ones who don't use GenAIchatbots have a more lasting effect  [@]. 
+- Likewise, what is the difference between regarding *research* as a process rather than as a product? Why should "serendipity" matter to this process? (copied from @teachingcails)
+  - Lecturers may also want to discuss the process of *learning* and *doing research* in tandem since learning is as much a process as is doing research. Through doing research, one learns and vice versa. Thus, research in itself is a learning *process* (which is why so many people like doing research because learning something is extremely fun and gratifying). 
+  - Before discussing why "serendipity" is important, lecturers may want to discuss why it may impeded by the use of GenAI chatbots. 
 
 
 # Development of ideas
 
+Coming up with a topic for a term paper and drafting a research question can seem like a daunting task. One may feel like one's knowledge of a particular field is too superficial to even know what could be a potential topic, yet alone an innovative research question. One may also just simply not feel creative enough to think of anything at all. Being tempted by the easy access of GenAI chatbots to ask for help, even if it's only to ask for an initial nudge into a possible direction, is thus really understandable and feels relatable to many. However, is it really the right way to overcome that (usually only initial) feeling of being lost? Here, we include some questions to create a conversation about exactly this. 
+
+
 ## Discussion questions
 
 - How may the engagement with AI both positively and negatively influence the development of ideas?
-  - Think about the goals of the design of the tool vs. your own particular goals ((see [Interaction](../topics/interaction/interaction.qmd)))
-  - Think about bias in the model output (see [Data](../topics/data/data.qmd))
-- What is the difference between regarding research as a process rather than as a product? Why should “serendipity” matter to this process? (from @teachingcails)
+  - Teachers may want to point to the goals of the design of the tool vs. your own particular goals ((see [Interaction](../topics/interaction/interaction.qmd)))
+  - Teachers may want to point to the bias in the model output (see [Data](../topics/data/data.qmd))
+- Research and developing research questions is a very creative and, thus a deeply human skill. To what extent can this be replaced by an artifical tool that produces synthetic text from mostly human-written content? 
 
-## Non-AI alternatives
+
+## Alternatives
 
 - peer discussions (both in-class and out-of-class discussions)
 - find a paper about a topic that particularly fascinates you and read this paper in detail, explore the references cited in there
 
 # Literature review
+
+<span class = 'highlight'>ADD Intro and text</span>
 
 ## Discussion questions
 
@@ -50,7 +85,7 @@ TBD
 - How does a collaboratively built resource such as Wikipedia, or a peer-reviewed academic resource, differ from generative AI tools such as ChatGPT or Perplexity AI? (from @teachingcails)
 
 
-## Non-AI alternatives
+## Alternatives
 
 - use search engines where you can be an "active researcher" and that allow for the evaluation and critical assessment of sources
   - libraries (e.g. [the University and City library of Cologne](https://ub.uni-koeln.de/))
@@ -62,12 +97,14 @@ TBD
 
 # Writing
 
+<span class = 'highlight'>ADD Intro and text</span>
+
 ## Discussion questions
 
 - Do we by citing a chatbot or acknowledging the use of a chatbot avoid plagiarising?
 - Are there other potential tools that may be more suitable for the task?
 
-## Non-AI alternatives
+## Alternatives
 
 - use online corpora and resources for finding synonyms and seeing how words are used in which context
   - e.g. for German, you could use [DWDS](https://www.dwds.de/)
@@ -81,7 +118,20 @@ TBD
 
 # Coding
 
+<span class = 'highlight'>ADD Intro and text</span>
+
 - for the use of AI in coding and learning how to code, see [Chapter 15](https://elenlefoll.github.io/RstatsTextbook/15_AI.html) in @lefoll
 
+
+# Good scientific practice
+
+## Open Science
+
+<span class = 'highlight'>to do</span>
+
+
+## Replicability and Reproducibility
+
+<span class = 'highlight'>to do</span>
 
 # References

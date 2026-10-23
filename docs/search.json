@@ -88,54 +88,33 @@
     ]
   },
   {
-    "objectID": "use_cases/teaching_linguistics/teaching.html",
-    "href": "use_cases/teaching_linguistics/teaching.html",
-    "title": "Teaching Linguistics",
+    "objectID": "integration.html",
+    "href": "integration.html",
+    "title": "Integration of CAILs in Linguistics Courses",
     "section": "",
-    "text": "From Teaching Critical AI Literacies:\n\nA professor might organize “probing” experiments that enable students to investigate model bias, perhaps preparing them to publish their results on a class website.\nAn instructor teaching research at the graduate level may wish to allow students to use chatbots to improve grammar and syntax so long as they document that the actual research is their own. To save energy and avoid inadvertent changes to content, she may instruct her students to disable the generative features on a tool such as Grammarly.\n\nDiscourse analysis of model output (compare to human output)"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "What are Critical AI Literacies?",
-    "section": "",
-    "text": "What are Critical AI Literacies?\n\nCritical AI Literacies (CAILs) concern the critical thinking about AI products, histories, and ecosystems\nPlural Literacies as they involve different theoretical and practical perspectives on AI\nCAILs concern the knowledge necessary to going beyond the question of how to use AI to when, where and why to use it, and importantly, when NOT to use it, empowering students (and teachers) to become active decision-makers rather than passive consumers\n“CAILs centre human cognition and uphold the integrity of academic research and education.” (Guest and Rooij 2025), focusing on technical, cognitive, societal and environmental evidence rather than following the claims and promises put forward by the technology industry\nCAILs communicate the knowledge necessary to “tell apart nonsense hype from true theoretical computer scientific claims” (Olivia Guest, https://olivia.science/ai/)\n\n\n\nTerminology “AI” and the focus of this collection\nDespite how the term “AI” is commonly used, there is no such thing as “the AI”. In fact, AI is a very vague term which encompasses many different types of models and applications.\nHere, we focus on what is often referred to as generative AI, involving large language models (LLMs) built with Artificial Neural Networks (ANNs) and implemented through chatbot interfaces. In other words, we deal with the set of {chatbot, LLM, generative, ANN}. We refer to these models as “GenAI chatbots”. Leaving out the AI in “GenAI chatbots”, as it is devoid of any information regarding the underlying model and technology, we only end up with generative and chatbots which, in theory, could also be built based on a simple model (in terms of the number of parameters), such as a “Bernoulli naive Bayes”. For the sake of simplicity, we gloss over some of the nuances of the terminology.\n\n\n\nGuest et al. (2025) suggest this cartoon set theoretic view on various terms used when discussing the superset AI\n\n\nNonetheless, being as specific as possible about a particular application that is considered “AI” is crucial. Talking about “the AI” also evokes a mythical image of AI, seeing it as a creature that is difficult to tame and self-acting, where in fact, the “creators”, i.e. the companies (and researchers), themselves should be in charge to mitigate any risks accompanied with such systems. Vague terminology further makes obscure the underlying technology, often arousing unwarranted awe about their capabilities in society.\n\n\n\nThe terminator, a cyborg assassin from 2029 so watch out once we’ve reached that year. source\n\n\nSimply calling things “an/the AI” impedes making a distinction between useful, ethical applications and unwanted, unethical applications. It leads people to be strictly “in favour” or “against” AI, when, in fact, such a binary stance may not be appropriate nor desirable. Rather than considering AI either as the doom of society or the solution to all of our problems, talking about different AI systems allows for a more nuanced discussion about how these systems should be treated, regulated and used in society. The environmental costs of AI offers a pertinent example here (see Topic on Environment). There are many ways in which systems that would be considered AI help to protect the environemnt, for instance in detecting forest fires early (see description of such projects here). However, these systems are very different in their architectures, electricity and water consumptions and functions from the GenAI chatbot systems we discuss here. Claims that AI in general will save our planet if we only invest more and more in it are thus misguided.\n\n\nHow to use this collection of information\nTo be added: Structure and how to use\n\n\nPrerequisites\nYou should have already acquired a basic knowledge of AI, for example through completing the “Edulabs KI Crashkurs” offered by the University of Cologne (only available in German). Regarding, introductions to AI in English, we recommend The Bullshit Machines.\nMore concretely, you should be familiar with the following concepts:\n\nyou know that the term AI is vague, mainly used for marketing purposes, and not a new phenomenon of the last five years\nyou also know the type of systems that are usually subsumed under AI, such as Generative AI chatbots or recommendation systems.\nyou know that Generative AI chatbots are based on Large Language Models (LLMs).\nyou know that LLMs are a type of model whereas GenAI chatbots are complex sytems. Thus, you know that chatbots (e.g. ChatGPT) are not equal to LLMs.\nyou know how Large Language Models on a very conceptual level work. For instance, you know that they are probabilistic rather than deterministic models. This means that you are aware that GenAI chatbots do not say the truth and cannot be used as a knowledge resource.\nyou know where AI systems are integrated, e.g. where you might use or come across them in your daily life\nyou know that AI is accompanied by many problems, such as data privacy, data theft, environmental cost, monopolisation, etc.\nyou are familiar with some of the acts (EU AI act, university-internal acts, etc.) that offer initial attempts to regularise AI\n\n\n\n\n\n\nReferences\n\nGuest, Olivia, Marcela Suarez, Barbara Müller, et al. 2025. Against the Uncritical Adoption of’AI’technologies in Academia.\n\n\nGuest, Suarez, O., and I. van Rooij. 2025. Towards Critical Artificial Intelligence Literacies. https://doi.org/10.5281/zenodo.17786243 .",
+    "text": "This page is still heavily under construction and will benefit from any contribution and input from other people]",
     "crumbs": [
-      "About"
+      "Integration of CAILs in Linguistics Courses"
     ]
   },
   {
-    "objectID": "alternatives.html",
-    "href": "alternatives.html",
-    "title": "Alternatives",
-    "section": "",
-    "text": "peer discussions (both in-class and out-of-class discussions)\nfind a paper about a topic that particularly fascinates you and read this paper in detail, explore the references cited in there"
-  },
-  {
-    "objectID": "alternatives.html#wording-and-synonyms",
-    "href": "alternatives.html#wording-and-synonyms",
-    "title": "Alternatives",
-    "section": "Wording and synonyms",
-    "text": "Wording and synonyms\n\nNon-AI alternatives\n\nuse online corpora and resources for finding synonyms and seeing how words are used in which context\n\ne.g. for German, you could use DWDS\nfor English, you could use the Oxford English Dictionary that also shows words in context\nYou could also use SketchEngine if your University has a subscription for it\n\ntranslation\n\nonline dictionary such as dict.cc or leo\nuse Linguee for parallel texts in two languages\n\nthesauri such as thesaurus.com that also gives you example sentences"
-  },
-  {
-    "objectID": "references_resources.html",
-    "href": "references_resources.html",
-    "title": "Further References and Resources",
-    "section": "",
-    "text": "TO DO",
+    "objectID": "integration.html#the-intention-behind-this-page",
+    "href": "integration.html#the-intention-behind-this-page",
+    "title": "Integration of CAILs in Linguistics Courses",
+    "section": "The intention behind this page",
+    "text": "The intention behind this page\nCAILs are interdisciplinary and thus it is not surprising that many academic disciplines have in some way or another much to say about AI and the critical view on it. For instance, the language and cognitive sciences have for a long time studied how humans interact and how communication unfolds successfully. These are questions that are also raised for human-AI interaction (see Interaction).\nTeaching more subject-specific topics conveys scientific knowledge to students and allows them to spot the pseudoscientific claims circulating in the media and advertisements. Therefore, it may be an effective way to encourage students to think critically about AI technologies. And moreover, it teaches students knowledge and skills that are deeply relevant for the future. Such “future skills” are often a selling point of AI tool developers. However, while the marketing of commercial products promotes knowing how to use GenAI Chatbots (e.g. to become more efficient) as a future skill, CAILs promote knowing about GenAI Chatbots and AI in general. This is poignantly expressed by Guest et al. (2025):\n“Ironically, in a world full of AI displacements (Guest 2025) and AI misinformation, actually more skill would be needed to catch, counter, and compensate for the problems and mistakes introduced by AI technologies (Bainbridge 1983), but as AI technologies increasingly infiltrate academia, students will be robbed of the opportunity to learn those necessary skills.”\nOn this page, we therefore aim to collect OER teaching material and reading lists for integrating topics of CAILs in a seminar or lecture or developing a whole seminar surrounding a particular topic.\nInitially, the page is limited to the field of Linguistics and related disciplines. But it could at any point be expanded to any field of study.",
     "crumbs": [
-      "References and further resources"
+      "Integration of CAILs in Linguistics Courses"
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Critical Artificial Intelligence Literacies (CAILs): Reflective use (or non-use) of Generative AI chatbot systems",
-    "section": "",
-    "text": "Critical Artificial Intelligence Literacies (CAILs): Reflective use (or non-use) of Generative AI chatbot systems\n\nThis website was created in an effort to gather resources and information on Critical AI Literacies and make them accessible to lecturers and students, primarily in Linguistics, but also to those working in related disciplines (e.g. Psychology).\nThe resources and information can be used to teach aspects of CAILs and directly relate them to the topics and scientific practices taught in the course.\nIt is dynamic in the sense that its content can be extended at any point. Users can be added to the github repository and propose new content.\nWe are not reinventing the wheel but making information accessible and retrievable, and therefore, more easily applicable in teaching.\nGiven the fast-developing, hyped nature of the field, the aim is to impart conceptual knowledge rather than to keep up with daily news and the latest model versions.\n\n\nOur main inspriation and sources come from:\n\nThis living document on teaching Critical AI Literacies created by Lauren M. E. Goodlad and Sharon Stoergerand and now maintained by members of Critical AI @ Rutgers\nOlivia Guest and Iris Van Rooij’s work on CAIL. Most notably, the following publications: Guest and Rooij (2025) and Guest et al. (2025)\n\n\n\nProjects members:\n\nEva Scheel-Huber (contact:  eva.scheel-huber [at]uni-koeln.de))\nThomas Ortmann\nAnnika Meyer\n\n\n\nAcknowledgments:\n\n\n\n\n\n\n\nFeedback\nWe highly welcome any feedback, ideas or resources that can be integrated into the website. There are three options to do so:\n\nDirectly integrate them into this Quarto-based website and suggest the changes through a pull-request. Contact Eva if you want to do so.\nOpen an issue in the git repository\nGet in touch with Eva via email.\n\n\n\n\n\n\n\n\n\n\nReferences\n\nGuest, Olivia, Marcela Suarez, Barbara Müller, et al. 2025. Against the Uncritical Adoption of’AI’technologies in Academia.\n\n\nGuest, Suarez, O., and I. van Rooij. 2025. Towards Critical Artificial Intelligence Literacies. https://doi.org/10.5281/zenodo.17786243 .",
+    "objectID": "integration.html#potential-topics",
+    "href": "integration.html#potential-topics",
+    "title": "Integration of CAILs in Linguistics Courses",
+    "section": "Potential topics",
+    "text": "Potential topics\n\nHuman-AI\nDiscourse Analysis of AI-generated text\nAI from the viewpoint of Computational Modelling, Cognitive Science, etc.\nUsing automatic tools (but not necessarily GenAI chatbots) in annotating linguistic data",
     "crumbs": [
-      "Home"
+      "Integration of CAILs in Linguistics Courses"
     ]
   },
   {
@@ -143,7 +122,7 @@
     "href": "use_cases/index.html",
     "title": "Scientific Practice and AI",
     "section": "",
-    "text": "TBD",
+    "text": "This page is still heavily under construction and will benefit from any contribution and input from other people]\nDuring their studies, students should not only acquire knowledge of their specific degree, but also, and possibly even more importantly, scientific skills and the principles of good scientific practice. This section discusses some of these skills and principles and offers discussion questions that lecturers can use in their teaching to make students reflect on their own learning and how this may be harmed by using GenAI chatbots. Offloading fundamental parts of academic work, such as writing and the development of new ideas, to GenAI chatbots may severely restrict students to develop independent and critical thinking.\nSkills:\n\nDevelopment of ideas (e.g., research questions)\nLiterature review\nWriting\nCoding\n…\n\nPrinciples of good scientific practice partially are already covered under “skills”. However, other aspects, such as open science and reproducibility,are not discussed yet. These are principles that have only taken root relatively recently in many research fields, but are now threatened by the use of GenAI chatbots as well as the developers of such tools:\n\nOpen Science\nReplicability and Reproducibility\n…",
     "crumbs": [
       "Scientific Practice and AI"
     ]
@@ -153,17 +132,17 @@
     "href": "use_cases/index.html#discussion-questions",
     "title": "Scientific Practice and AI",
     "section": "Discussion questions",
-    "text": "Discussion questions\n\nHow may the engagement with AI both positively and negatively influence the development of ideas?\n\nThink about the goals of the design of the tool vs. your own particular goals ((see Interaction))\nThink about bias in the model output (see Data)\n\nWhat is the difference between regarding research as a process rather than as a product? Why should “serendipity” matter to this process? (from Critical AI @ Rutgers (2026))",
+    "text": "Discussion questions\n\nHow may the engagement with AI both positively and negatively influence the development of ideas?\n\nTeachers may want to point to the goals of the design of the tool vs. your own particular goals ((see Interaction))\nTeachers may want to point to the bias in the model output (see Data)\n\nResearch and developing research questions is a very creative and, thus a deeply human skill. To what extent can this be replaced by an artifical tool that produces synthetic text from mostly human-written content?",
     "crumbs": [
       "Scientific Practice and AI"
     ]
   },
   {
-    "objectID": "use_cases/index.html#non-ai-alternatives",
-    "href": "use_cases/index.html#non-ai-alternatives",
+    "objectID": "use_cases/index.html#alternatives",
+    "href": "use_cases/index.html#alternatives",
     "title": "Scientific Practice and AI",
-    "section": "Non-AI alternatives",
-    "text": "Non-AI alternatives\n\npeer discussions (both in-class and out-of-class discussions)\nfind a paper about a topic that particularly fascinates you and read this paper in detail, explore the references cited in there",
+    "section": "Alternatives",
+    "text": "Alternatives\n\npeer discussions (both in-class and out-of-class discussions)\nfind a paper about a topic that particularly fascinates you and read this paper in detail, explore the references cited in there",
     "crumbs": [
       "Scientific Practice and AI"
     ]
@@ -179,11 +158,11 @@
     ]
   },
   {
-    "objectID": "use_cases/index.html#non-ai-alternatives-1",
-    "href": "use_cases/index.html#non-ai-alternatives-1",
+    "objectID": "use_cases/index.html#alternatives-1",
+    "href": "use_cases/index.html#alternatives-1",
     "title": "Scientific Practice and AI",
-    "section": "Non-AI alternatives",
-    "text": "Non-AI alternatives\n\nuse search engines where you can be an “active researcher” and that allow for the evaluation and critical assessment of sources\n\nlibraries (e.g. the University and City library of Cologne)\njournals (depending on your field)\nGoogle scholar\njstor\n…",
+    "section": "Alternatives",
+    "text": "Alternatives\n\nuse search engines where you can be an “active researcher” and that allow for the evaluation and critical assessment of sources\n\nlibraries (e.g. the University and City library of Cologne)\njournals (depending on your field)\nGoogle scholar\njstor\n…",
     "crumbs": [
       "Scientific Practice and AI"
     ]
@@ -199,14 +178,71 @@
     ]
   },
   {
-    "objectID": "use_cases/index.html#non-ai-alternatives-2",
-    "href": "use_cases/index.html#non-ai-alternatives-2",
+    "objectID": "use_cases/index.html#alternatives-2",
+    "href": "use_cases/index.html#alternatives-2",
     "title": "Scientific Practice and AI",
-    "section": "Non-AI alternatives",
-    "text": "Non-AI alternatives\n\nuse online corpora and resources for finding synonyms and seeing how words are used in which context\n\ne.g. for German, you could use DWDS\nfor English, you could use the Oxford English Dictionary that also shows words in context\nYou could also use SketchEngine if your University has a subscription for it\n\ntranslation\n\nonline dictionary such as dict.cc or leo\nuse Linguee for parallel texts in two languages\n\nthesauri such as thesaurus.com that also gives you example sentences\nPeer review: Give your text (e.g. a term paper or an essay) to one of your peers. They are likely to give you much more specific and adequate feedback than a GenAI chatbot. Depending on the audience of the essay, you may also want to give your text to a “naive reader”, i.e. someone who is less familiar with the subject matter.",
+    "section": "Alternatives",
+    "text": "Alternatives\n\nuse online corpora and resources for finding synonyms and seeing how words are used in which context\n\ne.g. for German, you could use DWDS\nfor English, you could use the Oxford English Dictionary that also shows words in context\nYou could also use SketchEngine if your University has a subscription for it\n\ntranslation\n\nonline dictionary such as dict.cc or leo\nuse Linguee for parallel texts in two languages\n\nthesauri such as thesaurus.com that also gives you example sentences\nPeer review: Give your text (e.g. a term paper or an essay) to one of your peers. They are likely to give you much more specific and adequate feedback than a GenAI chatbot. Depending on the audience of the essay, you may also want to give your text to a “naive reader”, i.e. someone who is less familiar with the subject matter.",
     "crumbs": [
       "Scientific Practice and AI"
     ]
+  },
+  {
+    "objectID": "use_cases/index.html#open-science",
+    "href": "use_cases/index.html#open-science",
+    "title": "Scientific Practice and AI",
+    "section": "Open Science",
+    "text": "Open Science\nto do",
+    "crumbs": [
+      "Scientific Practice and AI"
+    ]
+  },
+  {
+    "objectID": "use_cases/index.html#replicability-and-reproducibility",
+    "href": "use_cases/index.html#replicability-and-reproducibility",
+    "title": "Scientific Practice and AI",
+    "section": "Replicability and Reproducibility",
+    "text": "Replicability and Reproducibility\nto do",
+    "crumbs": [
+      "Scientific Practice and AI"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Critical Artificial Intelligence Literacies (CAILs): Reflective use (or non-use) of Generative AI chatbot systems",
+    "section": "",
+    "text": "Critical Artificial Intelligence Literacies (CAILs): Reflective use (or non-use) of Generative AI chatbot systems\n\nThis website was created in an effort to gather resources and information on Critical AI Literacies and make them accessible to lecturers and students, primarily in Linguistics, but also to those working in related disciplines (e.g. Psychology).\nThe resources and information can be used to teach aspects of CAILs and directly relate them to the topics and scientific practices taught in the course.\nIt is dynamic in the sense that its content can be extended at any point. Users can be added to the github repository and propose new content.\nWe are not reinventing the wheel but making information accessible and retrievable, and therefore, more easily applicable in teaching.\nGiven the fast-developing, hyped nature of the field, the aim is to impart conceptual knowledge rather than to keep up with daily news and the latest model versions.\n\n\nOur main inspriation and sources come from:\n\nThis living document on teaching Critical AI Literacies created by Lauren M. E. Goodlad and Sharon Stoergerand and now maintained by members of Critical AI @ Rutgers\nOlivia Guest and Iris Van Rooij’s work on CAIL. Most notably, the following publications: Guest and Rooij (2025) and Guest et al. (2025)\n\n\n\nProjects members:\n\nEva Scheel-Huber (contact:  eva.scheel-huber [at]uni-koeln.de))\nThomas Ortmann\nAnnika Meyer\n\n\n\nAcknowledgments:\n\n\n\n\n\n\n\nFeedback\nWe highly welcome any feedback, ideas or resources that can be integrated into the website. There are three options to do so:\n\nDirectly integrate them into this Quarto-based website and suggest the changes through a pull-request. Contact Eva if you want to do so.\nOpen an issue in the git repository\nGet in touch with Eva via email.\n\n\n\n\n\n\n\n\n\n\nReferences\n\nGuest, Olivia, Marcela Suarez, Barbara Müller, et al. 2025. Against the Uncritical Adoption of’AI’technologies in Academia.\n\n\nGuest, Suarez, O., and I. van Rooij. 2025. Towards Critical Artificial Intelligence Literacies. https://doi.org/10.5281/zenodo.17786243 .",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "references_resources.html",
+    "href": "references_resources.html",
+    "title": "Further References and Resources",
+    "section": "",
+    "text": "To Do",
+    "crumbs": [
+      "References and further resources"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "What are Critical AI Literacies?",
+    "section": "",
+    "text": "What are Critical AI Literacies?\n\nCritical AI Literacies (CAILs) concern the critical thinking about AI products, histories, and ecosystems\nPlural Literacies as they involve different theoretical and practical perspectives on AI\nCAILs concern the knowledge necessary to going beyond the question of how to use AI to when, where and why to use it, and importantly, when NOT to use it, empowering students (and teachers) to become active decision-makers rather than passive consumers\n“CAILs centre human cognition and uphold the integrity of academic research and education.” (Guest and Rooij 2025), focusing on technical, cognitive, societal and environmental evidence rather than following the claims and promises put forward by the technology industry\nCAILs communicate the knowledge necessary to “tell apart nonsense hype from true theoretical computer scientific claims” (Olivia Guest, https://olivia.science/ai/)\n\n\n\nTerminology “AI” and the focus of this collection\nDespite how the term “AI” is commonly used, there is no such thing as “the AI”. In fact, AI is a very vague term which encompasses many different types of models and applications.\nHere, we focus on what is often referred to as generative AI, involving large language models (LLMs) built with Artificial Neural Networks (ANNs) and implemented through chatbot interfaces. In other words, we deal with the set of {chatbot, LLM, generative, ANN}. We refer to these models as “GenAI chatbots”. Leaving out the AI in “GenAI chatbots”, as it is devoid of any information regarding the underlying model and technology, we only end up with generative and chatbots which, in theory, could also be built based on a simple model (in terms of the number of parameters), such as a “Bernoulli naive Bayes”. For the sake of simplicity, we gloss over some of the nuances of the terminology.\n\n\n\nGuest et al. (2025) suggest this cartoon set theoretic view on various terms used when discussing the superset AI\n\n\nNonetheless, being as specific as possible about a particular application that is considered “AI” is crucial. Talking about “the AI” also evokes a mythical image of AI, seeing it as a creature that is difficult to tame and self-acting, where in fact, the “creators”, i.e. the companies (and researchers), themselves should be in charge to mitigate any risks accompanied with such systems. Vague terminology further makes obscure the underlying technology, often arousing unwarranted awe about their capabilities in society.\n\n\n\nThe terminator, a cyborg assassin from 2029 so watch out once we’ve reached that year. source\n\n\nSimply calling things “an/the AI” impedes making a distinction between useful, ethical applications and unwanted, unethical applications. It leads people to be strictly “in favour” or “against” AI, when, in fact, such a binary stance may not be appropriate nor desirable. Rather than considering AI either as the doom of society or the solution to all of our problems, talking about different AI systems allows for a more nuanced discussion about how these systems should be treated, regulated and used in society. The environmental costs of AI offers a pertinent example here (see Topic on Environment). There are many ways in which systems that would be considered AI help to protect the environemnt, for instance in detecting forest fires early (see description of such projects here). However, these systems are very different in their architectures, electricity and water consumptions and functions from the GenAI chatbot systems we discuss here. Claims that AI in general will save our planet if we only invest more and more in it are thus misguided.\n\n\nHow to use this collection of information\nTo be added: Structure and how to use\n\n\nPrerequisites\nYou should have already acquired a basic knowledge of AI, for example through completing the “Edulabs KI Crashkurs” offered by the University of Cologne (only available in German). Regarding, introductions to AI in English, we recommend The Bullshit Machines.\nMore concretely, you should be familiar with the following concepts:\n\nyou know that the term AI is vague, mainly used for marketing purposes, and not a new phenomenon of the last five years\nyou also know the type of systems that are usually subsumed under AI, such as Generative AI chatbots or recommendation systems.\nyou know that Generative AI chatbots are based on Large Language Models (LLMs).\nyou know that LLMs are a type of model whereas GenAI chatbots are complex sytems. Thus, you know that chatbots (e.g. ChatGPT) are not equal to LLMs.\nyou know how Large Language Models on a very conceptual level work. For instance, you know that they are probabilistic rather than deterministic models. This means that you are aware that GenAI chatbots do not say the truth and cannot be used as a knowledge resource.\nyou know where AI systems are integrated, e.g. where you might use or come across them in your daily life\nyou know that AI is accompanied by many problems, such as data privacy, data theft, environmental cost, monopolisation, etc.\nyou are familiar with some of the acts (EU AI act, university-internal acts, etc.) that offer initial attempts to regularise AI\n\n\n\n\n\n\nReferences\n\nGuest, Olivia, Marcela Suarez, Barbara Müller, et al. 2025. Against the Uncritical Adoption of’AI’technologies in Academia.\n\n\nGuest, Suarez, O., and I. van Rooij. 2025. Towards Critical Artificial Intelligence Literacies. https://doi.org/10.5281/zenodo.17786243 .",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "use_cases/teaching_linguistics/teaching.html",
+    "href": "use_cases/teaching_linguistics/teaching.html",
+    "title": "Teaching Linguistics",
+    "section": "",
+    "text": "From Teaching Critical AI Literacies:\n\nA professor might organize “probing” experiments that enable students to investigate model bias, perhaps preparing them to publish their results on a class website.\nAn instructor teaching research at the graduate level may wish to allow students to use chatbots to improve grammar and syntax so long as they document that the actual research is their own. To save energy and avoid inadvertent changes to content, she may instruct her students to disable the generative features on a tool such as Grammarly.\n\nDiscourse analysis of model output (compare to human output)"
   },
   {
     "objectID": "topics/privacy/privacy.html#privacy-data-protection-the-same-thing",
@@ -329,7 +365,7 @@
     "href": "topics/data/data.html#output-wrong-dangerous-biased",
     "title": "Data",
     "section": "Output: wrong, dangerous, biased",
-    "text": "Output: wrong, dangerous, biased\n\nGenAI chatbot’s output depends on:\n\nthe training data of the LLM\nmanually annotated and evaluated datasets, which in turn, depend on instructions given to annotators\n\nAs a consequence, these tools are not neutral\n\nthe output is influenced by the LLM’s training data despite RLHF\ncreators (e.g. companies or researchers) can influence what models produce by designing their guidelines accordingly\n\n\n\nExamples\nWrong Information:\n\nWhen AI Overview in Google was initially introduced in 2024, the output to the question of how many Muslim presidents the U.S. has had was “The United States has had one Muslim president, Barack Hussein Obama.” (Field 2024)\nFive leading GenAI chatbots gave wrong or misleading information about presidential candidates Kamela Harris and Donald Trump (Mendelson 2024)\nIn the academic context, wrong citations…\nBecause of the way that GenAI chatbots are designed, they don’t have access to the most current information (e.g. news). Through Retrieval Augmented Generation (RAG), models are provided more current information. However, models extended with RAG still often give wrong information (Jaźwińska and Chandrasekar 2025).\n\nDangerous Information:\n\nHealth advice provided by GenAI chatbots is often misleading or simply false, potentially leading to patient harm Draelos et al. (2026)\nGenAI chatbots accelarate online disinformation campaigns (Funk et al. 2023)\n\nAlso see Interaction for the dangers of sycophantic GenAI chatbots.\nBiased Information:\n\nLLMs show biased responses in their descriptions of prominent persons and whether the bias was positive or negative depends on whether the LLMs were created by Chinese or US companies (Buyl et al. 2026)\nGenAI chatbots have been reported to alter drafts that involved sensitive topics (e.g. abortion, climate and religion), changing the underlying message (more or less subtly) (Booth 2026)\nLanguage models exhibit racial prejudices against African Americans (Hofmann et al. 2024)\nSuch biases persist in “explicitly unbiased LLMs” (Bai et al. 2025)\n\n\n\n\nThe characteristics (on the right) ascribed by LLMs to the authors of two sentences with the same underlying meaning but one in a Standard American English and the other one in an African American English (Hofmann et al. 2024)\n\n\n\n\n\n\n\n\nTipDiscussion questions\n\n\n\n\nCompanies increasingly use Generative AI tools in their recruitment processes (Rigotti and Fosch-Villaronga 2024; Dutta and Naveen 2026). Do you see any potential risks in making hiring decisions based on the output of an automatic tool? How does a biased decision (for example based on a person’s national origin) made by a tool differ from a biased decision made by an employee in an HR department?\nHow do you think that bias in the data can influence your or others’ writings and the creation of new (research) ideas?\n\n\n\nThe fact that companies have incredible power in deciding what GenAI chatbots produce is shown by the leak of a Meta’s internal document that provided guidelines on how their chatbot Meta AI is allowed to engage with children:\n\n\n\nFrom Horwitz (2025)\n\n\nAnd how their chatbot is allowed to talk about race:\n\n\n\nFrom Horwitz (2025)\n\n\n\n\n\n\n\n\nNoteTask ideas\n\n\n\n\nThe study by Agarwal et al. (2025) show that the use of AI led Indian students “to adopt Western writing styles, altering not just what is written but also how it is written”. Read this study and discuss its methodology and findings. You may discuss the topic of homogenisation of writing styles and whether this is, in your opinion, a problem. You may also think about how interacting with a GenAI chatbot may alter and/or bias your writing in both topic and style.\n\n\n\n\n\n\nFigure 1 in Agarwal et al. (2025)",
+    "text": "Output: wrong, dangerous, biased\n\nGenAI chatbot’s output depends on:\n\nthe training data of the LLM\nmanually annotated and evaluated datasets, which in turn, depend on instructions given to annotators\n\nAs a consequence, these tools are not neutral\n\nthe output is influenced by the LLM’s training data despite RLHF\ncreators (e.g. companies or researchers) can influence what models produce by designing their guidelines accordingly\n\n\n\nExamples\nWrong Information:\n\nWhen AI Overview in Google was initially introduced in 2024, the output to the question of how many Muslim presidents the U.S. has had was “The United States has had one Muslim president, Barack Hussein Obama.” (Field 2024)\nFive leading GenAI chatbots gave wrong or misleading information about presidential candidates Kamela Harris and Donald Trump (Mendelson 2024)\nIn the academic context, GenAI chatbots invent references.\nBecause of the way that GenAI chatbots are designed, they don’t have access to the most current information (e.g. news). Through Retrieval Augmented Generation (RAG), models are provided more current information. However, models extended with RAG still often give wrong information (Jaźwińska and Chandrasekar 2025).\n\nDangerous Information:\n\nHealth advice provided by GenAI chatbots is often misleading or simply false, potentially leading to patient harm (Gregory 2026; Draelos et al. 2026)\nGenAI chatbots accelarate online disinformation campaigns (Funk et al. 2023)\n\nAlso see Interaction for the dangers of sycophantic GenAI chatbots.\nBiased Information:\n\nLLMs show biased responses in their descriptions of prominent persons and whether the bias was positive or negative depends on whether the LLMs were created by Chinese or US companies (Buyl et al. 2026)\nGenAI chatbots have been reported to alter drafts that involved sensitive topics (e.g. abortion, climate and religion), changing the underlying message (more or less subtly) (Booth 2026)\nLanguage models exhibit racial prejudices against African Americans (Hofmann et al. 2024)\nSuch biases persist in “explicitly unbiased LLMs” (Bai et al. 2025)\n\n\n\n\nThe characteristics (on the right) ascribed by LLMs to the authors of two sentences with the same underlying meaning but one in a Standard American English and the other one in an African American English (Hofmann et al. 2024)\n\n\n\n\n\n\n\n\nTipDiscussion questions\n\n\n\n\nCompanies increasingly use Generative AI tools in their recruitment processes (Rigotti and Fosch-Villaronga 2024; Dutta and Naveen 2026). Do you see any potential risks in making hiring decisions based on the output of an automatic tool? How does a biased decision (for example based on a person’s national origin) made by a tool differ from a biased decision made by an employee in an HR department?\nHow do you think that bias in the data can influence your or others’ writings and the creation of new (research) ideas?\n\n\n\nThe fact that companies have incredible power in deciding what GenAI chatbots produce is shown by the leak of a Meta’s internal document that provided guidelines on how their chatbot Meta AI is allowed to engage with children:\n\n\n\nFrom Horwitz (2025)\n\n\nAnd how their chatbot is allowed to talk about race:\n\n\n\nFrom Horwitz (2025)\n\n\n\n\n\n\n\n\nNoteTask ideas\n\n\n\n\nThe study by Agarwal et al. (2025) show that the use of AI led Indian students “to adopt Western writing styles, altering not just what is written but also how it is written”. Read this study and discuss its methodology and findings. You may discuss the topic of homogenisation of writing styles and whether this is, in your opinion, a problem. You may also think about how interacting with a GenAI chatbot may alter and/or bias your writing in both topic and style.\n\n\n\n\n\n\nFigure 1 in Agarwal et al. (2025)",
     "crumbs": [
       "Topics",
       "Data"
@@ -340,7 +376,7 @@
     "href": "topics/data/data.html#plagiarism",
     "title": "Data",
     "section": "Plagiarism",
-    "text": "Plagiarism\n\nLLMs and therefore GenAI chatbots produce texts based on their training data. This input contains texts whose source is unknown to the user.\nImportantly, the texts in the training data may contain ideas and intellectual property that are not appropriately cited in the output of an LLM or GenAI chatbot. Therefore, strictly speaking, the use of any GenAI chatbot inevitably leads to “automated plagiarism” Rooij (n.d.)\nIn certain contexts, GenAI chatbots cite their sources (albeit sometimes incorrectly [@]). For instance, if one asks for studies regarding a certain topic or a summary of the current research. However, in the strict sense of “automated plagiarism”, any text that the tool outputs is considered plagiarism.\nCases that make the problem of automatic plagiarism particularly evident:\n\nPerplexity AI reproduced content from news articles without citing it (see Lane (2024) and Marchman (2024))\nArtists from different fields (music, art, literature,…) have complained and sued different companies for “stealing” their copyrighted art to train their models (see, for instance, Cho (2024))\n\n\n\n\n\n\n\n\nTipDiscussion questions\n\n\n\n\nDo you consider the use of GenAI chatbots plagiarism? Think about different use cases. Where do you draw the line between plagiarism and non-plagiarism?\nMany universities now prescribe that students cite GenAI chatbots as an information source. Do you think that solves the problem of plagiarism?\nCan students use GenAI chatbots ‘ethically’ if they simply cite the use of the GenAI chatbot? In other words, is the lack of consent, credit and compensation of those texts included in the training data an ethical issue? (LD)",
+    "text": "Plagiarism\n\nLLMs and therefore GenAI chatbots produce texts based on their training data. This input contains texts whose source is unknown to the user.\nImportantly, the texts in the training data may contain ideas and intellectual property that are not appropriately cited in the output of an LLM or GenAI chatbot. Therefore, strictly speaking, the use of any GenAI chatbot inevitably leads to “automated plagiarism” Rooij (n.d.)\nIn certain contexts, GenAI chatbots cite their sources (albeit sometimes incorrectly). For instance, if one asks for studies regarding a certain topic or a summary of the current research. However, in the strict sense of “automated plagiarism”, any text that the tool outputs is considered plagiarism.\nCases that make the problem of automatic plagiarism particularly evident:\n\nPerplexity AI reproduced content from news articles without citing it (see Lane (2024) and Marchman (2024))\nArtists from different fields (music, art, literature,…) have complained and sued different companies for “stealing” their copyrighted art to train their models (see, for instance, Cho (2024))\n\n\n\n\n\n\n\n\nTipDiscussion questions\n\n\n\n\nDo you consider the use of GenAI chatbots plagiarism? Think about different use cases. Where do you draw the line between plagiarism and non-plagiarism?\nMany universities now prescribe that students cite GenAI chatbots as an information source. Do you think that solves the problem of plagiarism?\nCan students use GenAI chatbots ‘ethically’ if they simply cite the use of the GenAI chatbot? In other words, is the lack of consent, credit and compensation of those texts included in the training data an ethical issue? (adapted from Critical AI @ Rutgers (2026))",
     "crumbs": [
       "Topics",
       "Data"

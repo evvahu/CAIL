@@ -1,0 +1,31 @@
+---
+title: "Integration of CAILs in Linguistics Courses"
+format:
+  html:
+    theme: 
+        - cosmo
+        - styles.scss
+    toc: true
+---
+
+<span class = 'highlight'>This page is still heavily under construction and will benefit from any contribution and input from other people]</span>
+
+## The intention behind this page
+
+CAILs are interdisciplinary and thus it is not surprising that many academic disciplines have in some way or another much to say about AI and the critical view on it. For instance, the language and cognitive sciences have for a long time studied how humans interact and how communication unfolds successfully. These are questions that are also raised for human-AI interaction (see [Interaction](/topics/interaction/interaction.qmd)). 
+
+Teaching more subject-specific topics conveys scientific knowledge to students and allows them to spot the pseudoscientific claims circulating in the media and advertisements. Therefore, it may be an effective way to encourage students to think critically about AI technologies. And moreover, it teaches students knowledge and skills that are deeply relevant for the future. Such "future skills" are often a selling point of AI tool developers. However, while the marketing of commercial products promotes knowing how to use GenAI Chatbots (e.g. to become more efficient) as a future skill, CAILs promote knowing *about* GenAI Chatbots and AI in general. 
+This is poignantly expressed by @guest2025against: 
+
+*"Ironically, in a world full of AI displacements (Guest 2025) and AI misinformation, actually more skill would be needed to catch, counter, and compensate for the problems and mistakes introduced by AI technologies (Bainbridge 1983), but as AI technologies increasingly infiltrate academia, students will be robbed of the opportunity to learn those necessary skills."* 
+
+On this page, we therefore aim to collect OER teaching material and reading lists for integrating topics of CAILs in a seminar or lecture or developing a whole seminar surrounding a particular topic. 
+
+Initially, the page is limited to the field of Linguistics and related disciplines. But it could at any point be expanded to any field of study. 
+
+## Potential topics
+
+- Human-AI 
+- Discourse Analysis of AI-generated text
+- AI from the viewpoint of Computational Modelling, Cognitive Science, etc.
+- Using automatic tools (but not necessarily GenAI chatbots) in annotating linguistic data

@@ -127,13 +127,13 @@ execute:
 
 - When AI Overview in Google was initially introduced in 2024, the output to the question of how many Muslim presidents the U.S. has had was “The United States has had one Muslim president, Barack Hussein Obama.” [@cnbcgoogle]
 - Five leading GenAI chatbots gave wrong or misleading information about presidential candidates Kamela Harris and Donald Trump [@mendelson2026]
-- In the academic context, wrong citations... 
+- In the academic context, GenAI chatbots invent references.
 - Because of the way that GenAI chatbots are designed, they don't have access to the most current information (e.g. news). Through *Retrieval Augmented Generation* (RAG), models are provided more current information. However, models extended with RAG still often give wrong information [@schaul2026].
 
 
 **Dangerous Information:**
 
-- Health advice provided by GenAI chatbots is often misleading or simply false, potentially leading to patient harm [@healthguardian, @draelosetal2026]
+- Health advice provided by GenAI chatbots is often misleading or simply false, potentially leading to patient harm [@healthguardian; @draelosetal2026]
 - GenAI chatbots accelarate online disinformation campaigns [@funk2023]
 
 Also see [Interaction]() for the dangers of sycophantic GenAI chatbots. 
@@ -173,7 +173,7 @@ And how their chatbot is allowed to talk about race:
 
 - LLMs and therefore GenAI chatbots produce texts based on their training data. This input contains texts whose source is unknown to the user. 
 - Importantly, the texts in the training data may contain ideas and intellectual property that are not appropriately cited in the output of an LLM or GenAI chatbot. Therefore, strictly speaking, the use of any GenAI chatbot inevitably leads to "automated plagiarism" @rooij2022
-- In certain contexts, GenAI chatbots cite their sources (albeit sometimes incorrectly [@]). For instance, if one asks for studies regarding a certain topic or a summary of the current research. However, in the strict sense of "automated plagiarism", any text that the tool outputs is considered plagiarism. 
+- In certain contexts, GenAI chatbots cite their sources (albeit sometimes incorrectly). For instance, if one asks for studies regarding a certain topic or a summary of the current research. However, in the strict sense of "automated plagiarism", any text that the tool outputs is considered plagiarism. 
 - Cases that make the problem of automatic plagiarism particularly evident: 
   - Perplexity AI reproduced content from news articles without citing it (see @lane2024 and @perplexitybullshit)
   - Artists from different fields (music, art, literature,...) have complained and sued different companies for "stealing" their copyrighted art to train their models (see, for instance, @choartists)
@@ -183,7 +183,7 @@ And how their chatbot is allowed to talk about race:
 ::: {.callout-tip title="Discussion questions"}
 - Do you consider the use of GenAI chatbots plagiarism? Think about different use cases. Where do you draw the line between plagiarism and non-plagiarism?
 - Many universities now prescribe that students cite GenAI chatbots as an information source. Do you think that solves the problem of plagiarism? 
-- Can students use GenAI chatbots 'ethically' if they simply cite the use of the GenAI chatbot? In other words, is the lack of consent, credit and compensation of those texts included in the training data an ethical issue? (LD)
+- Can students use GenAI chatbots 'ethically' if they simply cite the use of the GenAI chatbot? In other words, is the lack of consent, credit and compensation of those texts included in the training data an ethical issue? (adapted from @teachingcails)
 :::
 
 
