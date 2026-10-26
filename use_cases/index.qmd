@@ -16,7 +16,7 @@ format:
 
 <span class = 'highlight'>This page is still heavily under construction and will benefit from any contribution and input from other people]</span>
 
-During their studies, students should not only acquire knowledge of their specific degree, but also, and possibly even more importantly, scientific skills and the principles of good scientific practice. 
+During their studies, students should not only acquire knowledge of their discipline, but also, and possibly even more importantly, scientific skills and the principles of good scientific practice. 
 This section discusses some of these skills and principles and offers discussion questions that lecturers can use in their teaching to make students reflect on their own learning and how this may be harmed by using GenAI chatbots. Offloading fundamental parts of academic work, such as writing and the development of new ideas, to GenAI chatbots may severely restrict students to develop independent and critical thinking.
 
 Skills:
@@ -39,21 +39,20 @@ Principles of good scientific practice partially are already covered under "skil
 Some general reflection questions that students and lecturers alike may ask themselves:
 
 - Is your cognitive labour being affected by using a GenAI chatbot (or any AI tool)? [adapted from @guestsuarezrooij2025]
-  - First you may want to discuss what *cognitive labour* actually is, why *labour* can be negatively connotated as it's *effortful*, but why it is also necessary (especially in learning and thinking)
+  - First you may want to discuss what *cognitive labour* actually is, why *labour* can be negatively connotated as it's *effortful*, but why it is also extremely necessary (especially in learning and thought processes)
 - Do you learn what you are supposed to learn?
-  - Teachers should ideally always make clear what students are supposed to learn from a specific task or assessment. What are the goals that they have in mind? Based on this, you can discuss whether or not the use of a GenAI chatbot would lead them to this goal. 
+  - Teachers should ideally always make clear what students are supposed to learn from a specific task or assessment. What are the goals that you have in mind for your students to reach in your class? Based on this, you can discuss whether or not the use of a GenAI chatbot would lead them to this goal. 
 - Can the use of AI be justified given the ethical and environmental concerns of AI tools?
-  - As with any ethical question, this is a decision that every individual (and potential user) has to make themselves. Using GenAI chatbots can be compared to using an environmentally more damaging means of transportation, like a car or a plane instead of riding a train. It can also be compared to deciding to continue eating meat, to curb one's meat consumption or to strike it out your diet completely. The important question is that students are aware of the environmental damage inflicted by GenAI chatbots and that they can then, based on that knowledge, make a more informed decision. 
+  - As with any ethical question, this is a decision that every individual (and potential user) has to make for themselves. Using GenAI chatbots can be compared to using an environmentally more damaging means of transportation, like a car or a plane instead of riding a train. It can also be compared to deciding to continue eating meat, to curb one's meat consumption or to strike it out of your diet completely. The important question is that students are aware of the environmental damage inflicted by GenAI chatbots and that they can then, based on that knowledge, make more informed decisions with regard to their use (or non-use) of these tools. 
 - What exactly do you expect to gain by using a GenAI chatbot (or any AI tool)? 
-  - Lecturers may point to aspects such as time gain (often students may be stressed and challenged with their workload), cognitive offloading and the evasion of friction or also the insecurity of being able to complete something on their own without external help. 
+  - Lecturers may point to aspects such as time gain (often students may be pressed for time and overwhelmed by their workload), cognitive offloading and the evasion of friction, and also the lack of confidence to be able to complete something on their own without external help. 
 - Could the task be carried out using other means? 
   - Most likely, the question will be yes to this question. You can discuss why alternatives may be more effective and also fun than simply reverting to a GenAI chatbot. 
 - What is the difference between regarding learning as a process rather than as a product? (adapted from @teachingcails))
-  - In the academic context, grades are (unfortunately) (still) a central tool to screen and verify students' progress and the fulfillment of the required learning goals. However, students are often graded with respect to a *product* and the *process* that got the student to this product is left unnoticed. Therefore, lecturers may want to discuss the importance of the *process* rather than the *product* and ask their students why simply using a GenAI chabot may get them the product but not make them learn something in the process. 
-    - Many studies with students have now shown that when students use GenAI chatbots, the immediate product may be better. However, the effect  ones who don't use GenAIchatbots have a more lasting effect  [@]. 
+  - In the academic context, grades are (unfortunately) (still) a central tool to screen and verify students' progress and their fulfillment of the required learning goals. However, students are often graded with respect to a *product* and the *process* that got the student to this product is left unnoticed. Therefore, lecturers may want to discuss the importance of the *process* rather than the *product*. They can draw the students' attention to how using a GenAI chabot may get them a product without learning something as part of the process. 
 - Likewise, what is the difference between regarding *research* as a process rather than as a product? Why should "serendipity" matter to this process? (copied from @teachingcails)
   - Lecturers may also want to discuss the process of *learning* and *doing research* in tandem since learning is as much a process as is doing research. Through doing research, one learns and vice versa. Thus, research in itself is a learning *process* (which is why so many people like doing research because learning something is extremely fun and gratifying). 
-  - Before discussing why "serendipity" is important, lecturers may want to discuss why it may impeded by the use of GenAI chatbots. 
+  - Lecturers may want to discuss why serendipity may impeded by the use of GenAI chatbots fefore discussing why it is important. 
 
 
 # Development of ideas
