@@ -43,3 +43,6 @@ format:
 - why both users and organisations have a role to play in using GenAI systems securely
 
 ## Environment
+
+- how GenAI chatbots and their infrastructures are operated with energy and water
+- how this ecosystem causes environmental damage
